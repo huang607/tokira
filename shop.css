@@ -1,0 +1,230 @@
+.shopmain .banner{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.shopmain .banner h2{
+    
+}
+
+.shopmain .banner img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/* ============================================= */
+
+.shopmain .info{
+    position: relative;
+}
+
+.shopmain .info .deco .sticker-earth img{
+    position: absolute;
+    left: -1.5vw; 
+    bottom: 6vw;
+    width: 6vw;
+    rotate: 14deg;
+    vertical-align: bottom;
+}
+
+.shopmain .info .deco .sticker-eye2 img{
+    position: absolute;
+    left: -1.5vw; 
+    bottom: 6vw;
+    width: 6vw;
+    rotate: 14deg;
+    vertical-align: bottom;
+}
+
+.shopmain .info .deco .circlebomb img{
+    position: absolute;
+    left: -1.5vw; 
+    bottom: 6vw;
+    width: 6vw;
+    rotate: 14deg;
+    vertical-align: bottom;
+}
+
+/* ============================================= */
+
+.shopmain .info .shopcontent{}
+
+
+
+
+.shopmain .info .shopcontent .shopmenu{}
+
+.shopmain .info .shopcontent .shopmenu .shoptype{}
+
+.shopmain .info .shopcontent .shopmenu .shoptype span{}
+
+
+
+.shopmain .info .shopproduct .itemgroup{
+    display: flex;
+    justify-content: center;
+    margin-top: 3.4vw;;
+}
+
+.shopmain .info .shopproduct .itemgroup .item{
+    margin: 0 0.5vw;
+    position: relative;
+}
+
+
+
+
+
+.shopmain .info .shopproduct .itemgroup .item a .top{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 1vw 1vw 0 1vw;
+}
+
+
+
+.shopmain .info .shopproduct .itemgroup .item a .top .name{
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2vw;
+    letter-spacing: 0.08vw;
+    text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .top .arrow{
+    position: absolute;
+    /* display: none; */
+    top: 1vw;
+    right: 1vw;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .top .arrow img{
+    rotate: 45deg;
+    filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
+    width: 1.2vw;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .top .arrow2{
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .top .arrow2 img{
+    rotate: 45deg;
+    width: 1.2vw;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .top .detail{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 2vw;
+    padding: 1.5vw 1vw 0 0;
+    color: #3a3a3a;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    display: none;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17.3vw;
+    height: 17.3vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+
+.shopmain .info .shopproduct .itemgroup .item a:hover .overlay{
+    display: block;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a:hover .top .name{
+    color: #3a3a3a;
+    text-shadow: none;
+    z-index: 2;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a:hover .top .arrow img{
+    display: none;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a:hover .top .arrow2 img{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    rotate: 180deg;
+    transition: 0.5s;
+    z-index: 88;
+}
+
+
+.shopmain .info .shopproduct .itemgroup .item a:hover .top .detail{
+    display: block;
+    transition: 1s;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+.shopmain .info .shopproduct .itemgroup .item a .bottom{
+    display: flex;
+    position: absolute;
+    vertical-align: bottom;
+    align-items: end;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    padding: 0 1vw 1vw 1vw;
+    bottom: 0;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .bottom .price{
+    color: #fff;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.2vw;
+    letter-spacing: 0.08vw;
+    text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .bottom .stamp{
+    color: #fff;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 0.8vw;
+    letter-spacing: 0.08vw;
+    width: 4vw;
+    height: 4vw;
+    background-color: #FE793E;
+    border-radius: 30vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .primg img{
+    width: 17.3vw;
+    height: 17.3vw;
+}
+
+
+
+.shopmain .info .shopproduct .page{}
+
+.shopmain .info .shopproduct .page a{}
