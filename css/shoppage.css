@@ -1,0 +1,612 @@
+header nav ul li:nth-child(4) a{
+    color: #FE793E;
+}
+
+.shoppagemain{
+    
+}
+
+.shoppagemain .banner{
+    padding-top: 10.5vw;
+    padding-bottom: 3vw;
+    margin-left: 5.7vw;
+    margin-right: 5.7vw;
+    border-bottom: 0.14vw solid #3a3a3a;
+    
+    
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: 8.1vw 35.4vw 27vw;
+    grid-template-rows: 8.1vw 8.1vw 8.1vw 8.1vw;
+    align-content:center;justify-content:center;
+}
+
+.shoppagemain .banner .imgs1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: relative;
+}
+
+.shoppagemain .banner .imgs1 img{
+    display: block;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.shoppagemain .banner .imgs1 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8.1vw;
+    height: 8.1vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+
+.shoppagemain .banner .imgs1:hover .overlay{
+    display: block;
+}
+
+
+
+.shoppagemain .banner .imgs2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    position: relative;
+}
+
+.shoppagemain .banner .imgs2 img{
+    display: block;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.shoppagemain .banner .imgs2 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8.1vw;
+    height: 8.1vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+
+.shoppagemain .banner .imgs2:hover .overlay{
+    display: block;
+}
+
+
+
+.shoppagemain .banner .imgs3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    position: relative;
+}
+
+.shoppagemain .banner .imgs3 img{
+    display: block;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.shoppagemain .banner .imgs3 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8.1vw;
+    height: 8.1vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+
+.shoppagemain .banner .imgs3:hover .overlay{
+    display: block;
+}
+
+
+.shoppagemain .banner .imgs4{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    position: relative;
+}
+
+.shoppagemain .banner .imgs4 img{
+    display: block;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.shoppagemain .banner .imgs4 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8.1vw;
+    height: 8.1vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+
+.shoppagemain .banner .imgs4:hover .overlay{
+    display: block;
+}
+
+
+
+.shoppagemain .banner .imgmain{
+    position: relative;
+    
+}
+
+.shoppagemain .banner .imgmain .imgl{
+    grid-column: 2/3;
+    grid-row: 1/5;
+}
+
+.shoppagemain .banner .imgmain .imgl img{
+    display: block;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.shoppagemain .banner .imgmain .arrow_left img{
+    rotate: -90deg;
+    filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
+    position: absolute;
+    left: 1.7vw;
+    top: 17vw;
+    width: 1.2vw;
+}
+
+.shoppagemain .banner .imgmain .arrow_right img{
+    rotate: 90deg;
+    filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
+    position: absolute;
+    right: 1.7vw;
+    top: 17vw;
+    width: 1.2vw;
+}
+
+.shoppagemain .banner .imgmain:hover .arrow_left img{
+    animation: arrowleft .5s;
+}
+
+.shoppagemain .banner .imgmain:hover .arrow_right img{
+    animation: arrowright .5s;
+}
+
+@keyframes arrowleft{
+    0%{
+        left: 2.7vw;
+    }
+    100%{
+        left: 1.7vw;
+    }
+}
+
+@keyframes arrowright{
+    0%{
+        right: 2.7vw;
+    }
+    100%{
+        right: 1.7vw;
+    }
+}
+
+/*============================================= */
+
+.shoppagemain .banner .info{
+    grid-column: 3/4;
+    grid-row: 1/5;
+    align-self: center;
+    padding-left: 1vw;
+}
+
+.shoppagemain .banner .info .title{
+    padding-bottom: 1.7vw;
+}
+
+.shoppagemain .banner .info .title h3{
+    color: #3a3a3a;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    font-size: clamp(0.6rem, 1.5vw, 1.5rem);
+}
+
+.shoppagemain .banner .info p{
+    color: #3a3a3a;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(0.4rem, 1.2vw, 1.2rem);
+    line-height: 3vw;
+    padding-bottom: 3vw;
+}
+
+.shoppagemain .banner .info .detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.7vw;
+}
+
+.shoppagemain .banner .info .detail .count{
+    padding: 0.4vw 1.8vw;
+    background-color: #ececec;
+    border: 0.14vw solid #3a3a3a;
+    border-radius: 60vw;
+    display: block;
+    color: #3a3a3a;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1vw;
+    text-decoration: none;
+    text-align: center;
+}
+
+.shoppagemain .banner .info .detail .count span:first-child{
+    padding-right: 3.5vw;
+}
+
+.shoppagemain .banner .info .detail .count span:nth-child(2){
+    padding-right: 3.5vw;
+}
+
+.shoppagemain .banner .info .detail .count span:first-child:hover{
+    color: #FE793E;
+}
+
+.shoppagemain .banner .info .detail .count span:last-child:hover{
+    color: #FE793E;
+}
+
+
+.shoppagemain .banner .info .detail .price{
+    color: #3a3a3a;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: bold;
+    font-size: clamp(0.6rem, 1.5vw, 1.5rem);
+}
+
+.shoppagemain .banner .info .btn a{
+    color: #3a3a3a;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1vw;
+    text-decoration: none;
+    padding: 0.7vw 1.8vw;
+    background-color: #ececec;
+    border: 0.14vw solid #3a3a3a;
+    border-radius: 60vw;
+    display: block;
+    text-align: center;
+}
+
+.shoppagemain .banner .info .btn a:hover{
+    color: #FE793E;
+    border: 0.14vw solid #FE793E;
+}
+
+
+
+/*============================================= */
+
+.shoppagemain .shoppagecontent{
+    position: relative;
+    margin: auto;
+    padding: 9.5vw 0;
+
+}
+
+.shoppagemain .shoppagecontent .deco .sticker-flower1 img{
+    position: absolute;
+    right: 2vw; 
+    top: 3vw;
+    width: 12vw;
+    rotate: -14deg;
+    vertical-align: bottom;
+}
+
+.shoppagemain .shoppagecontent .deco .sticker-flower2 img{
+    position: absolute;
+    right: 10vw; 
+    top: 12vw;
+    width: 8vw;
+    rotate: -14deg;
+    vertical-align: bottom;
+}
+
+.shoppagemain .shoppagecontent .deco .sticker-bomb1 img{
+    position: absolute;
+    left: 17vw; 
+    top: 25vw;
+    width: 7vw;
+    rotate: 14deg;
+    vertical-align: bottom;
+}
+
+.shoppagemain .shoppagecontent .deco .sticker-bomb2 img{
+    position: absolute;
+    right: 10vw; 
+    top: 90vw;
+    width: 7vw;
+    vertical-align: bottom;
+}
+
+.shoppagemain .deco .sticker-eye img{
+    position: absolute;
+    left: 4.5vw; 
+    bottom: 40vw;
+    width: 7vw;
+    rotate: -14deg;
+    vertical-align: bottom;
+}
+
+
+
+/* ============================================= */
+
+.shoppagemain .shoppagecontent p{
+    color: #3a3a3a;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 3vw;
+    padding-bottom: 5.7vw;
+}
+
+.shoppagemain .shoppagecontent .primg{
+    
+}
+
+.shoppagemain .shoppagecontent .primg .img{
+    padding: 1.7vw 0;
+}
+
+.shoppagemain .shoppagecontent .primg .img img{
+    margin: auto;
+    display: block;
+    width: 72vw;
+    vertical-align: bottom;
+}
+/* ======================================================== */
+
+
+.shoppagemain .product{
+    background-color: #fff;
+    padding: 9.5vw 0;
+    position: relative;
+}
+
+.shoppagemain .product .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 13.2vw;
+    position: relative;
+    
+}
+
+.shoppagemain .product .title::after{
+    content: "";
+    width: 72.5vw;
+    border-bottom: 0.14vw solid #3a3a3a;
+    position: absolute;
+    bottom: -1.7vw;
+}
+
+.shoppagemain .product .title h2{
+    color: #3a3a3a;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 2.5vw;
+}
+
+.shoppagemain .product .title .btn a{
+    color: #3a3a3a;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1vw;
+    text-decoration: none;
+    padding: 0.7vw 1.8vw;
+    background-color: #ececec;
+    border: 0.14vw solid #3a3a3a;
+    border-radius: 60vw;
+    display: block;
+}
+
+.shoppagemain .product .title .btn a:hover{
+    color: #FE793E;
+    border: 0.14vw solid #FE793E;
+}
+
+
+
+
+
+
+
+.shoppagemain .product .itemgroup{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 3.4vw;
+    /* width: 100%;
+    margin: 0 13.2vw;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden; */
+}
+
+.shoppagemain .product .itemgroup .item{
+    margin: 0 0.5vw;
+    position: relative;
+
+    /* display: inline-block; */
+}
+
+
+
+
+
+.shoppagemain .product .itemgroup .item a .top{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 1vw 1vw 0 1vw;
+}
+
+
+
+.shoppagemain .product .itemgroup .item a .top .name{
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2vw;
+    letter-spacing: 0.08vw;
+    text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+}
+
+.shoppagemain .product .itemgroup .item a .top .arrow{
+    position: absolute;
+    /* display: none; */
+    top: 1vw;
+    right: 1vw;
+}
+
+.shoppagemain .product .itemgroup .item a .top .arrow img{
+    rotate: 45deg;
+    filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
+    width: 1.2vw;
+}
+
+.shoppagemain .product .itemgroup .item a .top .arrow2{
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+}
+
+.shoppagemain .product .itemgroup .item a .top .arrow2 img{
+    rotate: 45deg;
+    width: 1.2vw;
+}
+
+.shoppagemain .product .itemgroup .item a .top .detail{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 2vw;
+    padding: 1.5vw 1vw 0 0;
+    color: #3a3a3a;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    display: none;
+}
+
+.shoppagemain .product .itemgroup .item a .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17.3vw;
+    height: 17.3vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+
+.shoppagemain .product .itemgroup .item a:hover .overlay{
+    display: block;
+}
+
+.shoppagemain .product .itemgroup .item a:hover .top .name{
+    color: #3a3a3a;
+    text-shadow: none;
+    z-index: 2;
+}
+
+.shoppagemain .product .itemgroup .item a:hover .top .arrow img{
+    display: none;
+}
+
+.shoppagemain .product .itemgroup .item a:hover .top .arrow2 img{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    rotate: 180deg;
+    transition: 0.5s;
+    z-index: 88;
+}
+
+
+.shoppagemain .product .itemgroup .item a:hover .top .detail{
+    display: block;
+    transition: 1s;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+.shoppagemain .product .itemgroup .item a .bottom{
+    display: flex;
+    position: absolute;
+    vertical-align: bottom;
+    align-items: end;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    padding: 0 1vw 1vw 1vw;
+    bottom: 0;
+}
+
+.shoppagemain .product .itemgroup .item a .bottom .price{
+    color: #fff;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.2vw;
+    letter-spacing: 0.08vw;
+    text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+}
+
+.shoppagemain .product .itemgroup .item a .bottom .stamp1{
+    color: #fff;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 0.8vw;
+    letter-spacing: 0.08vw;
+    width: 4vw;
+    height: 4vw;
+    background-color: #FE793E;
+    border-radius: 30vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.shoppagemain .product .itemgroup .item a .bottom .stamp2{
+    color: #fff;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 0.8vw;
+    letter-spacing: 0.08vw;
+    width: 4vw;
+    height: 4vw;
+    background-color: #909090;
+    border-radius: 30vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.shoppagemain .product .itemgroup .item a .primg img{
+    width: 17.3vw;
+    height: 17.3vw;
+    vertical-align: bottom;
+}

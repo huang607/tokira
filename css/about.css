@@ -1,0 +1,298 @@
+header nav ul li:nth-child(1) a{
+    color: #FE793E;
+}
+
+.aboutmain .banner img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+
+/* ============================================= */
+
+
+.aboutmain .brand{
+    position: relative;
+    width: 100%;
+    padding: 9.5vw 0 0 0;
+    /* height: 50vw; */
+    /* background-color: #FE793E; */
+}
+
+.aboutmain .brand .logo{
+    position: absolute;
+    left: 39%;
+    top: 43%;
+}
+
+.aboutmain .brand .logo img{
+    width: 20vw;
+} 
+
+.aboutmain .brand .title{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutmain .brand .title .tokira{
+    color: #93ada4;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 10vw;
+    align-self: start;
+    padding-bottom: 4vw;
+}
+
+.aboutmain .brand .title .together{
+    color: #93ada4;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 10vw;
+    align-self: end;
+}
+
+.aboutmain .brand .deco .sticker-bc img{
+    position: absolute;
+    left: 30vw; 
+    top: 9vw;
+    width: 7vw;
+    rotate: -11deg;
+    vertical-align: bottom;
+}
+
+.aboutmain .brand .deco .sticker-circlebomb img{
+    position: absolute;
+    left: 6.5vw; 
+    top: 14vw;
+    width: 7.5vw;
+    rotate: 27deg;
+    vertical-align: bottom;
+}
+
+.aboutmain .brand .deco .sticker-sun img{
+    position: absolute;
+    right: 4vw; 
+    top: 20vw;
+    width: 6vw;
+    rotate: -16deg;
+    vertical-align: bottom;
+}
+
+.aboutmain .brand .deco .sticker-earth img{
+    position: absolute;
+    right: 6vw; 
+    top: 21vw;
+    width: 8.5vw;
+    rotate: 19deg;
+    vertical-align: bottom;
+}
+
+
+/* ============================================= */
+
+
+.aboutmain .concept{
+    position: relative;
+    padding: 9.5vw 0;
+}
+
+.aboutmain .concept h2{
+    color: #FE793E;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+    text-align: center;
+    line-height: 6vw;
+}
+
+.aboutmain .concept h3{
+    color: #3a3a3a;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: center;
+    line-height: 4vw;
+}
+
+.aboutmain .concept p{
+    color: #3a3a3a;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 3vw;
+}
+
+.aboutmain .concept .deco .sticker-1o img{
+    position: absolute;
+    right: 17vw; 
+    bottom: -2vw;
+    width: 8.5vw;
+    rotate: 14deg;
+    vertical-align: bottom;
+}
+
+.aboutmain .concept .deco .sticker-good img{
+    position: absolute;
+    right: 22vw; 
+    bottom: -4vw;
+    width: 6.5vw;
+    rotate: -3deg;
+    vertical-align: bottom;
+}
+
+
+/* ============================================= */
+
+
+.aboutmain .line{
+    background-color: #3a3a3a;
+    width: 0.14vw;
+    height: 11vw;
+    margin: auto;
+    animation: line 2s;
+}
+
+@keyframes line{
+    0%{
+        height: 0vw;
+    }
+
+    100%{
+        height: 11vw;
+    }
+}
+
+
+/* ============================================= */
+
+.aboutmain .visual{ 
+    margin-top: 9.5vw;
+}
+
+.aboutmain .visual .item{
+    position: relative;
+    padding: 1.7vw 0;
+}
+
+.aboutmain .visual .item .small1{
+    width: 100%;
+    height: 50vw;
+    background-image: url(../image/about_visual1.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100vw 50vw;
+    vertical-align: bottom;
+    position: relative;
+}
+
+.aboutmain .visual .item .small2{
+    width: 100%;
+    height: 50vw;
+    background-image: url(../image/about_visual2.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100vw 50vw;
+    vertical-align: bottom;
+    position: relative;
+}
+
+.aboutmain .visual .item .small3{
+    width: 100%;
+    height: 50vw;
+    background-image: url(../image/about_visual3.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100vw 50vw;
+    vertical-align: bottom;
+    position: relative;
+}
+
+
+.aboutmain .visual .item img{
+    width: 25%;
+    vertical-align: bottom;
+    position: absolute;
+    left: 37.5%;
+    top: 25%;
+}
+
+
+/* .aboutmain .visual .item .large img{
+    width: 100%;
+    vertical-align: bottom;
+} */
+
+
+/* ============================================= */
+
+
+.aboutmain .product_type{
+    position: relative;
+    /* padding: 177px 0; */
+    padding: 9.5vw 0;
+}
+
+.aboutmain .product_type .deco .sticker-hot img{
+    position: absolute;
+    left: 3vw; 
+    bottom: 5vw;
+    width: 7vw;
+    vertical-align: bottom;
+}
+
+.aboutmain .product_type .deco .sticker-snow img{
+    position: absolute;
+    left: 2vw; 
+    bottom: 4.5vw;
+    width: 3.5vw;
+    rotate: 23deg;
+    vertical-align: bottom;
+}
+
+.aboutmain .product_type .type{
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.aboutmain .product_type .type a{
+    text-decoration: none;
+}
+
+
+.aboutmain .product_type .type .item{
+    margin: 0 0.5vw;
+    /* width: 100%; */
+}
+
+.aboutmain .product_type .type .item h3{
+    color: #3a3a3a;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    padding-bottom: 1vw;
+}
+
+.aboutmain .product_type .type .item .pic{
+    overflow:hidden;
+}
+
+.aboutmain .product_type .type .item .pic img{
+    width: 17.3vw;
+    height: 17.3vw;
+    transition: .5s;
+    transform:scale(1);
+    vertical-align: bottom;
+}
+
+.aboutmain .product_type .type .item .pic:hover img{
+    transform:scale(1.08);
+}
+
+
+/* ============================================= */
+
+
+.aboutmain .map{
+    border-top: 0.14vw solid #3a3a3a;
+}
+
+.aboutmain .map iframe{
+    width: 100%;
+    vertical-align: bottom;
+}

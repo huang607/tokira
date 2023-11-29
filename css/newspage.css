@@ -1,0 +1,199 @@
+header nav ul li:nth-child(2) a{
+    color: #FE793E;
+}
+
+.newspagemain{
+    
+}
+
+.newspagemain .banner{
+    padding-top: 10.5vw;
+    padding-bottom: 3vw;
+    margin-left: 5.7vw;
+    margin-right: 5.7vw;
+    border-bottom: 0.14vw solid #3a3a3a;
+}
+
+.newspagemain .banner .text{
+    /* display: flex; */
+    
+    /* justify-content: space-between;
+    align-content: center;
+    justify-items: end;justify-items: center; */
+    margin-bottom:  3vw;
+    /* text-align: end; */
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    position: relative;
+}
+
+.newspagemain .banner .text .title{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.newspagemain .banner .text .title h3{
+    color: #3a3a3a;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    font-size: clamp(0.6rem, 1.5vw, 1.5rem);
+    text-align: center;
+}
+
+
+
+.newspagemain .banner .text .datetype{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.newspagemain .banner .text .datetype .date{
+    color: #3a3a3a;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1vw;
+    padding-right: 2vw;
+}
+
+.newspagemain .banner .text .datetype .type{
+    color: #FE793E;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1vw;
+}
+
+
+.newspagemain .banner .primg{
+    text-align: center;
+}
+
+.newspagemain .banner .primg img{
+    width: 63vw;
+    vertical-align: bottom;
+}
+
+/*============================================= */
+
+.newspagemain .newspagecontent{
+    position: relative;
+    margin: auto;
+    padding: 9.5vw 0;
+
+}
+
+.newspagemain .newspagecontent .deco .sticker-saleb img{
+    position: absolute;
+    right: 8vw; 
+    top: 5vw;
+    width: 8vw;
+    rotate: 14deg;
+    vertical-align: bottom;
+}
+
+.newspagemain .newspagecontent .deco .sticker-earth img{
+    position: absolute;
+    right: 4.5vw; 
+    top: 9vw;
+    width: 7vw;
+    rotate: -14deg;
+    vertical-align: bottom;
+}
+
+
+/* ============================================= */
+
+.newspagemain .newspagecontent p{
+    color: #3a3a3a;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(0.4rem, 1.2vw, 1.2rem);
+    text-align: center;
+    line-height: 3vw;
+    padding-bottom: 5.7vw;
+}
+
+.newspagemain .newspagecontent .newsimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newspagemain .newspagecontent .newsimg .center{
+    position: relative;
+}
+
+.newspagemain .newspagecontent .newsimg .center .imgc {
+    text-align: center;
+    outline: 1vw solid #ececec;
+}
+
+.newspagemain .newspagecontent .newsimg .center .imgc img{
+    width: 35vw;
+    /* display: block; */
+    vertical-align: bottom;
+}
+
+
+.newspagemain .newspagecontent .newsimg .center .arrow_left img{
+    rotate: -90deg;
+    filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
+    position: absolute;
+    left: 1.7vw;
+    top: 50%;
+    width: 1.2vw;
+}
+
+.newspagemain .newspagecontent .newsimg .center .arrow_right img{
+    rotate: 90deg;
+    filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
+    position: absolute;
+    right: 1.7vw;
+    top: 50%;
+    width: 1.2vw;
+}
+
+.newspagemain .newspagecontent .newsimg .center:hover .arrow_left img{
+    animation: arrowleft .5s;
+}
+
+.newspagemain .newspagecontent .newsimg .center:hover .arrow_right img{
+    animation: arrowright .5s;
+}
+
+@keyframes arrowleft{
+    0%{
+        left: 2.7vw;
+    }
+    100%{
+        left: 1.7vw;
+    }
+}
+
+@keyframes arrowright{
+    0%{
+        right: 2.7vw;
+    }
+    100%{
+        right: 1.7vw;
+    }
+}
+
+.newspagemain .newspagecontent .newsimg .left{
+    position: absolute;
+    left: 13.2vw;
+}
+
+.newspagemain .newspagecontent .newsimg .left img{
+    width: 22vw;
+    vertical-align: bottom;
+}
+
+.newspagemain .newspagecontent .newsimg .right{
+    position: absolute;
+    right: 13.2vw;
+}
+
+.newspagemain .newspagecontent .newsimg .right img{
+    width: 22vw;
+    vertical-align: bottom;
+}
+

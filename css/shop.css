@@ -1,0 +1,337 @@
+header nav ul li:nth-child(4) a{
+    color: #FE793E;
+}
+
+.shopmain .banner{
+    width: 100%;
+    /* height: 25vw; */
+    vertical-align: bottom;
+    position: relative;
+}
+
+.shopmain .banner .title{
+    position: absolute;
+    top: 13.5vw;
+    /* bottom: 0; */
+    left: 13.2vw;
+    animation: bannertitle 1s;
+}
+
+@keyframes bannertitle{
+    0%{
+        left: 11.2vw;
+    }
+
+    100%{
+        left: 13.2vw;
+    }
+}
+
+.shopmain .banner h2{
+    color: #fff;
+    font-family: 'Syncopate', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+}
+
+.shopmain .banner img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/* ============================================= */
+
+.shopmain .info{
+    position: relative;
+    margin: auto;
+}
+
+.shopmain .info .deco .sticker-earth img{
+    position: absolute;
+    right: 4.5vw; 
+    bottom: 15vw;
+    width: 6vw;
+    rotate: -14deg;
+    vertical-align: bottom;
+}
+
+.shopmain .info .deco .sticker-eye2 img{
+    position: absolute;
+    right: 2vw; 
+    bottom: 17vw;
+    width: 6vw;
+    rotate: 20deg;
+    vertical-align: bottom;
+}
+
+.shopmain .info .deco .sticker-circlebomb img{
+    position: absolute;
+    left: -1.5vw; 
+    top: 40vw;
+    width: 7vw;
+    rotate: 14deg;
+    vertical-align: bottom;
+}
+
+/* ============================================= */
+
+.shopmain .info .shopcontent{
+    /* margin-top: 5.7vw; 9.5-3.8*/
+    margin: 5.7vw 13.2vw 0 13.2vw;
+    display: flex;
+    border-top: 0.14vw solid #3a3a3a;
+}
+
+
+
+
+.shopmain .info .shopcontent .shopmenu{
+    position: sticky;
+    top: 3.8vw;
+    height: 100%;
+    margin-right: 3.4vw;
+    padding-top: 3.4vw;
+}
+
+.shopmain .info .shopcontent .shopmenu .shoptype{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.shopmain .info .shopcontent .shopmenu a{
+    text-decoration: none;
+    color: #3a3a3a;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1vw;
+    margin-bottom: 3vw;
+}
+
+.shopmain .info .shopcontent .shopmenu a:hover{
+    color: #FE793E;
+}
+
+
+.shopmain .info .shopcontent .shopmenu .shoptype span:first-child{
+    padding-right: 4vw;
+}
+
+
+/* ============================================= */
+
+
+.shopmain .info .shopproduct{
+    padding-top: 3.4vw;
+    padding-bottom: 9.5vw;
+    padding-left: 3.4vw;
+    border-left: 0.14vw solid #3a3a3a;
+}
+
+.shopmain .info .shopproduct .itemgroup{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: start; */
+    width: 100%;
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.shopmain .info .shopproduct .itemgroup .item{
+    /* margin: 0 0.5vw 0.5vw 0.5vw; */
+    position: relative;
+}
+
+
+
+
+
+.shopmain .info .shopproduct .itemgroup .item a .top{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 1vw 1vw 0 1vw;
+}
+
+
+
+.shopmain .info .shopproduct .itemgroup .item a .top .name{
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2vw;
+    letter-spacing: 0.08vw;
+    text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .top .arrow{
+    position: absolute;
+    /* display: none; */
+    top: 1vw;
+    right: 1vw;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .top .arrow img{
+    rotate: 45deg;
+    filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
+    width: 1.2vw;
+    vertical-align: bottom;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .top .arrow2{
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .top .arrow2 img{
+    rotate: 45deg;
+    width: 1.2vw;
+    vertical-align: bottom;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .top .detail{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 2vw;
+    padding: 1.5vw 1vw 0 0;
+    color: #3a3a3a;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    display: none;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17.3vw;
+    height: 17.3vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+
+.shopmain .info .shopproduct .itemgroup .item a:hover .overlay{
+    display: block;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a:hover .top .name{
+    color: #3a3a3a;
+    text-shadow: none;
+    z-index: 2;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a:hover .top .arrow img{
+    display: none;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a:hover .top .arrow2 img{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    rotate: 180deg;
+    transition: 0.5s;
+    z-index: 88;
+    
+}
+
+
+.shopmain .info .shopproduct .itemgroup .item a:hover .top .detail{
+    display: block;
+    transition: 1s;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+.shopmain .info .shopproduct .itemgroup .item a .bottom{
+    display: flex;
+    position: absolute;
+    vertical-align: bottom;
+    align-items: end;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    padding: 0 1vw 1vw 1vw;
+    bottom: 0;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .bottom .price{
+    color: #fff;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.2vw;
+    letter-spacing: 0.08vw;
+    text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .bottom .stamp1{
+    color: #fff;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 0.8vw;
+    letter-spacing: 0.08vw;
+    width: 4vw;
+    height: 4vw;
+    background-color: #FE793E;
+    border-radius: 30vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .bottom .stamp2{
+    color: #fff;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 0.8vw;
+    letter-spacing: 0.08vw;
+    width: 4vw;
+    height: 4vw;
+    background-color: #909090;
+    border-radius: 30vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.shopmain .info .shopproduct .itemgroup .item a .primg img{
+    /* width: 17.3vw;
+    height: 17.3vw; */
+    width: 100%;
+    vertical-align: bottom;
+}
+
+
+
+.shopmain .info .shopproduct .page{
+    text-align: center;
+    margin-top: 3.4vw;
+}
+
+.shopmain .info .shopproduct .page a{
+    color: #3a3a3a;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.2vw;
+    text-decoration: none;
+    margin: 1vw;
+    
+}
+
+.shopmain .info .shopproduct .page a:hover{
+    color: #FE793E;
+    border-bottom: 0.14vw solid #FE793E;
+}

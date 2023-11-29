@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .wrap{
+            width: 100%;
+            background-color: #FE793E;
+        }
         .itemgroup{
             /* display: flex;
             
             margin-top: 3.4vw; */
-            width: 70%;
+            width: 80%;
             display: grid;
             gap: 20px;
-            /* grid-template-columns: repeat(4, 1fr); */
+            grid-template-columns: repeat(1, 1fr);
             /* justify-content: center; */
             margin: auto;
         }
@@ -21,6 +25,11 @@
             /* margin: 0 0.5vw; */
             position: relative;
             /* width: 17.3vw; */
+        }
+        @media screen and (min-width:768px) {
+            .itemgroup{
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media screen and (min-width:768px) {
@@ -41,459 +50,64 @@
             }
         }
 
-
-
-
-
-        .itemgroup .item a .top{
-            display: flex;
-            position: absolute;
-            justify-content: space-between;
-            align-items: center;
-            left: 0;
-            right: 0;
-            top: 0;
-            padding: 1vw 1vw 0 1vw;
-        }
-
-
-
-        .itemgroup .item a .top .name{
-            color: #fff;
-            font-family: 'Noto Sans JP', sans-serif;
-            font-size: 1.2vw;
-            letter-spacing: 0.08vw;
-            text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
-        }
-
-        .itemgroup .item a .top .arrow{
-            position: absolute;
-            /* display: none; */
-            top: 1vw;
-            right: 1vw;
-        }
-
-        .itemgroup .item a .top .arrow img{
-            rotate: 45deg;
-            filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
-            width: 1.2vw;
-        }
-
-        .itemgroup .item a .top .arrow2{
-            position: absolute;
-            top: 1vw;
-            right: 1vw;
-        }
-
-        .itemgroup .item a .top .arrow2 img{
-            rotate: 45deg;
-            width: 1.2vw;
-        }
-
-        .itemgroup .item a .top .detail{
-            display: flex;
-            position: absolute;
-            justify-content: center;
-            align-items: center;
-            top: 2vw;
-            padding: 1.5vw 1vw 0 0;
-            color: #3a3a3a;
-            font-family: 'Noto Sans JP', sans-serif;
-            font-size: 1vw;
-            line-height: 1.5vw;
-            display: none;
-        }
-
-        .itemgroup .item a .overlay{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 17.3vw;
-            height: 17.3vw;
-            background-color: rgba(255, 255, 255, 0.8);
-            display: none;
-        }
-
-
-        .itemgroup .item a:hover .overlay{
-            display: block;
-        }
-
-        .itemgroup .item a:hover .top .name{
-            color: #3a3a3a;
-            text-shadow: none;
-            z-index: 2;
-        }
-
-        .itemgroup .item a:hover .top .arrow img{
-            display: none;
-        }
-
-        .itemgroup .item a:hover .top .arrow2 img{
-            display: block;
-            position: absolute;
-            top: 0;
-            right: 0;
-            rotate: 180deg;
-            transition: 0.5s;
-            z-index: 88;
-        }
-
-
-        .itemgroup .item a:hover .top .detail{
-            display: block;
-            transition: 1s;
-            z-index: 2;
-        }
-
-
-
-
-
-
-
-        .itemgroup .item a .bottom{
-            display: flex;
-            position: absolute;
-            vertical-align: bottom;
-            align-items: end;
-            justify-content: space-between;
-            left: 0;
-            right: 0;
-            padding: 0 1vw 1vw 1vw;
-            bottom: 0;
-        }
-
-        .itemgroup .item a .bottom .price{
-            color: #fff;
-            font-family: 'Syncopate', sans-serif;
-            font-size: 1.2vw;
-            letter-spacing: 0.08vw;
-            text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
-        }
-
-        .itemgroup .item a .bottom .stamp{
-            color: #fff;
-            font-family: 'Syncopate', sans-serif;
-            font-size: 0.8vw;
-            letter-spacing: 0.08vw;
-            width: 4vw;
-            height: 4vw;
-            background-color: #FE793E;
-            border-radius: 30vw;
-            box-shadow: 0 0 1vw rgba(0, 0, 0, 80);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
         .itemgroup .item a .primg img{
             /* width: 17.3vw;
             height: 17.3vw; */
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="itemgroup">
-        <div class="item">
-            <a href="#">
-                <div class="top">
-                    <span class="name">掌上電子遊戲機</span>
+    <div class="wrap">
+        <div class="itemgroup">
+            <div class="item">
+                <a href="#">
+                    <div class="primg">
+                        <img src="./image/product_gameboy.jpg" alt="gameboy">
+                    </div>
+                </a>
+            </div>
 
-                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                    
-                    <span class="detail">80年代經典電子遊戲機，帶您重溫當年的遊戲樂趣與童年回憶。</span>
-                </div>
-                
-                
+            <div class="item">
+                <a href="#">
+                    <div class="primg">
+                        <img src="./image/product_gameboy.jpg" alt="gameboy">
+                    </div>
+                </a>
+            </div>
 
-                <div class="bottom">
-                    <span class="price">$ 980</span>
+            <div class="item">
+                <a href="#">
+                    <div class="primg">
+                        <img src="./image/product_gameboy.jpg" alt="gameboy">
+                    </div>
+                </a>
+            </div>
 
-                    <span class="stamp">NEW</span>
-                </div>
+            <div class="item">
+                <a href="#">
+                    <div class="primg">
+                        <img src="./image/product_gameboy.jpg" alt="gameboy">
+                    </div>
+                </a>
+            </div>
 
-                <div class="overlay"></div>
-                
-                <div class="primg">
-                    <img src="./image/product_gameboy.jpg" alt="gameboy">
-                </div>
-            </a>
-        </div>
+            <div class="item">
+                <a href="#">
+                    <div class="primg">
+                        <img src="./image/product_gameboy.jpg" alt="gameboy">
+                    </div>
+                </a>
+            </div>
 
-        <div class="item">
-            <a href="#">
-                <div class="top">
-                    <span class="name">任天堂磁碟片</span>
-                    
-                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                    
-                    <span class="detail">創新的遊戲媒介。成就了遊戲史上的經典，承載了無數令人難忘的冒險與故事。</span>
-                </div>
-
-                <div class="bottom">
-                    <span class="price">$ 780</span>
-
-                    <span class="stamp">NEW</span>
-                </div>   
-
-                <div class="overlay"></div>
-                
-                <div class="primg">
-                    <img src="./image/product_gamedisk.jpg" alt="gamedisk">
-                </div> 
-            </a>
-        </div>
-
-        <div class="item">
-            <a href="#">
-                <div class="top">
-                    <span class="name">音樂時光卡式錄音帶</span>
-                    
-                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                    
-                    <span class="detail">充滿復古魅力的卡式錄音帶，帶您回到音樂在磁帶上流傳的年代，重溫那些珍貴的音樂時刻。</span>
-                </div>
-
-                <div class="bottom">
-                    <span class="price">$ 360</span>
-                </div>   
-
-                <div class="overlay"></div>
-                
-                <div class="primg">
-                    <img src="./image/product_audiotape.jpg" alt="audiotape">
-                </div>
-                
-            </a>
-        </div>
-
-        <div class="item">
-            <a href="#">
-                <div class="top">
-                    <span class="name">View-Master 幻燈片機</span>
-                    
-                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                    
-                    <span class="detail">即刻探索多樣景觀，沉浸於生動故事。這經典裝置將美景帶入手中，成為您探險的視覺窗。</span>
-                </div>
-
-                <div class="bottom">
-                    <span class="price">$ 600</span>
-                </div>   
-                
-                <div class="overlay"></div>
-
-                <div class="primg">
-                    <img src="./image/product_viewmaster.jpg" alt="viewmaster">
-                </div>
-                
-            </a>
-        </div>
-
-        <div class="item">
-            <a href="#">
-                <div class="top">
-                    <span class="name">掌上電子遊戲機</span>
-
-                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                    
-                    <span class="detail">80年代經典電子遊戲機，帶您重溫當年的遊戲樂趣與童年回憶。</span>
-                </div>
-                
-                
-
-                <div class="bottom">
-                    <span class="price">$ 980</span>
-
-                    <span class="stamp">NEW</span>
-                </div>
-
-                <div class="overlay"></div>
-                
-                <div class="primg">
-                    <img src="./image/product_gameboy.jpg" alt="gameboy">
-                </div>
-            </a>
-        </div>
-
-        <div class="item">
-            <a href="#">
-                <div class="top">
-                    <span class="name">任天堂磁碟片</span>
-                    
-                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                    
-                    <span class="detail">創新的遊戲媒介。成就了遊戲史上的經典，承載了無數令人難忘的冒險與故事。</span>
-                </div>
-
-                <div class="bottom">
-                    <span class="price">$ 780</span>
-
-                    <span class="stamp">NEW</span>
-                </div>   
-
-                <div class="overlay"></div>
-                
-                <div class="primg">
-                    <img src="./image/product_gamedisk.jpg" alt="gamedisk">
-                </div> 
-            </a>
-        </div>
-
-        <div class="item">
-            <a href="#">
-                <div class="top">
-                    <span class="name">音樂時光卡式錄音帶</span>
-                    
-                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                    
-                    <span class="detail">充滿復古魅力的卡式錄音帶，帶您回到音樂在磁帶上流傳的年代，重溫那些珍貴的音樂時刻。</span>
-                </div>
-
-                <div class="bottom">
-                    <span class="price">$ 360</span>
-                </div>   
-
-                <div class="overlay"></div>
-                
-                <div class="primg">
-                    <img src="./image/product_audiotape.jpg" alt="audiotape">
-                </div>
-                
-            </a>
-        </div>
-
-        <div class="item">
-            <a href="#">
-                <div class="top">
-                    <span class="name">View-Master 幻燈片機</span>
-                    
-                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                    
-                    <span class="detail">即刻探索多樣景觀，沉浸於生動故事。這經典裝置將美景帶入手中，成為您探險的視覺窗。</span>
-                </div>
-
-                <div class="bottom">
-                    <span class="price">$ 600</span>
-                </div>   
-                
-                <div class="overlay"></div>
-
-                <div class="primg">
-                    <img src="./image/product_viewmaster.jpg" alt="viewmaster">
-                </div>
-                
-            </a>
-        </div>
-
-        <div class="item">
-            <a href="#">
-                <div class="top">
-                    <span class="name">掌上電子遊戲機</span>
-
-                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                    
-                    <span class="detail">80年代經典電子遊戲機，帶您重溫當年的遊戲樂趣與童年回憶。</span>
-                </div>
-                
-                
-
-                <div class="bottom">
-                    <span class="price">$ 980</span>
-
-                    <span class="stamp">NEW</span>
-                </div>
-
-                <div class="overlay"></div>
-                
-                <div class="primg">
-                    <img src="./image/product_gameboy.jpg" alt="gameboy">
-                </div>
-            </a>
-        </div>
-
-        <div class="item">
-            <a href="#">
-                <div class="top">
-                    <span class="name">任天堂磁碟片</span>
-                    
-                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                    
-                    <span class="detail">創新的遊戲媒介。成就了遊戲史上的經典，承載了無數令人難忘的冒險與故事。</span>
-                </div>
-
-                <div class="bottom">
-                    <span class="price">$ 780</span>
-
-                    <span class="stamp">NEW</span>
-                </div>   
-
-                <div class="overlay"></div>
-                
-                <div class="primg">
-                    <img src="./image/product_gamedisk.jpg" alt="gamedisk">
-                </div> 
-            </a>
-        </div>
-
-        <div class="item">
-            <a href="#">
-                <div class="top">
-                    <span class="name">音樂時光卡式錄音帶</span>
-                    
-                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                    
-                    <span class="detail">充滿復古魅力的卡式錄音帶，帶您回到音樂在磁帶上流傳的年代，重溫那些珍貴的音樂時刻。</span>
-                </div>
-
-                <div class="bottom">
-                    <span class="price">$ 360</span>
-                </div>   
-
-                <div class="overlay"></div>
-                
-                <div class="primg">
-                    <img src="./image/product_audiotape.jpg" alt="audiotape">
-                </div>
-                
-            </a>
-        </div>
-
-        <div class="item">
-            <a href="#">
-                <div class="top">
-                    <span class="name">View-Master 幻燈片機</span>
-                    
-                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                    
-                    <span class="detail">即刻探索多樣景觀，沉浸於生動故事。這經典裝置將美景帶入手中，成為您探險的視覺窗。</span>
-                </div>
-
-                <div class="bottom">
-                    <span class="price">$ 600</span>
-                </div>   
-                
-                <div class="overlay"></div>
-
-                <div class="primg">
-                    <img src="./image/product_viewmaster.jpg" alt="viewmaster">
-                </div>
-                
-            </a>
+            <div class="item">
+                <a href="#">
+                    <div class="primg">
+                        <img src="./image/product_gameboy.jpg" alt="gameboy">
+                    </div>
+                </a>
+            </div>
+    
         </div>
     </div>
 </div>
