@@ -52,9 +52,11 @@ header nav ul li:nth-child(1) a{
     left: 30vw; 
     top: 9vw;
     width: 7vw;
+    height: 3vw;
     rotate: -11deg;
     vertical-align: bottom;
 }
+
 
 .aboutmain .brand .deco .sticker-circlebomb img{
     position: absolute;
@@ -63,6 +65,16 @@ header nav ul li:nth-child(1) a{
     width: 7.5vw;
     rotate: 27deg;
     vertical-align: bottom;
+    animation: sticker-circlebomb 12s infinite linear;
+}
+
+@keyframes sticker-circlebomb{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
 }
 
 .aboutmain .brand .deco .sticker-sun img{
@@ -72,6 +84,16 @@ header nav ul li:nth-child(1) a{
     width: 6vw;
     rotate: -16deg;
     vertical-align: bottom;
+    animation: sticker-sun 2s infinite alternate linear;
+}
+
+@keyframes sticker-sun{
+    0%{
+        rotate: 10deg;
+    }
+    100%{
+        rotate: -10deg;
+    }
 }
 
 .aboutmain .brand .deco .sticker-earth img{

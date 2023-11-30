@@ -203,6 +203,7 @@ header nav ul li:nth-child(4) a{
     font-size: var(--span-font-size);
     line-height: 1.5vw;
     display: none;
+    text-align: justify;
 }
 
 .shopmain .info .product .itemgroup .item a .overlay{

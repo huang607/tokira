@@ -189,6 +189,7 @@ header nav ul li:nth-child(2) a{
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--span-font-size);
     line-height: 1.5vw;
+    text-align: justify;
 }
 
 
