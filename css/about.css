@@ -36,7 +36,6 @@ header nav ul li:nth-child(1) a{
 
 .aboutmain .brand .title .tokira{
     color: #93ada4;
-    font-family: 'Syncopate', sans-serif;
     font-size: 10vw;
     align-self: start;
     padding-bottom: 4vw;
@@ -44,7 +43,6 @@ header nav ul li:nth-child(1) a{
 
 .aboutmain .brand .title .together{
     color: #93ada4;
-    font-family: 'Syncopate', sans-serif;
     font-size: 10vw;
     align-self: end;
 }
@@ -96,26 +94,23 @@ header nav ul li:nth-child(1) a{
 
 .aboutmain .concept h2{
     color: #FE793E;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bold;
-    font-size: 2.5vw;
+    font-weight: bold; 
+    font-size: var(--h2-font-size);
     text-align: center;
     line-height: 6vw;
 }
 
 .aboutmain .concept h3{
     color: #3a3a3a;
-    font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: var(--h3-font-size);
     text-align: center;
     line-height: 4vw;
 }
 
 .aboutmain .concept p{
     color: #3a3a3a;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2vw;
+    font-size: var(--p-font-size);
     text-align: center;
     line-height: 3vw;
 }
@@ -221,12 +216,6 @@ header nav ul li:nth-child(1) a{
 /* ============================================= */
 
 
-.aboutmain .product_type{
-    position: relative;
-    /* padding: 177px 0; */
-    padding: 9.5vw 0;
-}
-
 .aboutmain .product_type .deco .sticker-hot img{
     position: absolute;
     left: 3vw; 
@@ -242,46 +231,6 @@ header nav ul li:nth-child(1) a{
     width: 3.5vw;
     rotate: 23deg;
     vertical-align: bottom;
-}
-
-.aboutmain .product_type .type{
-    display: flex;
-    justify-content: center;
-    /* width: 100%; */
-}
-
-.aboutmain .product_type .type a{
-    text-decoration: none;
-}
-
-
-.aboutmain .product_type .type .item{
-    margin: 0 0.5vw;
-    /* width: 100%; */
-}
-
-.aboutmain .product_type .type .item h3{
-    color: #3a3a3a;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1.5vw;
-    text-align: center;
-    padding-bottom: 1vw;
-}
-
-.aboutmain .product_type .type .item .pic{
-    overflow:hidden;
-}
-
-.aboutmain .product_type .type .item .pic img{
-    width: 17.3vw;
-    height: 17.3vw;
-    transition: .5s;
-    transform:scale(1);
-    vertical-align: bottom;
-}
-
-.aboutmain .product_type .type .item .pic:hover img{
-    transform:scale(1.08);
 }
 
 

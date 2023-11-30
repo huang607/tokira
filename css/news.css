@@ -30,8 +30,7 @@ header nav ul li:nth-child(2) a{
 
 .newsmain .banner h2{
     color: #fff;
-    font-family: 'Syncopate', sans-serif;
-    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    font-size: var(--h2-font-size);
     text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
 }
 
@@ -68,7 +67,7 @@ header nav ul li:nth-child(2) a{
 
 .newsmain .info .deco .sticker-good img{
     position: absolute;
-    right: -0.5vw; 
+    right: 1vw; 
     bottom: 33vw;
     width: 5.5vw;
     rotate: 15deg;
@@ -104,8 +103,7 @@ header nav ul li:nth-child(2) a{
 .newsmain .info .newscontent .newsmenu a{
     text-decoration: none;
     color: #3a3a3a;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1vw;
+    font-size: var(--span-font-size);
     margin-bottom: 3vw;
 }
 
@@ -158,15 +156,13 @@ header nav ul li:nth-child(2) a{
 
 .newsmain .info .newsproduct .itemgroup .item .date{
     color: #3a3a3a;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1vw;
+    font-size: var(--span-font-size);
     padding-right: 2vw;
 }
 
 .newsmain .info .newsproduct .itemgroup .item .type{
     color: #FE793E;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1vw;
+    font-size: var(--span-font-size);
 }
 
 
@@ -184,14 +180,14 @@ header nav ul li:nth-child(2) a{
 
 .newsmain .info .newsproduct .itemgroup .item .title span{
     color: #3a3a3a;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2vw;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: var(--p-font-size);
 }
 
 .newsmain .info .newsproduct .itemgroup .item .detail{
     color: #3a3a3a;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1vw;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: var(--span-font-size);
     line-height: 1.5vw;
 }
 
@@ -251,8 +247,7 @@ header nav ul li:nth-child(2) a{
 
 .newsmain .info .newsproduct .page a{
     color: #3a3a3a;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1.2vw;
+    font-size: var(--p-font-size);
     text-decoration: none;
     margin: 1vw;
     

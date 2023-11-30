@@ -1,5 +1,21 @@
+:root{
+    /* --h2-font-size:clamp(1rem, 2.5vw, 2.5rem);
+    --h3-font-size:clamp(0.95rem, 1.5vw, 2.5rem);
+    --p-font-size:clamp(0.6rem, 1.2vw, 1.2rem);
+    --span-font-size:clamp(0.4rem, 1vw, 1rem);
+    --stamp-font-size:clamp(0.2rem, 0.8vw, 0.8rem); */
+
+    --h2-font-size:2.5vw;
+    --h3-font-size:1.5vw;
+    --p-font-size:1.2vw;
+    --span-font-size:1vw;
+    --stamp-font-size:0.8vw;
+}
+
 body{
     background-color: #ececec;
+    font-family: 'Syncopate', 'Noto Sans TC', sans-serif;
+    /* font-family: 'Noto Sans TC', sans-serif; */
 }
 
 .wrap{
@@ -44,18 +60,62 @@ header ul{
 
 header ul li a{
     text-decoration: none;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1.2vw;
+    font-size: var(--p-font-size);
     /* font-size: 20px; */
     color: #3a3a3a;
     margin: 0 3vw;
     /* margin: 0 120px; */
+    position: relative;
 
+}
+
+/* header ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.3vw;
+    width: 0%;
+    height: 0.14vw;
+    background-color: #292421;
 }
 
 header ul li a:hover{
     color: #FE793E;
-    border-bottom: 0.14vw solid #FE793E;
+}
+
+header ul li a:hover::after{
+    width: 100%;
+    transition: .5s;
+} */
+
+.headerbtn {
+    /* width: 15vw; */
+    height: 1.4vw;
+    line-height: 1.4vw;
+
+    /* transform: translate(-50%, 0); */
+    color: #3a3a3a;
+    font-size: var(--p-font-size);
+    z-index: 999;
+    overflow: hidden;
+    display: block;
+}
+
+.headertxt {
+    width: 62%;
+    float: left;
+}
+
+.headeron {
+    transition: all 0.5s ease-in-out;
+}
+
+.headerout {
+    color: #FE793E;
+}
+
+.headerbtn:hover .headeron {
+    margin-top: -1.4vw;
 }
 
 header .logo{   
@@ -80,8 +140,8 @@ header .logo img{
     vertical-align: bottom;
 }
 
-header .logo a:hover{
-    border-bottom: none;
+header .logo a:hover::after{
+    display: none;
 }
 
 
@@ -96,8 +156,8 @@ header .cart a{
     display: flex;
 }
 
-header .cart a:hover{
-    border-bottom: none;
+header .cart a:hover::after{
+    display: none;
 }
 
 header .cart a:hover .count{
@@ -114,7 +174,6 @@ header .cart a .count{
     justify-content: center;
     font-size: 0.7vw;
     /* font-size: 14px; */
-    font-family: 'Syncopate', sans-serif;
     color: rgb(255, 255, 255);
     background-color: #3a3a3a;
     border-radius: 100%;

@@ -29,8 +29,7 @@ header nav ul li:nth-child(4) a{
 
 .shopmain .banner h2{
     color: #fff;
-    font-family: 'Syncopate', sans-serif;
-    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    font-size: var(--h2-font-size);
     text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
 }
 
@@ -102,8 +101,7 @@ header nav ul li:nth-child(4) a{
 .shopmain .info .shopcontent .shopmenu a{
     text-decoration: none;
     color: #3a3a3a;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1vw;
+    font-size: var(--span-font-size);
     margin-bottom: 3vw;
 }
 
@@ -120,14 +118,14 @@ header nav ul li:nth-child(4) a{
 /* ============================================= */
 
 
-.shopmain .info .shopproduct{
+.shopmain .info .product{
     padding-top: 3.4vw;
     padding-bottom: 9.5vw;
     padding-left: 3.4vw;
     border-left: 0.14vw solid #3a3a3a;
 }
 
-.shopmain .info .shopproduct .itemgroup{
+.shopmain .info .product .itemgroup{
     /* display: flex;
     flex-wrap: wrap;
     justify-content: start; */
@@ -137,7 +135,7 @@ header nav ul li:nth-child(4) a{
     grid-template-columns: repeat(3, 1fr);
 }
 
-.shopmain .info .shopproduct .itemgroup .item{
+.shopmain .info .product .itemgroup .item{
     /* margin: 0 0.5vw 0.5vw 0.5vw; */
     position: relative;
 }
@@ -146,7 +144,7 @@ header nav ul li:nth-child(4) a{
 
 
 
-.shopmain .info .shopproduct .itemgroup .item a .top{
+.shopmain .info .product .itemgroup .item a .top{
     display: flex;
     position: absolute;
     justify-content: space-between;
@@ -159,41 +157,41 @@ header nav ul li:nth-child(4) a{
 
 
 
-.shopmain .info .shopproduct .itemgroup .item a .top .name{
+.shopmain .info .product .itemgroup .item a .top .name{
     color: #fff;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2vw;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: var(--p-font-size);
     letter-spacing: 0.08vw;
     text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
 }
 
-.shopmain .info .shopproduct .itemgroup .item a .top .arrow{
+.shopmain .info .product .itemgroup .item a .top .arrow{
     position: absolute;
     /* display: none; */
     top: 1vw;
     right: 1vw;
 }
 
-.shopmain .info .shopproduct .itemgroup .item a .top .arrow img{
+.shopmain .info .product .itemgroup .item a .top .arrow img{
     rotate: 45deg;
     filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
     width: 1.2vw;
     vertical-align: bottom;
 }
 
-.shopmain .info .shopproduct .itemgroup .item a .top .arrow2{
+.shopmain .info .product .itemgroup .item a .top .arrow2{
     position: absolute;
     top: 1vw;
     right: 1vw;
 }
 
-.shopmain .info .shopproduct .itemgroup .item a .top .arrow2 img{
+.shopmain .info .product .itemgroup .item a .top .arrow2 img{
     rotate: 45deg;
     width: 1.2vw;
     vertical-align: bottom;
 }
 
-.shopmain .info .shopproduct .itemgroup .item a .top .detail{
+.shopmain .info .product .itemgroup .item a .top .detail{
     display: flex;
     position: absolute;
     justify-content: center;
@@ -201,13 +199,13 @@ header nav ul li:nth-child(4) a{
     top: 2vw;
     padding: 1.5vw 1vw 0 0;
     color: #3a3a3a;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1vw;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: var(--span-font-size);
     line-height: 1.5vw;
     display: none;
 }
 
-.shopmain .info .shopproduct .itemgroup .item a .overlay{
+.shopmain .info .product .itemgroup .item a .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -218,21 +216,21 @@ header nav ul li:nth-child(4) a{
 }
 
 
-.shopmain .info .shopproduct .itemgroup .item a:hover .overlay{
+.shopmain .info .product .itemgroup .item a:hover .overlay{
     display: block;
 }
 
-.shopmain .info .shopproduct .itemgroup .item a:hover .top .name{
+.shopmain .info .product .itemgroup .item a:hover .top .name{
     color: #3a3a3a;
     text-shadow: none;
     z-index: 2;
 }
 
-.shopmain .info .shopproduct .itemgroup .item a:hover .top .arrow img{
+.shopmain .info .product .itemgroup .item a:hover .top .arrow img{
     display: none;
 }
 
-.shopmain .info .shopproduct .itemgroup .item a:hover .top .arrow2 img{
+.shopmain .info .product .itemgroup .item a:hover .top .arrow2 img{
     display: block;
     position: absolute;
     top: 0;
@@ -244,7 +242,7 @@ header nav ul li:nth-child(4) a{
 }
 
 
-.shopmain .info .shopproduct .itemgroup .item a:hover .top .detail{
+.shopmain .info .product .itemgroup .item a:hover .top .detail{
     display: block;
     transition: 1s;
     z-index: 2;
@@ -256,7 +254,7 @@ header nav ul li:nth-child(4) a{
 
 
 
-.shopmain .info .shopproduct .itemgroup .item a .bottom{
+.shopmain .info .product .itemgroup .item a .bottom{
     display: flex;
     position: absolute;
     vertical-align: bottom;
@@ -268,18 +266,16 @@ header nav ul li:nth-child(4) a{
     bottom: 0;
 }
 
-.shopmain .info .shopproduct .itemgroup .item a .bottom .price{
+.shopmain .info .product .itemgroup .item a .bottom .price{
     color: #fff;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1.2vw;
+    font-size: var(--p-font-size);
     letter-spacing: 0.08vw;
     text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
 }
 
-.shopmain .info .shopproduct .itemgroup .item a .bottom .stamp1{
+.shopmain .info .product .itemgroup .item a .bottom .stamp1{
     color: #fff;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 0.8vw;
+    font-size: var(--stamp-font-size);
     letter-spacing: 0.08vw;
     width: 4vw;
     height: 4vw;
@@ -292,10 +288,9 @@ header nav ul li:nth-child(4) a{
     text-align: center;
 }
 
-.shopmain .info .shopproduct .itemgroup .item a .bottom .stamp2{
+.shopmain .info .product .itemgroup .item a .bottom .stamp2{
     color: #fff;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 0.8vw;
+    font-size: var(--stamp-font-size);
     letter-spacing: 0.08vw;
     width: 4vw;
     height: 4vw;
@@ -308,7 +303,7 @@ header nav ul li:nth-child(4) a{
     text-align: center;
 }
 
-.shopmain .info .shopproduct .itemgroup .item a .primg img{
+.shopmain .info .product .itemgroup .item a .primg img{
     /* width: 17.3vw;
     height: 17.3vw; */
     width: 100%;
@@ -317,21 +312,20 @@ header nav ul li:nth-child(4) a{
 
 
 
-.shopmain .info .shopproduct .page{
+.shopmain .info .product .page{
     text-align: center;
     margin-top: 3.4vw;
 }
 
-.shopmain .info .shopproduct .page a{
+.shopmain .info .product .page a{
     color: #3a3a3a;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1.2vw;
+    font-size: var(--p-font-size);
     text-decoration: none;
     margin: 1vw;
     
 }
 
-.shopmain .info .shopproduct .page a:hover{
+.shopmain .info .product .page a:hover{
     color: #FE793E;
     border-bottom: 0.14vw solid #FE793E;
 }

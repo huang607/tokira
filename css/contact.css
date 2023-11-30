@@ -58,8 +58,8 @@ header nav ul li:nth-child(5) a{
 
 .contactmain .info .itemgroup .item span{
     color: #fff;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2vw;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: var(--p-font-size);
     text-align: center;
     line-height: 2.5vw;
 }
@@ -86,8 +86,7 @@ header nav ul li:nth-child(5) a{
 }
 .contactmain .form h2{
     color: #FE793E;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 2.5vw;
+    font-size: var(--h2-font-size);
     text-align: center;
 }
 
@@ -115,13 +114,11 @@ header nav ul li:nth-child(5) a{
 
 .contactmain .form .text label{
     color: #3a3a3a;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2vw;
+    font-size: var(--p-font-size);
 }
 
 .contactmain .form .text label input{
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2vw;
+    font-size: var(--p-font-size);
     padding: 1.3vw 1vw;
     background-color: #ffffff;
     border: 0.14vw solid #3a3a3a;
@@ -135,8 +132,7 @@ header nav ul li:nth-child(5) a{
 }
 
 .contactmain .form .text label textarea{
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2vw;
+    font-size: var(--p-font-size);
     padding: 1.3vw 1vw;
     background-color: #ffffff;
     border: 0.14vw solid #3a3a3a;
@@ -176,8 +172,7 @@ header nav ul li:nth-child(5) a{
 }
 
 .contactmain .form .check label span{
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2vw;
+    font-size: var(--p-font-size);
     color: #3a3a3a;
     /* padding-top: -0.5vw; */
     /* vertical-align: middle; */
@@ -186,8 +181,7 @@ header nav ul li:nth-child(5) a{
 
 .contactmain .form .check a{
     text-decoration: none;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2vw;
+    font-size: var(--p-font-size);
     color: #3a3a3a;
     margin-left: 0vw;
 }
@@ -203,8 +197,7 @@ header nav ul li:nth-child(5) a{
 
 .contactmain .form .btn a{
     color: #3a3a3a;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1vw;
+    font-size: var(--span-font-size);
     text-decoration: none;
     padding: 0.7vw 1.8vw;
     background-color: #ececec;
@@ -264,16 +257,15 @@ header nav ul li:nth-child(5) a{
 
 .contactmain .form .contact_agree figcaption h3{
     color: #FE793E;
-    font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: var(--h3-font-size);
     text-align: center;
     padding-bottom: 1.7vw;
 }
 
 .contactmain .form .contact_agree figcaption p{color: #3a3a3a;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1vw;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: var(--span-font-size);
     line-height: 2vw;
 }
 
@@ -370,15 +362,14 @@ header nav ul li:nth-child(5) a{
 
 .contactmain .form .contact_tqp figcaption h2{
     color: #FE793E;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 2.5vw;
+    font-size: var(--h2-font-size);
     text-align: center;
     padding-bottom: 1.7vw;
 }
 
 .contactmain .form .contact_tqp figcaption span{color: #3a3a3a;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2vw;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: var(--p-font-size);
     text-align: center;
     line-height: 3vw;
 }

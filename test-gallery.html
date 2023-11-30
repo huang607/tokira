@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .pin-spacer {
+            order: 0;
+            place-self: auto;
+            grid-area: auto;
+            z-index: auto;
+            float: none;
+            flex-shrink: 1;
+            display: block;
+            margin: 0px;
+            inset: 0px;
+            position: relative;
+            flex-basis: auto;
+            overflow: visible;
+            box-sizing: border-box;
+            width: 133px;
+            height: 2620px;
+            padding: 0px 0px 1977px;
+        }
+
+        .index__gallery {
+            translate: none;
+            rotate: none;
+            scale: none;
+            inset: 0px auto auto 0px;
+            margin: 0px;
+            max-width: 133.333px;
+            width: 133.333px;
+            max-height: 643.333px;
+            height: 643.333px;
+            padding: 0px;
+            transform: translate(0px, 1977px);
+        }
+
+        .index__gallery__largeslides, .index__gallery__largeslides__img {
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .index__gallery__smallslides {
+            background-color: #cac9bd;
+            left: 50%;
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+        }
+
+        .index__gallery__smallslides__img {
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="pin-spacer">
+        <div class="index__gallery">
+            <div class="index__gallery__largeslides">
+                <div class="index__gallery__largeslides__img" >
+                    <img src="./image/about_visual1.jpg" alt="">
+                </div>
+<!-- style="transform: translateY(-1977px);" -->
+                <div class="index__gallery__largeslides__img" >
+                    <img src="./image/about_visual2.jpg" alt="">
+                </div>
+<!-- style="transform: translateY(-1318px);" -->
+                <div class="index__gallery__largeslides__img" >
+                    <img src="./image/about_visual3.jpg" alt="">
+                </div>
+<!-- style="transform: translateY(-659px);" -->
+                <div class="index__gallery__largeslides__img" >
+                    <img src="./image/about_visual1.jpg" alt="">
+                </div>
+            </div>
+<!-- style="transform: translateY(0px);" -->
+
+
+            <div class="index__gallery__smallslides">
+                <div class="index__gallery__smallslides__img" >
+                    <img src="./image/about_visual4.jpg" alt="">
+                </div>
+<!-- style="transform: translateY(177px);" -->
+                <div class="index__gallery__smallslides__img" >
+                    <img src="./image/about_visual5.jpg" alt="">
+                </div>
+<!-- style="transform: translateY(118px);" -->
+                <div class="index__gallery__smallslides__img" >
+                    <img src="./image/about_visual6.jpg" alt="">
+                </div>
+<!-- style="transform: translateY(59px);" -->
+                <div class="index__gallery__smallslides__img" >
+                    <img src="./image/about_visual4.jpg" alt="">
+                </div>
+            </div>
+            <!-- style="transform: translateY(0px);" -->
+            <!-- <div class="index__gallery__pager"><span>01</span> / 04</div> -->
+        </div>
+    </div>
+</body>
+</html>

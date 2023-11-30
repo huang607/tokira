@@ -35,9 +35,9 @@ header nav ul li:nth-child(2) a{
 
 .newspagemain .banner .text .title h3{
     color: #3a3a3a;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     font-weight: bold;
-    font-size: clamp(0.6rem, 1.5vw, 1.5rem);
+    font-size: var(--h3-font-size);
     text-align: center;
 }
 
@@ -51,15 +51,13 @@ header nav ul li:nth-child(2) a{
 
 .newspagemain .banner .text .datetype .date{
     color: #3a3a3a;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1vw;
+    font-size: var(--span-font-size);
     padding-right: 2vw;
 }
 
 .newspagemain .banner .text .datetype .type{
     color: #FE793E;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1vw;
+    font-size: var(--span-font-size);
 }
 
 
@@ -104,8 +102,7 @@ header nav ul li:nth-child(2) a{
 
 .newspagemain .newspagecontent p{
     color: #3a3a3a;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: clamp(0.4rem, 1.2vw, 1.2rem);
+    font-size: var(--p-font-size);
     text-align: center;
     line-height: 3vw;
     padding-bottom: 5.7vw;

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contact-btn {
+            width: 15vw;
+            height: 1.4vw;
+            line-height: 1.4vw;
+
+            position: absolute;
+            left: 100px;
+
+            transform: translate(-50%, 0);
+            font-family: 'Syncopate', sans-serif;
+            color: #3a3a3a;
+            font-size: var(--p-font-size);
+            z-index: 999;
+            overflow: hidden;
+            display: block;
+        }
+
+        .contact-pic-txt {
+            width: 62%;
+            float: left;
+        }
+
+        .contact-on {
+            transition: all 0.5s ease-in-out;
+        }
+
+        .contact-out {
+            color: #FE793E;
+        }
+
+        .contact-btn:hover .contact-on {
+            margin-top: -1.4vw;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.fudian.com.tw/07.aspx" class="contact-btn">
+        <div class="contact-on">
+            <div class="contact-pic-txt">contact</div>
+            <div class="contact-out">
+                <div class="contact-pic-txt">contact</div>
+            </div>
+        </div>
+    </a>
+</body>
+</html>
