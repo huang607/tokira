@@ -2,9 +2,6 @@ header nav ul li:nth-child(2) a{
     color: #FE793E;
 }
 
-.newspagemain{
-    
-}
 
 .newspagemain .banner{
     padding-top: 10.5vw;
@@ -27,18 +24,17 @@ header nav ul li:nth-child(2) a{
     position: relative;
 }
 
-.newspagemain .banner .text .title{
-    position: absolute;
-    left: 0;
-    right: 0;
-}
 
-.newspagemain .banner .text .title h3{
+.newspagemain .banner .text h3{
     color: #3a3a3a;
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: bold;
     font-size: var(--h3-font-size);
     text-align: center;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 

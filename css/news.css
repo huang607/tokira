@@ -9,7 +9,15 @@ header nav ul li:nth-child(2) a{
     position: relative;
 }
 
-.newsmain .banner .title{
+
+
+
+
+.newsmain .banner h2{
+    color: #fff;
+    font-size: var(--h2-font-size);
+    text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+    
     position: absolute;
     top: 13.5vw;
     /* bottom: 0; */
@@ -26,14 +34,6 @@ header nav ul li:nth-child(2) a{
         left: 13.2vw;
     }
 }
-
-
-.newsmain .banner h2{
-    color: #fff;
-    font-size: var(--h2-font-size);
-    text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
-}
-
 
 .newsmain .banner img{
     width: 100%;
@@ -173,15 +173,14 @@ header nav ul li:nth-child(2) a{
     
 }
 
-.newsmain .info .newsproduct .itemgroup .item .title{
-    padding-bottom: 0.5vw;
-    /* padding: 0.5vw 1.5vw 1.5vw 1.5vw; */
-}
 
-.newsmain .info .newsproduct .itemgroup .item .title span{
+.newsmain .info .newsproduct .itemgroup .item .title{
     color: #3a3a3a;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--p-font-size);
+    
+    padding-bottom: 0.5vw;
+    /* padding: 0.5vw 1.5vw 1.5vw 1.5vw; */
 }
 
 .newsmain .info .newsproduct .itemgroup .item .detail{

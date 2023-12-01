@@ -205,11 +205,10 @@ header nav ul li:nth-child(4) a{
     padding-left: 1vw;
 }
 
-.shoppagemain .banner .info .title{
-    padding-bottom: 1.7vw;
-}
 
-.shoppagemain .banner .info .title h3{
+.shoppagemain .banner .info h3{
+    padding-bottom: 1.7vw;
+
     color: #3a3a3a;
     font-weight: bold;
     font-size: var(--h3-font-size);

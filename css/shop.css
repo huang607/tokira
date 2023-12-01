@@ -9,7 +9,11 @@ header nav ul li:nth-child(4) a{
     position: relative;
 }
 
-.shopmain .banner .title{
+.shopmain .banner h2{
+    color: #fff;
+    font-size: var(--h2-font-size);
+    text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+    
     position: absolute;
     top: 13.5vw;
     /* bottom: 0; */
@@ -25,12 +29,6 @@ header nav ul li:nth-child(4) a{
     100%{
         left: 13.2vw;
     }
-}
-
-.shopmain .banner h2{
-    color: #fff;
-    font-size: var(--h2-font-size);
-    text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
 }
 
 .shopmain .banner img{
