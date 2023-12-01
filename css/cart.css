@@ -21,12 +21,10 @@ header .cart a .count{
     align-content:center;justify-content:center;
 }
 
-.cartmain .banner .bannertitle{
+.cartmain .banner h2{
     grid-column: 1/2;
     grid-row: 1/2;
-}
-
-.cartmain .banner .bannertitle h2{
+    
     color: #3a3a3a;
     font-size: var(--h2-font-size);
     padding-bottom: 1.7vw;
@@ -137,6 +135,7 @@ header .cart a .count{
     color: #3a3a3a;
     font-size: var(--span-font-size);
     position: relative;
+    text-decoration: none;
 }
 
 .cartmain .banner .itemgroup .item .detail .remove::after{
@@ -189,9 +188,7 @@ header .cart a .count{
     vertical-align: bottom;
 }
 
-.cartmain .banner .list .title{}
-
-.cartmain .banner .list .title h3{
+.cartmain .banner .list h3{
     color: #3a3a3a;
     font-size: var(--h3-font-size);
     text-align: center;
@@ -222,11 +219,9 @@ header .cart a .count{
     font-size: var(--p-font-size);
 }
 
-.cartmain .banner .list .btn{
-    padding-left: 6vw;
-}
 
-.cartmain .banner .list .btn a{
+.cartmain .banner .list .btn{
+    margin-left: 6vw;
     color: #3a3a3a;
     font-size: var(--span-font-size);
     text-decoration: none;
@@ -239,7 +234,7 @@ header .cart a .count{
     width: 8vw;
 }
 
-.cartmain .banner .list .btn a:hover{
+.cartmain .banner .list .btn:hover{
     color: #FE793E;
     border: 0.14vw solid #FE793E;
 }

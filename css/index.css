@@ -232,7 +232,7 @@
 }
 
 
-.indexmain .product_new .btn a{
+.indexmain .product_new .btn{
     color: #3a3a3a;
     font-size: var(--span-font-size);
     text-decoration: none;
@@ -244,7 +244,7 @@
     display: block;
 }
 
-.indexmain .product_new .btn a:hover{
+.indexmain .product_new .btn:hover{
     color: #FE793E;
     border: 0.14vw solid #FE793E;
 }

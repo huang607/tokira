@@ -26,7 +26,7 @@
     font-size: var(--h2-font-size);
 }
 
-.product .title .btn a{
+.product .title .btn{
     color: #3a3a3a;
     font-size: var(--span-font-size);
     text-decoration: none;
@@ -37,7 +37,7 @@
     display: block;
 }
 
-.product .title .btn a:hover{
+.product .title .btn:hover{
     color: #FE793E;
     border: 0.14vw solid #FE793E;
 }

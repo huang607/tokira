@@ -191,11 +191,9 @@ header nav ul li:nth-child(5) a{
     border-bottom: 0.14vw solid #FE793E;
 }
 
+
 .contactmain .form .btn{
     padding-top: 2vw;
-}
-
-.contactmain .form .btn a{
     color: #3a3a3a;
     font-size: var(--span-font-size);
     text-decoration: none;
@@ -205,7 +203,7 @@ header nav ul li:nth-child(5) a{
     border-radius: 60vw;
 }
 
-.contactmain .form .btn a:hover{
+.contactmain .form .btn:hover{
     color: #FE793E;
     border: 0.14vw solid #FE793E;
 }

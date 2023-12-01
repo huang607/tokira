@@ -271,7 +271,7 @@ header nav ul li:nth-child(4) a{
     font-size: var(--h3-font-size);
 }
 
-.shoppagemain .banner .info .btn a{
+.shoppagemain .banner .info .btn{
     color: #3a3a3a;
     font-size: var(--span-font-size);
     text-decoration: none;
@@ -283,7 +283,7 @@ header nav ul li:nth-child(4) a{
     text-align: center;
 }
 
-.shoppagemain .banner .info .btn a:hover{
+.shoppagemain .banner .info .btn:hover{
     color: #FE793E;
     border: 0.14vw solid #FE793E;
 }
