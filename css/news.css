@@ -142,7 +142,7 @@ header nav ul li:nth-child(2) a{
     display: grid;
     gap: 1vw;
     grid-template-columns: 20vw 29vw;
-    grid-template-rows: 2.5vw 9vw;
+    grid-template-rows: 3.5vw 8vw;
     align-items:start;
 }
 
@@ -189,6 +189,7 @@ header nav ul li:nth-child(2) a{
     font-size: var(--span-font-size);
     line-height: 1.5vw;
     text-align: justify;
+    padding-top: 0.5vw;
 }
 
 
