@@ -187,13 +187,13 @@
     vertical-align: bottom;
 }
 
-.indexmain .product_new .deco .sticker-bomb2 img{
+/* .indexmain .product_new .deco .sticker-bomb2 img{
     position: absolute;
     right: 8vw; 
     bottom: -3vw;
     width: 7vw;
     vertical-align: bottom;
-}
+} */
 
 .indexmain .product_new h2{
     color: #fff;
@@ -249,6 +249,14 @@
     border: 0.14vw solid #FE793E;
 }
 
+
+.indexmain .product .deco .sticker-bomb2 img{
+    position: absolute;
+    right: 8vw; 
+    top: -3vw;
+    width: 7vw;
+    vertical-align: bottom;
+}
 
 /* ============================================= */
 
