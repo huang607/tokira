@@ -206,7 +206,7 @@ header nav ul li:nth-child(2) a{
     display: block;
     width: 25vw;
     vertical-align: bottom;
-    
+    transition: .5s ease-in-out;
     /* transform:scale(1,1); */
 }
 
@@ -218,12 +218,13 @@ header nav ul li:nth-child(2) a{
     right: 1vw;
     vertical-align: bottom;
     opacity: 0;
+
 }
 
 
 .newsmain .info .newsproduct .itemgroup .item:hover  .primg .newsimg img{
     padding-right: 2.5vw;
-    transition: .5s ease-in-out;
+
     /* transform:scale(1.1,1.1); */
 }
 
