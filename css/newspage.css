@@ -3,7 +3,7 @@ header nav ul li:nth-child(2) a{
 }
 
 
-.newspagemain .banner{
+.banner{
     padding-top: 10.5vw;
     padding-bottom: 3vw;
     margin-left: 5.7vw;
@@ -11,7 +11,7 @@ header nav ul li:nth-child(2) a{
     border-bottom: 0.14vw solid #3a3a3a;
 }
 
-.newspagemain .banner .text{
+.banner .text{
     /* display: flex; */
     
     /* justify-content: space-between;
@@ -25,7 +25,7 @@ header nav ul li:nth-child(2) a{
 }
 
 
-.newspagemain .banner .text h3{
+.banner h3{
     color: #3a3a3a;
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: bold;
@@ -39,43 +39,43 @@ header nav ul li:nth-child(2) a{
 
 
 
-.newspagemain .banner .text .datetype{
+.banner .datetype{
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.newspagemain .banner .text .datetype .date{
+.banner .date{
     color: #3a3a3a;
     font-size: var(--span-font-size);
     padding-right: 2vw;
 }
 
-.newspagemain .banner .text .datetype .type{
+.banner .type{
     color: #FE793E;
     font-size: var(--span-font-size);
 }
 
 
-.newspagemain .banner .primg{
+.banner .primg{
     text-align: center;
 }
 
-.newspagemain .banner .primg img{
+.banner .primg img{
     width: 63vw;
     vertical-align: bottom;
 }
 
 /*============================================= */
 
-.newspagemain .newspagecontent{
+.newspagecontent{
     position: relative;
     margin: auto;
     padding: 9.5vw 0;
 
 }
 
-.newspagemain .newspagecontent .deco .sticker-saleb img{
+.newspagecontent .sticker-saleb img{
     position: absolute;
     right: 8vw; 
     top: 5vw;
@@ -84,7 +84,7 @@ header nav ul li:nth-child(2) a{
     vertical-align: bottom;
 }
 
-.newspagemain .newspagecontent .deco .sticker-earth img{
+.newspagecontent .sticker-earth img{
     position: absolute;
     right: 4.5vw; 
     top: 9vw;
@@ -96,7 +96,7 @@ header nav ul li:nth-child(2) a{
 
 /* ============================================= */
 
-.newspagemain .newspagecontent p{
+.newspagecontent p{
     color: #3a3a3a;
     font-size: var(--p-font-size);
     text-align: center;
@@ -104,29 +104,29 @@ header nav ul li:nth-child(2) a{
     padding-bottom: 5.7vw;
 }
 
-.newspagemain .newspagecontent .newsimg{
+.newspagecontent .newsimg{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.newspagemain .newspagecontent .newsimg .center{
+.newspagecontent .newsimg .center{
     position: relative;
 }
 
-.newspagemain .newspagecontent .newsimg .center .imgc {
+.newspagecontent .newsimg .center .imgc {
     text-align: center;
     outline: 1vw solid #ececec;
 }
 
-.newspagemain .newspagecontent .newsimg .center .imgc img{
+.newspagecontent .newsimg .center .imgc img{
     width: 35vw;
     /* display: block; */
     vertical-align: bottom;
 }
 
 
-.newspagemain .newspagecontent .newsimg .center .arrow_left img{
+.newspagecontent .newsimg .center .arrow_left img{
     rotate: -90deg;
     filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
     position: absolute;
@@ -135,7 +135,7 @@ header nav ul li:nth-child(2) a{
     width: 1.2vw;
 }
 
-.newspagemain .newspagecontent .newsimg .center .arrow_right img{
+.newspagecontent .newsimg .center .arrow_right img{
     rotate: 90deg;
     filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
     position: absolute;
@@ -144,11 +144,11 @@ header nav ul li:nth-child(2) a{
     width: 1.2vw;
 }
 
-.newspagemain .newspagecontent .newsimg .center:hover .arrow_left img{
+.newspagecontent .newsimg .center:hover .arrow_left img{
     animation: arrowleft .5s;
 }
 
-.newspagemain .newspagecontent .newsimg .center:hover .arrow_right img{
+.newspagecontent .newsimg .center:hover .arrow_right img{
     animation: arrowright .5s;
 }
 
@@ -170,22 +170,22 @@ header nav ul li:nth-child(2) a{
     }
 }
 
-.newspagemain .newspagecontent .newsimg .left{
+.newspagecontent .newsimg .left{
     position: absolute;
     left: 13.2vw;
 }
 
-.newspagemain .newspagecontent .newsimg .left img{
+.newspagecontent .newsimg .left img{
     width: 22vw;
     vertical-align: bottom;
 }
 
-.newspagemain .newspagecontent .newsimg .right{
+.newspagecontent .newsimg .right{
     position: absolute;
     right: 13.2vw;
 }
 
-.newspagemain .newspagecontent .newsimg .right img{
+.newspagecontent .newsimg .right img{
     width: 22vw;
     vertical-align: bottom;
 }

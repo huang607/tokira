@@ -1,4 +1,4 @@
-.indexmain .banner img{
+.banner img{
     width: 100%;
     height: 100%;
     vertical-align: bottom;
@@ -6,7 +6,7 @@
 
 
 
-.indexmain .run{
+.run{
     background-color: #FE793E;
     /* width: 100%; */
     height: 4.5vw;
@@ -22,7 +22,7 @@
     display: flex;
 }
 
-.indexmain .run .word1{
+.run .word1{
     color: #fff;
     font-size: var(--span-font-size);
     letter-spacing: 0.08vw;
@@ -32,7 +32,7 @@
     animation: marquee 20s linear infinite;
 }
 
-.indexmain .run .word2{
+.run .word2{
     color: #fff;
     font-size: var(--span-font-size);
     letter-spacing: 0.08vw;
@@ -42,7 +42,7 @@
     animation: marquee2 20s linear infinite;
 }
 
-.indexmain .run .word3{
+.run .word3{
     color: #fff;
     font-size: var(--span-font-size);
     letter-spacing: 0.08vw;
@@ -80,7 +80,7 @@
 
 /* ============================================= */
 
-.indexmain .product_type .deco .sticker-bc1 img{
+.product_type .sticker-bc1 img{
     position: absolute;
     rotate: -14.58deg;
     /* left: -30px; 
@@ -91,7 +91,7 @@
     vertical-align: bottom;
 }
 
-.indexmain .product_type .deco .sticker-bc2 img{
+.product_type .sticker-bc2 img{
     position: absolute;
     rotate: 4.72deg;
     /* left: 27px; 
@@ -103,7 +103,7 @@
     box-shadow: -0.2vw 0.2vw 0 0 #3a3a3a;
 }
 
-.indexmain .product_type .deco .sticker-sun img{
+.product_type .sticker-sun img{
     position: absolute;
     rotate: 8.91deg;
     /* right: 73px;  */
@@ -117,7 +117,7 @@
 /* ============================================= */
 
 
-.indexmain .product_new{
+.product_new{
     width: 100%;
     height: 50vw;
     background-image: url(../image/productnew_gamedisk.jpg) ;
@@ -127,7 +127,7 @@
     position: relative;
 } 
 
-.indexmain .product_new .arrow_left img{
+.product_new .arrow_left img{
     rotate: -90deg;
     filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
     position: absolute;
@@ -136,7 +136,7 @@
     width: 1.2vw;
 }
 
-.indexmain .product_new .arrow_right img{
+.product_new .arrow_right img{
     rotate: 90deg;
     filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
     position: absolute;
@@ -145,11 +145,11 @@
     width: 1.2vw;
 }
 
-.indexmain .product_new:hover .arrow_left img{
+.product_new:hover .arrow_left img{
     animation: arrowleft .5s;
 }
 
-.indexmain .product_new:hover .arrow_right img{
+.product_new:hover .arrow_right img{
     animation: arrowright .5s;
 }
 
@@ -171,7 +171,7 @@
     }
 }
 
-.indexmain .product_new .deco .sticker-flower img{
+.product_new .sticker-flower img{
     position: absolute;
     left: 24vw; 
     top: -5vw;
@@ -179,7 +179,7 @@
     vertical-align: bottom;
 }
 
-.indexmain .product_new .deco .sticker-bomb1 img{
+.product_new .sticker-bomb1 img{
     position: absolute;
     right: 2vw; 
     bottom: 3.5vw;
@@ -187,7 +187,7 @@
     vertical-align: bottom;
 }
 
-/* .indexmain .product_new .deco .sticker-bomb2 img{
+/* .product_new .sticker-bomb2 img{
     position: absolute;
     right: 8vw; 
     bottom: -3vw;
@@ -195,7 +195,7 @@
     vertical-align: bottom;
 } */
 
-.indexmain .product_new h2{
+.product_new h2{
     color: #fff;
     font-size: var(--h2-font-size);
     text-align: center;
@@ -206,7 +206,7 @@
     right: 0;
 }
 
-.indexmain .product_new .bottom{
+.product_new .bottom{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -216,14 +216,14 @@
     right: 0;
 }
 
-.indexmain .product_new h3{
+.product_new h3{
     color: #fff;
     font-size: var(--h3-font-size);
     text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
     margin-bottom: 1.7vw;
 }
 
-.indexmain .product_new span{
+.product_new span{
     color: #fff;
     font-weight: bold;
     font-size: var(--h3-font-size);
@@ -232,7 +232,7 @@
 }
 
 
-.indexmain .product_new .btn{
+.product_new .btn{
     color: #3a3a3a;
     font-size: var(--span-font-size);
     text-decoration: none;
@@ -244,13 +244,13 @@
     display: block;
 }
 
-.indexmain .product_new .btn:hover{
+.product_new .btn:hover{
     color: #FE793E;
     border: 0.14vw solid #FE793E;
 }
 
 
-.indexmain .product .deco .sticker-bomb2 img{
+.product .sticker-bomb2 img{
     position: absolute;
     right: 8vw; 
     top: -3vw;
@@ -261,7 +261,7 @@
 /* ============================================= */
 
 
-.indexmain .newscontact{
+.newscontact{
     display: flex;
     justify-content: center;
     border-top: 0.14vw solid #3a3a3a;
@@ -269,7 +269,7 @@
 }
 
 
-.indexmain .newscontact .deco .sticker-sale img{
+.newscontact .sticker-sale img{
     position: absolute;
     left: -2vw; 
     top: -5vw;
@@ -280,25 +280,24 @@
 /* ============================================= */
 
 
-.indexmain .newscontact .news{
+.newscontact h2{
+    color: #3a3a3a;
+    font-size: var(--h2-font-size);
+    padding-bottom: 1.7vw;
+}
+
+.news{
     padding: 5vw 4vw;
     border-right: 0.14vw solid #3a3a3a;
 }
 
-.indexmain .newscontact .news h2{
-    color: #3a3a3a;
-    font-size: var(--h2-font-size);
-    padding-bottom: 1.7vw;
-
-}
-
-.indexmain .newscontact .news .primg img{
+.news .primg img{
     width: 32vw;
     vertical-align: bottom;
     padding-bottom: 1.8vw;
 }
 
-.indexmain .newscontact .news .itemgroup{
+.news .itemgroup{
     border-bottom: 0.14vw solid #3a3a3a;
     /* height: 18vw; 
     display: flex;
@@ -306,7 +305,7 @@
     justify-content: space-evenly; */
 }
 
-.indexmain .newscontact .news .itemgroup .item{
+.news .item{
     text-decoration: none;
     display: flex;
     justify-content: space-between;
@@ -316,28 +315,28 @@
 }
 
 
-.indexmain .newscontact .news .itemgroup a .datetype .date{
+.news .date{
     color: #3a3a3a;
     font-size: var(--span-font-size);
     padding-right: 2vw;
 }
 
-.indexmain .newscontact .news .itemgroup a .datetype .type{
+.news .type{
     color: #FE793E;
     font-size: var(--span-font-size);
 }
 
-.indexmain .newscontact .news .itemgroup a .title{
+.news .title{
     padding-top: 0.5vw;
 }
 
-.indexmain .newscontact .news .itemgroup a .title span{
+.news .title span{
     color: #3a3a3a;
     font-size: var(--p-font-size);
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-.indexmain .newscontact .news .itemgroup a .arrow2 img{
+.news .arrow2 img{
     rotate: 90deg;
     width: 1.2vw;
     vertical-align: bottom;
@@ -345,7 +344,7 @@
     opacity: 0;
 }
 
-.indexmain .newscontact .news .itemgroup .item:hover .arrow2 img{
+.news .itemgroup .item:hover .arrow2 img{
     margin-right: 0;
     transition: .5s ease-in-out;
     opacity: 100;
@@ -355,23 +354,17 @@
 /* ============================================= */
 
 
-.indexmain .newscontact .contact{
+.contact{
     padding: 5vw 4vw;
 }
 
-.indexmain .newscontact .contact h2{
-    color: #3a3a3a;
-    font-size: var(--h2-font-size);
-    padding-bottom: 1.7vw;
-}
-
-.indexmain .newscontact .contact iframe{
+.contact iframe{
     width: 32vw;
     height: 16.7vw;
     padding-bottom: 1.7vw;
 }
 
-.indexmain .newscontact .contact .itemgroup{
+.contact .itemgroup{
     border-bottom: 0.14vw solid #3a3a3a;
     /* height: 18vw; */
     display: flex;
@@ -379,19 +372,19 @@
     justify-content: space-evenly;
 }
 
-.indexmain .newscontact .contact .itemgroup .item{
+.contact .item{
     text-decoration: none;
     border-top: 0.14vw solid #3a3a3a;
     padding: 2.35vw 1.5vw 2.35vw 1.5vw;
 }
 
-.indexmain .newscontact .contact .itemgroup .item span{
+.contact span{
     color: #3a3a3a;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--p-font-size);
 }
 
-.indexmain .newscontact .contact .itemgroup .item span:first-child::after{
+.contact .itemgroup .item span:first-child::after{
     content: "|";
     color: #3a3a3a;
     font-family: 'Noto Sans TC', sans-serif;

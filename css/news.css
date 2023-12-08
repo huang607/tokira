@@ -2,18 +2,14 @@ header nav ul li:nth-child(2) a{
     color: #FE793E;
 }
 
-.newsmain .banner{
+.banner{
     width: 100%;
     /* height: 25vw; */
     vertical-align: bottom;
     position: relative;
 }
 
-
-
-
-
-.newsmain .banner h2{
+.banner h2{
     color: #fff;
     font-size: var(--h2-font-size);
     text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
@@ -35,19 +31,19 @@ header nav ul li:nth-child(2) a{
     }
 }
 
-.newsmain .banner img{
+.banner img{
     width: 100%;
     vertical-align: bottom;
 }
 
 /* ============================================= */
 
-.newsmain .info{
+.info{
     position: relative;
     margin: auto;
 }
 
-.newsmain .info .deco .sticker-sun img{
+.info .sticker-sun img{
     position: absolute;
     left: 1vw; 
     top: 28vw;
@@ -56,7 +52,7 @@ header nav ul li:nth-child(2) a{
     vertical-align: bottom;
 }
 
-.newsmain .info .deco .sticker-hot img{
+.info .sticker-hot img{
     position: absolute;
     right: 3vw; 
     bottom: 40vw;
@@ -65,7 +61,7 @@ header nav ul li:nth-child(2) a{
     vertical-align: bottom;
 }
 
-.newsmain .info .deco .sticker-good img{
+.info .sticker-good img{
     position: absolute;
     right: 1vw; 
     bottom: 33vw;
@@ -77,7 +73,7 @@ header nav ul li:nth-child(2) a{
 
 /* ============================================= */
 
-.newsmain .info .newscontent{
+.newscontent{
     margin: 5.7vw 13.2vw 0 13.2vw;
     display: flex;
     border-top: 0.14vw solid #3a3a3a;
@@ -86,7 +82,7 @@ header nav ul li:nth-child(2) a{
 
 
 
-.newsmain .info .newscontent .newsmenu{
+.newsmenu{
     position: sticky;
     top: 3.8vw;
     height: 100%;
@@ -94,25 +90,25 @@ header nav ul li:nth-child(2) a{
     padding-top: 3.4vw;
 }
 
-.newsmain .info .newscontent .newsmenu .newstype{
+.newsmenu .newstype{
     display: flex;
     justify-content: space-between;
     
 }
 
-.newsmain .info .newscontent .newsmenu a{
+.newsmenu a{
     text-decoration: none;
     color: #3a3a3a;
     font-size: var(--span-font-size);
     margin-bottom: 3vw;
 }
 
-.newsmain .info .newscontent .newsmenu a:hover{
+.newsmenu a:hover{
     color: #FE793E;
 }
 
 
-.newsmain .info .newscontent .newsmenu .newstype span:first-child{
+.newsmenu .newstype span:first-child{
     padding-right: 4vw;
 }
 
@@ -120,18 +116,15 @@ header nav ul li:nth-child(2) a{
 /* ============================================= */
 
 
-.newsmain .info .newsproduct{
+.newsproduct{
     /* padding-top: 3.4vw; */
     padding-bottom: 9.5vw;
     padding-left: 3.4vw;
     border-left: 0.14vw solid #3a3a3a;
 }
 
-.newsmain .info .newsproduct .itemgroup{
-    
-}
 
-.newsmain .info .newsproduct .itemgroup .item{
+.newsproduct .itemgroup .item{
     /* margin: 0 0.5vw 0.5vw 0.5vw; */
     /* position: relative;
     display: flex; */
@@ -149,18 +142,18 @@ header nav ul li:nth-child(2) a{
 
 
 
-.newsmain .info .newsproduct .itemgroup .item .datetype{
+.newsproduct .datetype{
     align-self:end;
     justify-self:start;
 }
 
-.newsmain .info .newsproduct .itemgroup .item .date{
+.newsproduct .date{
     color: #3a3a3a;
     font-size: var(--span-font-size);
     padding-right: 2vw;
 }
 
-.newsmain .info .newsproduct .itemgroup .item .type{
+.newsproduct .type{
     color: #FE793E;
     font-size: var(--span-font-size);
 }
@@ -168,13 +161,13 @@ header nav ul li:nth-child(2) a{
 
 
 
-.newsmain .info .newsproduct .itemgroup .item .text{
+.newsproduct .text{
     grid-row: 2/3;
     
 }
 
 
-.newsmain .info .newsproduct .itemgroup .item .title{
+.newsproduct .title{
     color: #3a3a3a;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--p-font-size);
@@ -183,7 +176,7 @@ header nav ul li:nth-child(2) a{
     /* padding: 0.5vw 1.5vw 1.5vw 1.5vw; */
 }
 
-.newsmain .info .newsproduct .itemgroup .item .detail{
+.newsproduct .detail{
     color: #3a3a3a;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--span-font-size);
@@ -194,7 +187,7 @@ header nav ul li:nth-child(2) a{
 
 
 
-.newsmain .info .newsproduct .itemgroup .item .primg{
+.newsproduct .primg{
     grid-column: 2/3;
     grid-row: 1/3;
     justify-self:end;
@@ -202,7 +195,7 @@ header nav ul li:nth-child(2) a{
     /* overflow:hidden; */
 }
 
-.newsmain .info .newsproduct .itemgroup .item .primg .newsimg img{
+.newsproduct .primg .newsimg img{
     display: block;
     width: 25vw;
     vertical-align: bottom;
@@ -210,7 +203,7 @@ header nav ul li:nth-child(2) a{
     /* transform:scale(1,1); */
 }
 
-.newsmain .info .newsproduct .itemgroup .item .primg .arrow2 img{
+.newsproduct .primg .arrow2 img{
     rotate: 90deg;
     width: 1.2vw;
     position: absolute;
@@ -222,13 +215,13 @@ header nav ul li:nth-child(2) a{
 }
 
 
-.newsmain .info .newsproduct .itemgroup .item:hover  .primg .newsimg img{
+.newsproduct .itemgroup .item:hover  .primg .newsimg img{
     padding-right: 2.5vw;
 
     /* transform:scale(1.1,1.1); */
 }
 
-.newsmain .info .newsproduct .itemgroup .item:hover  .primg .arrow2 img{
+.newsproduct .itemgroup .item:hover  .primg .arrow2 img{
     right: 0;
     transition: .5s ease-in-out;
     opacity: 100;
@@ -242,12 +235,12 @@ header nav ul li:nth-child(2) a{
 
 
 
-.newsmain .info .newsproduct .page{
+.newsproduct .page{
     text-align: center;
     margin-top: 3.4vw;
 }
 
-.newsmain .info .newsproduct .page a{
+.newsproduct .page a{
     color: #3a3a3a;
     font-size: var(--p-font-size);
     text-decoration: none;
@@ -255,7 +248,7 @@ header nav ul li:nth-child(2) a{
     
 }
 
-.newsmain .info .newsproduct .page a:hover{
+.newsproduct .page a:hover{
     color: #FE793E;
     border-bottom: 0.14vw solid #FE793E;
 }
