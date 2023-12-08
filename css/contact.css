@@ -415,3 +415,15 @@ header nav ul li:nth-child(5) a{
     content: "";
     cursor: default;
 }
+@media screen and (max-width:768px ) {
+    .contactmain .info .itemgroup {
+        flex-direction: column;
+    }
+    .contactmain .info .itemgroup .item {
+        padding: 5vw;
+    }
+    .contactmain .info .itemgroup .line {
+        height: 0.1vw;
+        width: 8vw;
+    }
+}
