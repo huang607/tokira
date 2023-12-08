@@ -2,11 +2,7 @@ header .cart a .count{
     background-color: #FE793E;
 }
 
-.cartmain{
-    
-}
-
-.cartmain .banner{
+.banner{
     padding-top: 10.5vw;
     padding-bottom: 5vw;
     margin-left: 13.2vw;
@@ -21,7 +17,7 @@ header .cart a .count{
     align-content:center;justify-content:center;
 }
 
-.cartmain .banner h2{
+.banner h2{
     grid-column: 1/2;
     grid-row: 1/2;
     
@@ -34,12 +30,12 @@ header .cart a .count{
 
 /*============================================= */
 
-.cartmain .banner .itemgroup{
+.banner .itemgroup{
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
-.cartmain .banner .itemgroup .item{
+.banner .itemgroup .item{
     padding: 1.5vw 1.5vw 1.5vw 1.5vw;
     border-bottom: 0.14vw solid #3a3a3a;
 
@@ -50,19 +46,19 @@ header .cart a .count{
     align-items:start;
 }
 
-.cartmain .banner .itemgroup .item .primg{
+.banner .primg{
     grid-column: 1/2;
     grid-row: 1/3;
 }
 
-.cartmain .banner .itemgroup .item .primg img{
+.banner .primg img{
     display: block;
     width: 100%;
 }
 
 /*============================================= */
 
-.cartmain .banner .itemgroup .item .title{
+.banner .title{
     grid-column: 2/3;
     grid-row: 1/2;
 
@@ -72,21 +68,21 @@ header .cart a .count{
     align-self: center;
 }
 
-.cartmain .banner .itemgroup .item .title .name{
+.banner .title .name{
     color: #3a3a3a;
     font-weight: bold;
     font-size: var(--p-font-size);
 
 }
 
-.cartmain .banner .itemgroup .item .title .price{
+.banner .title .price{
     color: #3a3a3a;
     font-size: var(--p-font-size);
 }
 
 /*============================================= */
 
-.cartmain .banner .itemgroup .item .detail{
+.banner .detail{
     grid-column: 2/3;
     grid-row: 2/3;
 
@@ -97,7 +93,7 @@ header .cart a .count{
     
 }
 
-.cartmain .banner .itemgroup .item .detail .count{
+.banner .count{
     display: flex;
     flex-wrap: nowrap;
     padding: 0.3vw 1.7vw;
@@ -107,14 +103,14 @@ header .cart a .count{
     display: block;
 }
 
-.cartmain .banner .itemgroup .item .detail .count button{
+.banner .count button{
     border: none;
     font-family: 'Syncopate', 'Noto Sans TC', sans-serif;
     font-size: var(--span-font-size);
     background: none;
 }
 
-.cartmain .banner .itemgroup .item .detail .count input{
+.banner .count input{
     outline: none;
     border: none;
     font-family: 'Syncopate', 'Noto Sans TC', sans-serif;
@@ -126,19 +122,19 @@ header .cart a .count{
 }
 
 
-.cartmain .banner .itemgroup .item .detail .count button:hover{
+.banner .count button:hover{
     color: #FE793E;
 }
 
 
-.cartmain .banner .itemgroup .item .detail .remove{
+.banner .remove{
     color: #3a3a3a;
     font-size: var(--span-font-size);
     position: relative;
     text-decoration: none;
 }
 
-.cartmain .banner .itemgroup .item .detail .remove::after{
+.banner .remove::after{
     content: "";
     position: absolute;
     left: 0;
@@ -148,18 +144,18 @@ header .cart a .count{
     background-color: #FE793E;
 }
 
-.cartmain .banner .itemgroup .item .detail .remove:hover{
+.banner .remove:hover{
     color: #FE793E;
 }
 
-.cartmain .banner .itemgroup .item .detail .remove:hover::after{
+.banner .remove:hover::after{
     width: 100%;
     transition: .5s;
 }
 
 /*============================================= */
 
-.cartmain .banner .list{
+.list{
     grid-column: 2/3;
     grid-row: 1/3;
 
@@ -170,7 +166,7 @@ header .cart a .count{
     position: relative;
 }
 
-.cartmain .banner .list .deco .sticker-snow img{
+.list .sticker-snow img{
     position: absolute;
     right: 4vw; 
     top: -3vw;
@@ -179,7 +175,7 @@ header .cart a .count{
     vertical-align: bottom;
 }
 
-.cartmain .banner .list .deco .sticker-sun img{
+.list .sticker-sun img{
     position: absolute;
     right: -2vw; 
     top: -2vw;
@@ -188,24 +184,24 @@ header .cart a .count{
     vertical-align: bottom;
 }
 
-.cartmain .banner .list h3{
+.list h3{
     color: #3a3a3a;
     font-size: var(--h3-font-size);
     text-align: center;
 }
 
-.cartmain .banner .list .detail{
+.list .detail{
     display: flex;
     justify-content: space-between;
     padding: 2.5vw 1.2vw 0 1.2vw;
 }
 
-.cartmain .banner .list .detail span{
+.list .detail span{
     color: #3a3a3a;
     font-size: var(--p-font-size);
 }
 
-.cartmain .banner .list .detailtotal{
+.list .detailtotal{
     display: flex;
     justify-content: space-between;
     margin: 2.5vw 0;
@@ -214,13 +210,13 @@ header .cart a .count{
     border-bottom: 0.14vw solid #3a3a3a;
 }
 
-.cartmain .banner .list .detailtotal span{
+.list .detailtotal span{
     color: #3a3a3a;
     font-size: var(--p-font-size);
 }
 
 
-.cartmain .banner .list .btn{
+.list .btn{
     margin-left: 6vw;
     color: #3a3a3a;
     font-size: var(--span-font-size);
@@ -234,7 +230,7 @@ header .cart a .count{
     width: 8vw;
 }
 
-.cartmain .banner .list .btn:hover{
+.list .btn:hover{
     color: #FE793E;
     border: 0.14vw solid #FE793E;
 }
@@ -242,7 +238,7 @@ header .cart a .count{
 /*============================================= */
 
 
-.cartmain .product .deco .sticker-good img{
+.sticker-good img{
     position: absolute;
     left: 0vw; 
     bottom: 40vw;

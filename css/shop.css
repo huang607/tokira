@@ -2,14 +2,14 @@ header nav ul li:nth-child(4) a{
     color: #FE793E;
 }
 
-.shopmain .banner{
+.banner{
     width: 100%;
     /* height: 25vw; */
     vertical-align: bottom;
     position: relative;
 }
 
-.shopmain .banner h2{
+.banner h2{
     color: #fff;
     font-size: var(--h2-font-size);
     text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
@@ -31,19 +31,19 @@ header nav ul li:nth-child(4) a{
     }
 }
 
-.shopmain .banner img{
+.banner img{
     width: 100%;
     vertical-align: bottom;
 }
 
 /* ============================================= */
 
-.shopmain .info{
+.info{
     position: relative;
     margin: auto;
 }
 
-.shopmain .info .deco .sticker-earth img{
+.sticker-earth img{
     position: absolute;
     right: 4.5vw; 
     bottom: 15vw;
@@ -52,7 +52,7 @@ header nav ul li:nth-child(4) a{
     vertical-align: bottom;
 }
 
-.shopmain .info .deco .sticker-eye2 img{
+.sticker-eye2 img{
     position: absolute;
     right: 2vw; 
     bottom: 17vw;
@@ -61,7 +61,7 @@ header nav ul li:nth-child(4) a{
     vertical-align: bottom;
 }
 
-.shopmain .info .deco .sticker-circlebomb img{
+.sticker-circlebomb img{
     position: absolute;
     left: -1.5vw; 
     top: 40vw;
@@ -72,7 +72,7 @@ header nav ul li:nth-child(4) a{
 
 /* ============================================= */
 
-.shopmain .info .shopcontent{
+.shopcontent{
     /* margin-top: 5.7vw; 9.5-3.8*/
     margin: 5.7vw 13.2vw 0 13.2vw;
     display: flex;
@@ -82,7 +82,7 @@ header nav ul li:nth-child(4) a{
 
 
 
-.shopmain .info .shopcontent .shopmenu{
+.shopmenu{
     position: sticky;
     top: 3.8vw;
     height: 100%;
@@ -90,25 +90,25 @@ header nav ul li:nth-child(4) a{
     padding-top: 3.4vw;
 }
 
-.shopmain .info .shopcontent .shopmenu .shoptype{
+.shopmenu .shoptype{
     display: flex;
     justify-content: space-between;
     
 }
 
-.shopmain .info .shopcontent .shopmenu a{
+.shopmenu a{
     text-decoration: none;
     color: #3a3a3a;
     font-size: var(--span-font-size);
     margin-bottom: 3vw;
 }
 
-.shopmain .info .shopcontent .shopmenu a:hover{
+.shopmenu a:hover{
     color: #FE793E;
 }
 
 
-.shopmain .info .shopcontent .shopmenu .shoptype span:first-child{
+.shopmenu .shoptype span:first-child{
     padding-right: 4vw;
 }
 
@@ -116,14 +116,14 @@ header nav ul li:nth-child(4) a{
 /* ============================================= */
 
 
-.shopmain .info .product{
+.product{
     padding-top: 3.4vw;
     padding-bottom: 9.5vw;
     padding-left: 3.4vw;
     border-left: 0.14vw solid #3a3a3a;
 }
 
-.shopmain .info .product .itemgroup{
+.product .itemgroup{
     /* display: flex;
     flex-wrap: wrap;
     justify-content: start; */
@@ -133,7 +133,7 @@ header nav ul li:nth-child(4) a{
     grid-template-columns: repeat(3, 1fr);
 }
 
-.shopmain .info .product .itemgroup .item{
+.product .itemgroup .item{
     /* margin: 0 0.5vw 0.5vw 0.5vw; */
     position: relative;
 }
@@ -142,7 +142,7 @@ header nav ul li:nth-child(4) a{
 
 
 
-.shopmain .info .product .itemgroup .item a .top{
+.product .top{
     display: flex;
     position: absolute;
     justify-content: space-between;
@@ -155,7 +155,7 @@ header nav ul li:nth-child(4) a{
 
 
 
-.shopmain .info .product .itemgroup .item a .top .name{
+.product .name{
     color: #fff;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--p-font-size);
@@ -163,33 +163,33 @@ header nav ul li:nth-child(4) a{
     text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
 }
 
-.shopmain .info .product .itemgroup .item a .top .arrow{
+.product .arrow{
     position: absolute;
     /* display: none; */
     top: 1vw;
     right: 1vw;
 }
 
-.shopmain .info .product .itemgroup .item a .top .arrow img{
+.product .arrow img{
     rotate: 45deg;
     filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
     width: 1.2vw;
     vertical-align: bottom;
 }
 
-.shopmain .info .product .itemgroup .item a .top .arrow2{
+.product .arrow2{
     position: absolute;
     top: 1vw;
     right: 1vw;
 }
 
-.shopmain .info .product .itemgroup .item a .top .arrow2 img{
+.product .arrow2 img{
     rotate: 45deg;
     width: 1.2vw;
     vertical-align: bottom;
 }
 
-.shopmain .info .product .itemgroup .item a .top .detail{
+.product .detail{
     display: flex;
     position: absolute;
     justify-content: center;
@@ -204,7 +204,7 @@ header nav ul li:nth-child(4) a{
     text-align: justify;
 }
 
-.shopmain .info .product .itemgroup .item a .overlay{
+.product .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -215,21 +215,21 @@ header nav ul li:nth-child(4) a{
 }
 
 
-.shopmain .info .product .itemgroup .item a:hover .overlay{
+.product .itemgroup .item a:hover .overlay{
     display: block;
 }
 
-.shopmain .info .product .itemgroup .item a:hover .top .name{
+.product .itemgroup .item a:hover .top .name{
     color: #3a3a3a;
     text-shadow: none;
     z-index: 2;
 }
 
-.shopmain .info .product .itemgroup .item a:hover .top .arrow img{
+.product .itemgroup .item a:hover .top .arrow img{
     display: none;
 }
 
-.shopmain .info .product .itemgroup .item a:hover .top .arrow2 img{
+.product .itemgroup .item a:hover .top .arrow2 img{
     display: block;
     position: absolute;
     top: 0;
@@ -241,7 +241,7 @@ header nav ul li:nth-child(4) a{
 }
 
 
-.shopmain .info .product .itemgroup .item a:hover .top .detail{
+.product .itemgroup .item a:hover .top .detail{
     display: block;
     transition: 1s;
     z-index: 2;
@@ -253,7 +253,7 @@ header nav ul li:nth-child(4) a{
 
 
 
-.shopmain .info .product .itemgroup .item a .bottom{
+.product .bottom{
     display: flex;
     position: absolute;
     vertical-align: bottom;
@@ -265,14 +265,14 @@ header nav ul li:nth-child(4) a{
     bottom: 0;
 }
 
-.shopmain .info .product .itemgroup .item a .bottom .price{
+.product .price{
     color: #fff;
     font-size: var(--p-font-size);
     letter-spacing: 0.08vw;
     text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
 }
 
-.shopmain .info .product .itemgroup .item a .bottom .stamp1{
+.product .stamp1{
     color: #fff;
     font-size: var(--stamp-font-size);
     letter-spacing: 0.08vw;
@@ -287,7 +287,7 @@ header nav ul li:nth-child(4) a{
     text-align: center;
 }
 
-.shopmain .info .product .itemgroup .item a .bottom .stamp2{
+.product .stamp2{
     color: #fff;
     font-size: var(--stamp-font-size);
     letter-spacing: 0.08vw;
@@ -302,7 +302,7 @@ header nav ul li:nth-child(4) a{
     text-align: center;
 }
 
-.shopmain .info .product .itemgroup .item a .primg img{
+.product .primg img{
     /* width: 17.3vw;
     height: 17.3vw; */
     width: 100%;
@@ -311,12 +311,12 @@ header nav ul li:nth-child(4) a{
 
 
 
-.shopmain .info .product .page{
+.product .page{
     text-align: center;
     margin-top: 3.4vw;
 }
 
-.shopmain .info .product .page a{
+.product .page a{
     color: #3a3a3a;
     font-size: var(--p-font-size);
     text-decoration: none;
@@ -324,7 +324,7 @@ header nav ul li:nth-child(4) a{
     
 }
 
-.shopmain .info .product .page a:hover{
+.product .page a:hover{
     color: #FE793E;
     border-bottom: 0.14vw solid #FE793E;
 }

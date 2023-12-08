@@ -43,7 +43,7 @@ header nav ul li:nth-child(2) a{
     margin: auto;
 }
 
-.info .sticker-sun img{
+.sticker-sun img{
     position: absolute;
     left: 1vw; 
     top: 28vw;
@@ -52,7 +52,7 @@ header nav ul li:nth-child(2) a{
     vertical-align: bottom;
 }
 
-.info .sticker-hot img{
+.sticker-hot img{
     position: absolute;
     right: 3vw; 
     bottom: 40vw;
@@ -61,7 +61,7 @@ header nav ul li:nth-child(2) a{
     vertical-align: bottom;
 }
 
-.info .sticker-good img{
+.sticker-good img{
     position: absolute;
     right: 1vw; 
     bottom: 33vw;

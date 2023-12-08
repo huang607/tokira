@@ -1,7 +1,7 @@
 header nav ul li:nth-child(5) a{
     color: #FE793E;
 }
-.contactmain .info{
+.banner{
     width: 100%;
     height: 50vw;
     background-image: url(../image/banner_contact.jpg) ;
@@ -15,48 +15,48 @@ header nav ul li:nth-child(5) a{
     justify-content: center;
 }
 
-.contactmain .info .logo{
+.banner .logo{
     padding-bottom: 5vw;
 }
 
-.contactmain .info .logo img{
+.banner .logo img{
     width: 23vw;
     display: block;
 }
 
 
 
-.contactmain .info .itemgroup{
+.banner .itemgroup{
     display: flex;
     justify-content: center;
     
 }
 
-.contactmain .info .itemgroup .line{
+.banner .line{
     background-color: #fff;
     width: 0.1vw;
     height: 8vw;
     margin: auto;
 }
 
-.contactmain .info .itemgroup .item{
+.banner .item{
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 5vw;
 }
 
-.contactmain .info .itemgroup .item .icon{
+.banner .icon{
     align-self: center;
     padding-bottom: 0.2vw;
 }
 
-.contactmain .info .itemgroup .item .icon img{
+.banner .icon img{
     display: block;
     height: 2vw;
 }
 
-.contactmain .info .itemgroup .item span{
+.banner span{
     color: #fff;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--p-font-size);
@@ -66,31 +66,31 @@ header nav ul li:nth-child(5) a{
 
 /* ============================================= */
 
-.contactmain .map{
+.map{
     border-bottom: 0.14vw solid #3a3a3a;
 }
 
-.contactmain .map iframe{
+.map iframe{
     width: 100%;
     vertical-align: bottom;
 }
 
 /* ============================================= */
 
-.contactmain .form{
+.form{
     position: relative;
     padding: 9.5vw 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.contactmain .form h2{
+.form h2{
     color: #FE793E;
     font-size: var(--h2-font-size);
     text-align: center;
 }
 
-.contactmain .form .deco .sticker-bomb1 img{
+.form .sticker-bomb1 img{
     position: absolute;
     left: 3vw; 
     bottom: 11vw;
@@ -99,7 +99,7 @@ header nav ul li:nth-child(5) a{
     vertical-align: bottom;
 }
 
-.contactmain .form .deco .sticker-bomb2 img{
+.form .sticker-bomb2 img{
     position: absolute;
     left: -1.5vw; 
     bottom: 6vw;
@@ -108,16 +108,16 @@ header nav ul li:nth-child(5) a{
     vertical-align: bottom;
 }
 
-.contactmain .form .text{
+.form .text{
     padding: 0.85vw;
 }
 
-.contactmain .form .text label{
+.form .text label{
     color: #3a3a3a;
     font-size: var(--p-font-size);
 }
 
-.contactmain .form .text label input{
+.form .text label input{
     font-size: var(--p-font-size);
     padding: 1.3vw 1vw;
     background-color: #ffffff;
@@ -127,11 +127,11 @@ header nav ul li:nth-child(5) a{
     outline: none;
 }
 
-.contactmain .form .text label input::placeholder{
+.form input::placeholder{
     color: #ccc;
 }
 
-.contactmain .form .text label textarea{
+.form textarea{
     font-size: var(--p-font-size);
     padding: 1.3vw 1vw;
     background-color: #ffffff;
@@ -142,11 +142,11 @@ header nav ul li:nth-child(5) a{
     vertical-align: middle;
 }
 
-.contactmain .form .text label textarea::placeholder{
+.form textarea::placeholder{
     color: #ccc;
 }
 
-.contactmain .form .check{
+.form .check{
     vertical-align: middle;
     align-self: flex-start;
     padding-top: 0.85vw;
@@ -154,12 +154,12 @@ header nav ul li:nth-child(5) a{
     
 }
 
-.contactmain .form .check label{
+.form .check label{
     display: flex;
     align-items: center;
 }
 
-.contactmain .form .check label input{
+.form .check label input{
     border: 0.14vw solid #3a3a3a;
     outline: none;
     width: 1.2vw;
@@ -167,11 +167,11 @@ header nav ul li:nth-child(5) a{
     appearance: none;
 }
 
-.contactmain .form .check label input:checked{
+.form .check label input:checked{
     background-color: #3a3a3a;
 }
 
-.contactmain .form .check label span{
+.form .check label span{
     font-size: var(--p-font-size);
     color: #3a3a3a;
     /* padding-top: -0.5vw; */
@@ -179,20 +179,20 @@ header nav ul li:nth-child(5) a{
 }
 
 
-.contactmain .form .check a{
+.form .check a{
     text-decoration: none;
     font-size: var(--p-font-size);
     color: #3a3a3a;
     margin-left: 0vw;
 }
 
-.contactmain .form .check a:hover{
+.form .check a:hover{
     color: #FE793E;
     border-bottom: 0.14vw solid #FE793E;
 }
 
 
-.contactmain .form .btn{
+.form .btn{
     padding-top: 2vw;
     color: #3a3a3a;
     font-size: var(--span-font-size);
@@ -203,18 +203,18 @@ header nav ul li:nth-child(5) a{
     border-radius: 60vw;
 }
 
-.contactmain .form .btn:hover{
+.form .btn:hover{
     color: #FE793E;
     border: 0.14vw solid #FE793E;
 }
 
 /* ============================================= */
 
-.contactmain .form .contact_agree{
+.contact_agree{
     display: none;
 }
 
-.contactmain .form .contact_agree:target{
+.contact_agree:target{
     position: absolute;
     left: 0;
     top: 0;
@@ -225,7 +225,7 @@ header nav ul li:nth-child(5) a{
     justify-content: center;
 }
 
-.contactmain .form .contact_agree figcaption{
+.contact_agree figcaption{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,23 +237,23 @@ header nav ul li:nth-child(5) a{
     
 }
 
-.contactmain .form .contact_agree figcaption .closeimg{
+.contact_agree figcaption .closeimg{
     position: absolute;
     top: 2vw;
     right: 2vw;
 }
 
-.contactmain .form .contact_agree figcaption .closeimg img{
+.contact_agree figcaption .closeimg img{
     width: 2vw;
     display: block;
 }
 
-.contactmain .form .contact_agree figcaption .closeimg:hover{
+.contact_agree figcaption .closeimg:hover{
     rotate: 90deg;
     transition: 0.5s;
 }
 
-.contactmain .form .contact_agree figcaption h3{
+.contact_agree figcaption h3{
     color: #FE793E;
     font-weight: bold;
     font-size: var(--h3-font-size);
@@ -261,13 +261,13 @@ header nav ul li:nth-child(5) a{
     padding-bottom: 1.7vw;
 }
 
-.contactmain .form .contact_agree figcaption p{color: #3a3a3a;
+.contact_agree figcaption p{color: #3a3a3a;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--span-font-size);
     line-height: 2vw;
 }
 
-.contactmain .form .contact_agree figcaption .deco .sticker-1o img{
+.contact_agree figcaption .sticker-1o img{
     position: absolute;
     rotate: 15deg;
     right: 2vw; 
@@ -276,7 +276,7 @@ header nav ul li:nth-child(5) a{
     vertical-align: bottom;
 }
 
-.contactmain .form .contact_agree figcaption .deco .sticker-earth img{
+.contact_agree figcaption .sticker-earth img{
     position: absolute;
     rotate: -17deg;
     right: 6.5vw; 
@@ -285,14 +285,14 @@ header nav ul li:nth-child(5) a{
     vertical-align: bottom;
 }
 
-.contactmain .form .contact_agree .close{
+.contact_agree .close{
     position: absolute;
     display: block;
 }
 
 
 
-.contactmain .form .contact_agree .close::before{
+.contact_agree .close::before{
     left: 0;
     top: 0;
     width: 100%;
@@ -306,11 +306,11 @@ header nav ul li:nth-child(5) a{
 
 /* ============================================= */
 
-.contactmain .form .contact_tqp{
+.contact_tqp{
     display: none;
 }
 
-.contactmain .form .contact_tqp:target{
+.contact_tqp:target{
     position: absolute;
     left: 0;
     top: 0;
@@ -321,7 +321,7 @@ header nav ul li:nth-child(5) a{
     justify-content: center;
 }
 
-.contactmain .form .contact_tqp figcaption{
+.contact_tqp figcaption{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -333,46 +333,46 @@ header nav ul li:nth-child(5) a{
     
 }
 
-.contactmain .form .contact_tqp figcaption .closeimg{
+.contact_tqp figcaption .closeimg{
     position: absolute;
     top: 2vw;
     right: 2vw;
 }
 
-.contactmain .form .contact_tqp figcaption .closeimg img{
+.contact_tqp figcaption .closeimg img{
     width: 2vw;
     display: block;
 }
 
-.contactmain .form .contact_tqp figcaption .closeimg:hover{
+.contact_tqp figcaption .closeimg:hover{
     rotate: 90deg;
     transition: 0.5s;
 }
 
-.contactmain .form .contact_tqp figcaption .logo{
+.contact_tqp figcaption .logo{
     padding-bottom: 1vw;
 }
 
-.contactmain .form .contact_tqp figcaption .logo img{
+.contact_tqp figcaption .logo img{
     display: block;
     width: 16vw;
 }
 
-.contactmain .form .contact_tqp figcaption h2{
+.contact_tqp figcaption h2{
     color: #FE793E;
     font-size: var(--h2-font-size);
     text-align: center;
     padding-bottom: 1.7vw;
 }
 
-.contactmain .form .contact_tqp figcaption span{color: #3a3a3a;
+.contact_tqp figcaption span{color: #3a3a3a;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--p-font-size);
     text-align: center;
     line-height: 3vw;
 }
 
-.contactmain .form .contact_tqp figcaption .deco .sticker-snow img{
+.contact_tqp figcaption .sticker-snow img{
     position: absolute;
     rotate: -18deg;
     left: 11.5vw; 
@@ -381,7 +381,7 @@ header nav ul li:nth-child(5) a{
     vertical-align: bottom;
 }
 
-.contactmain .form .contact_tqp figcaption .deco .sticker-eye img{
+.contact_tqp figcaption .sticker-eye img{
     position: absolute;
     left: 13vw; 
     top: 5vw;
@@ -389,7 +389,7 @@ header nav ul li:nth-child(5) a{
     vertical-align: bottom;
 }
 
-.contactmain .form .contact_tqp figcaption .deco .sticker-circlebomb img{
+.contact_tqp figcaption .sticker-circlebomb img{
     position: absolute;
     rotate: 8deg;
     right: 9vw; 
@@ -398,14 +398,14 @@ header nav ul li:nth-child(5) a{
     vertical-align: bottom;
 }
 
-.contactmain .form .contact_tqp .close{
+.contact_tqp .close{
     position: absolute;
     display: block;
 }
 
 
 
-.contactmain .form .contact_tqp .close::before{
+.contact_tqp .close::before{
     left: 0;
     top: 0;
     width: 100%;
@@ -415,15 +415,15 @@ header nav ul li:nth-child(5) a{
     content: "";
     cursor: default;
 }
-@media screen and (max-width:768px ) {
-    .contactmain .info .itemgroup {
+/* @media screen and (max-width:768px ) {
+    .info .itemgroup {
         flex-direction: column;
     }
-    .contactmain .info .itemgroup .item {
+    .info .itemgroup .item {
         padding: 5vw;
     }
-    .contactmain .info .itemgroup .line {
+    .info .itemgroup .line {
         height: 0.1vw;
         width: 8vw;
     }
-}
+} */

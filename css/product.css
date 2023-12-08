@@ -71,7 +71,7 @@
 
 
 
-.product .itemgroup .item a .top{
+.product .top{
     display: flex;
     position: absolute;
     justify-content: space-between;
@@ -84,7 +84,7 @@
 
 
 
-.product .itemgroup .item a .top .name{
+.product .name{
     color: #fff;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--p-font-size);
@@ -92,31 +92,31 @@
     text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
 }
 
-.product .itemgroup .item a .top .arrow{
+.product .arrow{
     position: absolute;
     /* display: none; */
     top: 1vw;
     right: 1vw;
 }
 
-.product .itemgroup .item a .top .arrow img{
+.product .arrow img{
     rotate: 45deg;
     filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
     width: 1.2vw;
 }
 
-.product .itemgroup .item a .top .arrow2{
+.product .arrow2{
     position: absolute;
     top: 1vw;
     right: 1vw;
 }
 
-.product .itemgroup .item a .top .arrow2 img{
+.product .arrow2 img{
     rotate: 45deg;
     width: 1.2vw;
 }
 
-.product .itemgroup .item a .top .detail{
+.product .detail{
     display: flex;
     position: absolute;
     justify-content: center;
@@ -131,7 +131,7 @@
     text-align: justify;
 }
 
-.product .itemgroup .item a .overlay{
+.product .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -179,7 +179,7 @@
 
 
 
-.product .itemgroup .item a .bottom{
+.product .bottom{
     display: flex;
     position: absolute;
     vertical-align: bottom;
@@ -191,14 +191,14 @@
     bottom: 0;
 }
 
-.product .itemgroup .item a .bottom .price{
+.product .price{
     color: #fff;
     font-size: var(--p-font-size);
     letter-spacing: 0.08vw;
     text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
 }
 
-.product .itemgroup .item a .bottom .stamp1{
+.product .stamp1{
     color: #fff;
     font-size: var(--stamp-font-size);
     letter-spacing: 0.08vw;
@@ -213,7 +213,7 @@
     text-align: center;
 }
 
-.product .itemgroup .item a .bottom .stamp2{
+.product .stamp2{
     color: #fff;
     font-size: var(--stamp-font-size);
     letter-spacing: 0.08vw;
@@ -229,11 +229,11 @@
 }
 
 
-/* .product .itemgroup .item a .primg{
+/* .product .primg{
     overflow:hidden;
 } */
 
-.product .itemgroup .item a .primg img{
+.product .primg img{
     width: 17.3vw;
     height: 17.3vw;
     /* transition: .5s;
