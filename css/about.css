@@ -1,5 +1,40 @@
 header nav ul li:nth-child(1) a{
-    color: #FE793E;
+    color: var(--orange-color);
+}
+
+.banner{
+    width: 100%;
+    /* height: 25vw; */
+    vertical-align: bottom;
+    position: relative;
+}
+
+.banner h2{
+    color: #fff;
+    font-size: var(--h2-font-size);
+    text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+    
+    position: absolute;
+    top: 13.5vw;
+    /* bottom: 0; */
+    left: 13.2vw;
+    animation: bannertitle 1s;
+}
+
+@media screen and (max-width:768px){
+    .banner h2{
+        font-size: var(--h2ph-font-size);
+    }
+}
+
+@keyframes bannertitle{
+    0%{
+        left: 11.2vw;
+    }
+
+    100%{
+        left: 13.2vw;
+    }
 }
 
 .banner img{
@@ -16,7 +51,13 @@ header nav ul li:nth-child(1) a{
     width: 100%;
     padding: 9.5vw 0 0 0;
     /* height: 50vw; */
-    /* background-color: #FE793E; */
+    /* background-color: var(--orange-color); */
+}
+
+@media screen and (max-width:1024px){
+    .brand{
+        padding: 13vw 0 0 0;
+    }
 }
 
 .brand .logo{
@@ -35,14 +76,14 @@ header nav ul li:nth-child(1) a{
 }
 
 .brand .tokira{
-    color: #93ada4;
+    color: var(--green-color);
     font-size: 10vw;
     align-self: start;
     padding-bottom: 4vw;
 }
 
 .brand .together{
-    color: #93ada4;
+    color: var(--green-color);
     font-size: 10vw;
     align-self: end;
 }
@@ -105,6 +146,51 @@ header nav ul li:nth-child(1) a{
     vertical-align: bottom;
 }
 
+@media screen and (max-width:1024px){
+    .brand .logo{
+        left: 33%;
+        top: 40%;
+    }
+    
+    .brand .logo img{
+        width: 30vw;
+    } 
+    
+    .brand .tokira{
+        font-size: 12vw;
+        padding-bottom: 10vw;
+    }
+    
+    .brand .together{
+        font-size: 12vw;
+    }
+    
+    .brand .sticker-bc img{
+        left: 35vw; 
+        top: 11vw;
+        width: 9vw;
+        height: 5vw;
+    }
+    
+    
+    .brand .sticker-circlebomb img{
+        left: 6.5vw; 
+        top: 18vw;
+        width: 9.5vw;
+    }
+    
+    .brand .sticker-sun img{
+        right: 4vw; 
+        top: 31vw;
+        width: 8vw;
+    }
+    
+    .brand .sticker-earth img{
+        right: 6vw; 
+        top: 32vw;
+        width: 10.5vw;
+    }
+}
 
 /* ============================================= */
 
@@ -114,8 +200,14 @@ header nav ul li:nth-child(1) a{
     padding: 9.5vw 0;
 }
 
+@media screen and (max-width:1024px){
+    .concept{
+        padding: 13vw 0 ;
+    }
+}
+
 .concept h2{
-    color: #FE793E;
+    color: var(--orange-color);
     font-weight: bold; 
     font-size: var(--h2-font-size);
     text-align: center;
@@ -123,18 +215,48 @@ header nav ul li:nth-child(1) a{
 }
 
 .concept h3{
-    color: #3a3a3a;
+    color: var(--dkgray-color);
     font-weight: bold;
     font-size: var(--h3-font-size);
     text-align: center;
     line-height: 4vw;
 }
 
+
+
 .concept p{
-    color: #3a3a3a;
+    color: var(--dkgray-color);
     font-size: var(--p-font-size);
     text-align: center;
     line-height: 3vw;
+}
+
+@media screen and (max-width:1024px){
+    .concept h2{
+        line-height: 6vw;
+    }
+    
+    .concept h3{
+        line-height: 7vw;
+    }
+
+    .concept p{
+        line-height: 4vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    .concept h2{
+        font-size: var(--h2ph-font-size);
+    }
+
+    .concept h3{
+        font-size: var(--h3ph-font-size);
+    }
+    
+    .concept p{
+        font-size: var(--pph-font-size);
+    }
 }
 
 .concept .sticker-1o img{
@@ -160,8 +282,8 @@ header nav ul li:nth-child(1) a{
 
 
 .line{
-    background-color: #3a3a3a;
-    width: 0.14vw;
+    background-color: var(--dkgray-color);
+    width: 2px;
     height: 11vw;
     margin: auto;
     animation: line 2s;
@@ -174,6 +296,12 @@ header nav ul li:nth-child(1) a{
 
     100%{
         height: 11vw;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .line{
+        width: 1.5px;
     }
 }
 
@@ -190,33 +318,36 @@ header nav ul li:nth-child(1) a{
 }
 
 .visual .small1{
-    width: 100%;
-    height: 50vw;
-    background-image: url(../image/about_visual1.jpg) ;
-    background-repeat: no-repeat;
-    background-size: 100vw 50vw;
     vertical-align: bottom;
     position: relative;
+
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../image/about_visual1.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .visual .small2{
-    width: 100%;
-    height: 50vw;
-    background-image: url(../image/about_visual2.jpg) ;
-    background-repeat: no-repeat;
-    background-size: 100vw 50vw;
     vertical-align: bottom;
     position: relative;
+
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../image/about_visual2.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .visual .small3{
-    width: 100%;
-    height: 50vw;
-    background-image: url(../image/about_visual3.jpg) ;
-    background-repeat: no-repeat;
-    background-size: 100vw 50vw;
     vertical-align: bottom;
     position: relative;
+
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../image/about_visual3.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 
@@ -228,6 +359,13 @@ header nav ul li:nth-child(1) a{
     top: 25%;
 }
 
+@media screen and (max-width:1024px){
+    .visual img{
+        width: 40%;
+        left: 30%;
+        top: 35%;
+    }
+}
 
 /* .visual .item .large img{
     width: 100%;
@@ -260,10 +398,20 @@ header nav ul li:nth-child(1) a{
 
 
 .map{
-    border-top: 0.14vw solid #3a3a3a;
+    border-top: var(--borderpc-border);
 }
 
 .map iframe{
     width: 100%;
     vertical-align: bottom;
+}
+
+@media screen and (max-width:1024px){
+    .map{
+        border-top: var(--borderpad-border);
+    }
+    
+    .map iframe{
+        height: 25vh;
+    }
 }

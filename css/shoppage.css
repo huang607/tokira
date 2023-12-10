@@ -1,20 +1,47 @@
 header nav ul li:nth-child(4) a{
-    color: #FE793E;
+    color: var(--orange-color);
 }
 
 .banner{
-    padding-top: 10.5vw;
+    width: 90%;
+    margin: auto;
+    padding-top: 8.5vw;
     padding-bottom: 3vw;
-    margin-left: 5.7vw;
-    margin-right: 5.7vw;
-    border-bottom: 0.14vw solid #3a3a3a;
+    border-bottom: var(--borderpc-border);
+    display: flex;
+    justify-content: center;
     
-    
-    display: grid;
+    /* display: grid;
     gap: 1vw;
     grid-template-columns: 8.1vw 35.4vw 27vw;
     grid-template-rows: 8.1vw 8.1vw 8.1vw 8.1vw;
-    align-content:center;justify-content:center;
+    align-content:center;
+    justify-content:center; */
+}
+
+@media screen and (max-width:1024px){
+    .banner{
+        padding-top: 11.5vw;
+        padding-bottom: 4vw;
+        border-bottom: var(--borderpad-border);
+        flex-direction: column;
+    }
+}
+
+.bannerimg{
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: 8.1vw 35.4vw;
+    grid-template-rows: 8.1vw 8.1vw 8.1vw 8.1vw;
+    align-content:center;
+    justify-content:center;
+}
+
+@media screen and (max-width:1024px){
+    .bannerimg{
+        grid-template-columns: 17vw 71vw;
+        grid-template-rows: 17vw 17vw 17vw 17vw;
+    }
 }
 
 .imgs1{
@@ -33,8 +60,8 @@ header nav ul li:nth-child(4) a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 8.1vw;
-    height: 8.1vw;
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     display: none;
 }
@@ -62,8 +89,8 @@ header nav ul li:nth-child(4) a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 8.1vw;
-    height: 8.1vw;
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     display: none;
 }
@@ -91,8 +118,8 @@ header nav ul li:nth-child(4) a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 8.1vw;
-    height: 8.1vw;
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     display: none;
 }
@@ -119,8 +146,8 @@ header nav ul li:nth-child(4) a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 8.1vw;
-    height: 8.1vw;
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     display: none;
 }
@@ -153,7 +180,7 @@ header nav ul li:nth-child(4) a{
     filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
     position: absolute;
     left: 1.7vw;
-    top: 17vw;
+    top: 200%;
     width: 1.2vw;
 }
 
@@ -162,8 +189,20 @@ header nav ul li:nth-child(4) a{
     filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
     position: absolute;
     right: 1.7vw;
-    top: 17vw;
+    top: 200%;
     width: 1.2vw;
+}
+
+@media screen and (max-width:1024px){
+    .arrow_left img{
+        width: 1.8vw;
+        top: 200%;
+    }
+    
+    .arrow_right img{
+        width: 1.8vw;
+        top: 200%;
+    }
 }
 
 .imgmain:hover .arrow_left img{
@@ -195,27 +234,46 @@ header nav ul li:nth-child(4) a{
 /*============================================= */
 
 .info{
-    grid-column: 3/4;
-    grid-row: 1/5;
     align-self: center;
-    padding-left: 1vw;
+    padding-left: 2vw;
 }
 
+@media screen and (max-width:1024px){
+    .info{
+        width: 100%;
+        margin: auto;
+        padding-top: 6vw;
+        padding-left: 0vw;
+        /* align-self: start; */
+    }
+}
 
 .info h3{
     padding-bottom: 1.7vw;
 
-    color: #3a3a3a;
+    color: var(--dkgray-color);
     font-weight: bold;
     font-size: var(--h3-font-size);
 }
 
+@media screen and (max-width:768px){
+    .info h3{
+        font-size: var(--h3ph-font-size);
+    }
+}
+
 .info p{
-    color: #3a3a3a;
+    color: var(--dkgray-color);
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--p-font-size);
     line-height: 3vw;
     padding-bottom: 3vw;
+}
+
+@media screen and (max-width:768px){
+    .info p{
+        font-size: var(--pph-font-size);
+    }
 }
 
 .detail{
@@ -226,24 +284,37 @@ header nav ul li:nth-child(4) a{
 }
 
 
-.count{
+.detail .count{
     display: flex;
     flex-wrap: nowrap;
     padding: 0.3vw 1.7vw;
-    background-color: #ececec;
-    border: 0.14vw solid #3a3a3a;
+    background-color: var(--lggray-color);
+    border: var(--borderpc-border);
     border-radius: 60vw;
     display: block;
 }
 
-.count button{
+@media screen and (max-width:1024px){
+    .detail .count{
+        padding: 6.5px 22px;
+        border: var(--borderpad-border);
+    }
+}
+
+.detail .count button{
     border: none;
     font-family: 'Syncopate', 'Noto Sans TC', sans-serif;
     font-size: var(--span-font-size);
     background: none;
 }
 
-.count input{
+@media screen and (max-width:768px){
+    .detail .count button{
+        font-size: var(--spanph-font-size);
+    }
+}
+
+.detail .count input{
     outline: none;
     border: none;
     font-family: 'Syncopate', 'Noto Sans TC', sans-serif;
@@ -254,33 +325,58 @@ header nav ul li:nth-child(4) a{
     background: none;
 }
 
+@media screen and (max-width:768px){
+    .detail .count input{
+        font-size: var(--spanph-font-size);
+    }
+}
 
-.count button:hover{
-    color: #FE793E;
+.detail .count button:hover{
+    color: var(--orange-color);
 }
 
 
 .price{
-    color: #3a3a3a;
+    color: var(--dkgray-color);
     font-weight: bold;
     font-size: var(--h3-font-size);
 }
 
+@media screen and (max-width:768px){
+    .price{
+        font-size: var(--h3ph-font-size);
+    }
+}
+
 .btn{
-    color: #3a3a3a;
+    color: var(--orange-color);
     font-size: var(--span-font-size);
     text-decoration: none;
     padding: 0.7vw 1.8vw;
-    background-color: #ececec;
-    border: 0.14vw solid #3a3a3a;
+    background-color: var(--lggray-color);
+    border: 2px solid var(--orange-color);
     border-radius: 60vw;
     display: block;
     text-align: center;
 }
 
+@media screen and (max-width:1024px){
+    .btn{
+        border: 1.5px solid var(--orange-color);
+        padding: 12.5px 26px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .btn{
+        font-size: var(--spanph-font-size);
+    }
+}
+
+
 .btn:hover{
-    color: #FE793E;
-    border: 0.14vw solid #FE793E;
+    color: var(--orange-color);
+    
 }
 
 
@@ -290,13 +386,18 @@ header nav ul li:nth-child(4) a{
 .shoppagecontent{
     position: relative;
     margin: auto;
-    padding: 9.5vw 0;
+    padding: 6vw 0 9.5vw 0;
+}
 
+@media screen and (max-width:1024px){
+    .shoppagecontent{
+        padding: 8vw 0 13vw 0;
+    }
 }
 
 .sticker-flower1 img{
     position: absolute;
-    right: 2vw; 
+    right: 0vw; 
     top: 3vw;
     width: 12vw;
     rotate: -14deg;
@@ -305,7 +406,7 @@ header nav ul li:nth-child(4) a{
 
 .sticker-flower2 img{
     position: absolute;
-    right: 10vw; 
+    right: 8vw; 
     top: 12vw;
     width: 8vw;
     rotate: -14deg;
@@ -314,8 +415,8 @@ header nav ul li:nth-child(4) a{
 
 .sticker-bomb1 img{
     position: absolute;
-    left: 17vw; 
-    top: 25vw;
+    left: 10vw; 
+    top: 26vw;
     width: 7vw;
     rotate: 14deg;
     vertical-align: bottom;
@@ -323,7 +424,7 @@ header nav ul li:nth-child(4) a{
 
 .sticker-bomb2 img{
     position: absolute;
-    right: 10vw; 
+    right: 3vw; 
     top: 90vw;
     width: 7vw;
     vertical-align: bottom;
@@ -332,7 +433,7 @@ header nav ul li:nth-child(4) a{
 .sticker-eye img{
     position: absolute;
     left: 4.5vw; 
-    bottom: 40vw;
+    bottom: 45vw;
     width: 7vw;
     rotate: -14deg;
     vertical-align: bottom;
@@ -343,12 +444,24 @@ header nav ul li:nth-child(4) a{
 /* ============================================= */
 
 .shoppagecontent p{
-    color: #3a3a3a;
+    color: var(--dkgray-color);
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--p-font-size);
     text-align: center;
     line-height: 3vw;
     padding-bottom: 5.7vw;
+}
+
+@media screen and (max-width:1024px){
+    .shoppagecontent p{
+        line-height: 4vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    .shoppagecontent p{
+        font-size: var(--pph-font-size);
+    }
 }
 
 .primg .img{
@@ -358,7 +471,13 @@ header nav ul li:nth-child(4) a{
 .primg .img img{
     margin: auto;
     display: block;
-    width: 72vw;
+    width: 74%;
     vertical-align: bottom;
+}
+
+@media screen and (max-width:1024px){
+    .primg .img img{
+        width: 90%;
+    }
 }
 /* ======================================================== */
