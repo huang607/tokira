@@ -7,12 +7,12 @@
     <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css" >
     <link rel="stylesheet" href="./css/cart.css">
-    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/productwrap.css">
 
     <script src="https://kit.fontawesome.com/9c638736ac.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/cart.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,120 +21,8 @@
 <body>
     
     <div class="wrap">
-        <header>
-            
-            <nav>
-                <ul>
-                    <li>
-                        <a href="about.html" class="headerbtn">
-                            <div class="headeron">
-                                <div class="headertxt">ABOUT</div>
-                                <div class="headerout">
-                                    <div class="headertxt">ABOUT</div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
+        <div id="header"></div>
 
-                    <li>
-                        <a href="news.html" class="headerbtn">
-                            <div class="headeron">
-                                <div class="headertxt">NEWS</div>
-                                <div class="headerout">
-                                    <div class="headertxt">NEWS</div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="logo">
-                        <a href="index.html"><img src="./image/header_logo.svg" alt="logo"></a>
-                    </li>
-
-                    <li>
-                        <a href="shop.html" class="headerbtn">
-                            <div class="headeron">
-                                <div class="headertxt">SHOP</div>
-                                <div class="headerout">
-                                    <div class="headertxt">SHOP</div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html" class="headerbtn">
-                            <div class="headeron">
-                                <div class="headertxt">CONTACT</div>
-                                <div class="headerout">
-                                    <div class="headertxt">CONTACT</div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="cart">
-                        <a href="cart.html">
-                            <img src="./image/header_cart.svg" alt="cart">
-                            <div class="count">2</div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <input type="checkbox" name="" id="menu-switch">
-        <div class="headerph">
-            
-            <label for="menu-switch" class="hb">
-                <div class="line1"></div>
-                <div class="line2"></div>
-            </label>
-            
-            <a href="index.html" class="logo">
-                <img src="./image/header_logo.svg" alt="logo">
-            </a>
-            
-            <a href="cart.html" class="cart">
-                <img src="./image/header_cart.svg" alt="cart">
-                <div class="count">2</div>
-            </a>
-            
-            <nav>
-                <ul>
-                    <li>
-                        <a href="about.html" class="headerbtn">
-                            ABOUT
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="news.html" class="headerbtn">
-                            NEWS
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="shop.html" class="headerbtn">
-                            SHOP
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html" class="headerbtn">
-                            CONTACT
-                        </a>
-                    </li>
-
-                </ul>
-            </nav>
-            <!-- -------------------------------- -->
-        </div>
-    </div>
-
-
-
-    <div class="wrap">
         <div class="cartmain" id="top">
             <div class="banner">
                 <div class="itemgroup">
@@ -152,9 +40,9 @@
         
                             <div class="detail">
                                 <div class="count">
-                                    <button>-</button>
-                                    <input type="text" value="1">
-                                    <button>+</button>
+                                    <input type="button" value="-" class="btnMinus">
+                                    <input type="text" value="1" id="qty0">
+                                    <input type="button" value="+" class="btnPlus">
                                 </div>
                                 
                                 <a href="#" class="remove">
@@ -178,9 +66,9 @@
         
                             <div class="detail">
                                 <div class="count">
-                                    <button>-</button>
-                                    <input type="text" value="1">
-                                    <button>+</button>
+                                    <input type="button" value="-" class="btnMinus">
+                                    <input type="text" value="1" id="qty0">
+                                    <input type="button" value="+" class="btnPlus">	
                                 </div>
         
                                 <a href="#" class="remove">
@@ -342,38 +230,16 @@
                 </div>
             </div>
         </div>
+
+        <div id="footer"></div>
     </div>
 
-    
-
-    <div class="wrap">
-        <footer>
-            <div class="deco">
-                <div class="sticker-bc"><img src="./image/sticker_bc.svg" alt="sticker-bc"></div>
-                <div class="sticker-1"><img src="./image/sticker_1.svg" alt="sticker-bc"></div>
-                <div class="sticker-hagd"><img src="./image/sticker_hagd.svg" alt="sticker-sun"></div>
-            </div>
-            <div class="front">
-                <div class="logo">
-                    <img src="./image/footer_logo.svg" alt="logo">
-                </div>
-                <div class="top">
-                    <a href="#top"><img src="./image/footer_arrow.svg" alt="top">
-                        <span>TOP</span></a>
-                </div>
-            </div>
-            <div class="info">
-                <span>320<br>桃園市中壢區復興路46號9樓</span>
-                <span>聯絡電話<br>03-425-1234</span>
-                <span>營業時間<br>平日 14:00-19:30   假日 13:00-19:30</span>
-                <span>INSTAGRAM</span>
-                <span>FACEBOOK</span>
-            </div>
-            <div class="bottom">
-                <span>本網站為緯育TibaMe前端工程師班第88期學員專題作品，本平台僅供學習、展示之用。</span>
-                <span>@2023 TOKIRA</span>
-            </div>
-        </footer>
-    </div>
+    <script type="text/javascript">
+        //在js中引入html
+        $(document).ready(function () {
+            $('#header').load('header.html');
+            $('#footer').load('footer.html');
+        });
+    </script>
 </body>
 </html>

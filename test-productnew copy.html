@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/index.js"></script>
+    <style>
+        .itemView{
+            position:relative;
+            width: 100%;
+            height:100vh;
+            margin: auto;
+            background-color: #bfbfef;
+            overflow:hidden;
+        }
+        .wrap{
+            position:absolute;
+            width:300%;
+            transition:left 1s;
+        }
+        .item{
+            width:33%;
+            height:100vh;
+            background-color: yellow;
+            text-align: center;
+            float:left;
+        }
+        
+        .itemView .gamedisk{
+            height: 100vh;
+            background-size: cover;
+            background-image: url(../image/productnew_gamedisk.jpg) ;
+            background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+        } 
+
+        .itemView .gameboy{
+            height: 100vh;
+            background-size: cover;
+            background-image: url(../image/productnew_gameboy.jpg) ;
+            background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+        } 
+
+        .itemView .film{
+            height: 100vh;
+            background-size: cover;
+            background-image: url(../image/productnew_film.jpg) ;
+            background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+        } 
+    </style>
+</head>
+<body>
+    <div class="itemView">    
+        <div class="wrap">
+            <div class="item gamedisk">
+                <h2>\ NEW ARRIVAL /</h2>
+
+                <div class="bottom">
+                    <h3>Nitendo<span>任天堂卡帶</span></h3>
+                    <h3>$ 780</h3>
+                    <a href="shoppage.html" class="btn">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="item gameboy">
+                <h2>\ NEW ARRIVAL /</h2>
+
+                <div class="bottom">
+                    <h3>Nitendo<span>任天堂卡帶</span></h3>
+                    <h3>$ 780</h3>
+                    <a href="shoppage.html" class="btn">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="item film">
+                <h2>\ NEW ARRIVAL /</h2>
+
+                <div class="bottom">
+                    <h3>Nitendo<span>任天堂卡帶</span></h3>
+                    <h3>$ 780</h3>
+                    <a href="shoppage.html" class="btn">SHOP NOW</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="shiftPanel" style="text-align:center;padding-top:10px;">
+        <input type="button" id="btnLeft" value="<<" disabled style="font-weight:bold;font-size:20px">
+        <input type="button" id="btnRight" value=">>" style="font-weight:bold;font-size:20px">
+    </div>
+    
+
+
+    <script>
+        function $id(id){  //$id("btnLeft")
+            return document.getElementById(id);  //document.getElementById("btnLeft")
+        }
+
+        window.addEventListener("load", function(){
+
+        let wrap = document.querySelector(".wrap");
+        let curIndex = 0;
+        //-----------------------------------------btnLeft.onclick
+        $id("btnLeft").onclick = function(){
+            curIndex--;
+            wrap.style.left = - curIndex * 100 + "%";
+            if(curIndex === 0){
+                $id("btnLeft").disabled = true;
+            }
+            $id("btnRight").disabled = false;
+        }
+        //-----------------------------------------btnRight.onclick
+        $id("btnRight").onclick = function(){
+            curIndex++;
+            if(curIndex === 3){
+                // $id("btnRight").disabled = true;
+                curIndex = 0;
+                $id("btnLeft").disabled = true;
+            } else {
+                $id("btnLeft").disabled = false;
+            }
+            wrap.style.left = - curIndex * 100 + "%";
+            
+            
+        }
+
+
+        })
+    </script>
+</body>
+</html>

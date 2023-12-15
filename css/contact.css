@@ -29,9 +29,22 @@ header nav ul li:nth-child(5) a{
     }
 }
 
+@media screen and (max-width:1024px){
+    .banner .logo img{
+        width: 40vw;
+    }
+}
+
 .banner .itemgroup{
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width:1024px) {
+    .banner .itemgroup{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .banner .line{
@@ -41,6 +54,21 @@ header nav ul li:nth-child(5) a{
     margin: auto;
 }
 
+@media screen and (max-width:1024px) {
+    .banner .line{
+        height: 0.2vw;
+        width: 8vw;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .banner .line{
+        height: 0.3vw;
+        width: 10vw;
+    }
+}
+
+
 .banner .item{
     display: flex;
     flex-direction: column;
@@ -48,9 +76,37 @@ header nav ul li:nth-child(5) a{
     padding: 0 5vw;
 }
 
+@media screen and (max-width:1024px) {
+    .banner .item{
+        padding: 5vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .banner .item{
+        padding: 6vw;
+    }
+}
+
+.banner .item a{
+    text-decoration: none;
+}
+
 .banner .icon{
     align-self: center;
-    padding-bottom: 0.2vw;
+    padding-bottom: 0.8vw;
+}
+
+@media screen and (max-width:1024px) {
+    .banner .icon{
+        padding-bottom: 1vw;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .banner .icon{
+        padding-bottom: 2vw;
+    }
 }
 
 .banner .icon img{
@@ -58,46 +114,37 @@ header nav ul li:nth-child(5) a{
     height: 2vw;
 }
 
+@media screen and (max-width:1024px) {
+    .banner .icon img{
+        height: 4vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .banner .icon img{
+        height: 6vw;
+    }
+}
+
 .banner span{
     color: var(--white-color);
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--p-font-size);
     text-align: center;
-    line-height: 2.5vw;
+    line-height:2vw;
+}
+
+@media screen and (max-width:1024px) {
+    .banner span{
+        font-size: var(--h3-font-size);
+        line-height: 4vw;
+    }
 }
 
 @media screen and (max-width:768px){
     .banner span{
         font-size: var(--pph-font-size);
-    }
-}
-
-@media screen and (max-width:1024px) {
-    .banner .itemgroup{
-        flex-direction: column;
-    }
-
-    .banner .item{
-        padding: 5vw;
-    }
-
-    .banner .line{
-        height: 0.1vw;
-        width: 8vw;
-    }
-
-    .banner .icon{
-        padding-bottom: 1vw;
-    }
-
-    .banner .icon img{
-        display: block;
-        height: 3.5vw;
-    }
-
-    .banner span{
-        font-size: var(--h3-font-size);
-        line-height: 4vw;
+        line-height: 6vw;
     }
 }
 
@@ -122,6 +169,12 @@ header nav ul li:nth-child(5) a{
     }
 }
 
+@media screen and (max-width:768px){
+    .map iframe{
+        height: 40vh;
+    }
+}
+
 /* ============================================= */
 
 .form{
@@ -141,6 +194,12 @@ header nav ul li:nth-child(5) a{
     }
 }
 
+@media screen and (max-width:768px){
+    .form{
+        padding: 18vw 0;
+    }
+}
+
 .form h2{
     color: var(--orange-color);
     font-size: var(--h2-font-size);
@@ -151,6 +210,7 @@ header nav ul li:nth-child(5) a{
 @media screen and (max-width:768px){
     .form h2{
         font-size: var(--h2ph-font-size);
+        padding-bottom: 4vw;
     }
 }
 
@@ -159,7 +219,7 @@ header nav ul li:nth-child(5) a{
     left: -3vw; 
     bottom: 6vw;
     width: 7vw;
-    rotate: 14deg;
+    transform: rotate(14deg);
     vertical-align: bottom;
 }
 
@@ -168,13 +228,33 @@ header nav ul li:nth-child(5) a{
     left: -7.5vw; 
     bottom: 1vw;
     width: 6vw;
-    rotate: 14deg;
+    transform: rotate(14deg);
     vertical-align: bottom;
+}
+
+@media screen and (max-width:768px){
+    .form .sticker-bomb1 img{
+        left: 0vw; 
+        bottom: 15vw;
+        width: 12vw;
+    }
+    
+    .form .sticker-bomb2 img{
+        left: -8.5vw; 
+        bottom: 5vw;
+        width: 11vw;
+    }
 }
 
 .form .text{
     padding: 0.85vw;
     width: 100%;
+}
+
+@media screen and (max-width:768px){
+    .form .text{
+        padding: 2.5vw;
+    }
 }
 
 .form .text label{
@@ -185,7 +265,10 @@ header nav ul li:nth-child(5) a{
 @media screen and (max-width:768px){
     .form .text label{
         font-size: var(--pph-font-size);
+        display: flex;
+        flex-direction: column;
     }
+    
 }
 
 .form .text label input{
@@ -197,6 +280,9 @@ header nav ul li:nth-child(5) a{
     margin-left: 2vw;
     outline: none;
     border-radius: 0;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 
 @media screen and (max-width:1024px){
@@ -208,13 +294,19 @@ header nav ul li:nth-child(5) a{
 
 @media screen and (max-width:768px){
     .form .text label input{
+        padding: 2.5vw 2vw;
         font-size: var(--pph-font-size);
+        margin-left: 0vw;
+        width: 95%;
+        margin-top: 2vw;
     }
 }
 
 .form input::placeholder{
     color: #ccc;
 }
+
+
 
 .form textarea{
     font-size: var(--p-font-size);
@@ -226,6 +318,9 @@ header nav ul li:nth-child(5) a{
     outline: none;
     vertical-align: middle;
     border-radius: 0;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 
 @media screen and (max-width:1024px){
@@ -236,13 +331,20 @@ header nav ul li:nth-child(5) a{
 
 @media screen and (max-width:768px){
     .form textarea{
+        padding: 2.5vw 2vw;
         font-size: var(--pph-font-size);
+        margin-left: 0vw;
+        width: 95%;
+        margin-top: 2vw;
+        height: 20vw;
     }
 }
 
 .form textarea::placeholder{
     color: #ccc;
 }
+
+
 
 
 .form  .bottom{
@@ -253,14 +355,26 @@ header nav ul li:nth-child(5) a{
     align-items: center;
 }
 
+@media screen and (max-width:768px){
+    .form  .bottom{
+        flex-direction: column;
+    }
+}
+
 .form .check{
     vertical-align: middle;
-    padding-left: 9%;
+    padding-left: 9.5%;
 }
 
 @media screen and (max-width:1024px){
     .form .check{
         padding-left: 10%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .form .check{
+        padding-left: 0%;
     }
 }
 
@@ -276,12 +390,24 @@ header nav ul li:nth-child(5) a{
     width: 1.3vw;
     height: 1.3vw;
     appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     border-radius: 0;
 }
 
 @media screen and (max-width:1024px){
     .form .check label input{
         border: var(--borderpad-border);
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    .form .check label input{
+        border: var(--borderpad-border);
+        width: 4.3vw;
+        height: 4.3vw;
     }
 }
 
@@ -295,13 +421,20 @@ header nav ul li:nth-child(5) a{
 .form .check label span{
     font-size: var(--p-font-size);
     color: var(--dkgray-color);
-    padding-top: 0.3vw;
+    padding-top: 0.5vw;
     /* vertical-align: middle; */
+}
+
+@media screen and (max-width:1024px){
+    .form .check label span{
+        padding-top: 1vw;
+    }
 }
 
 @media screen and (max-width:768px){
     .form .check label span{
         font-size: var(--pph-font-size);
+        padding-top: 1.5vw;
     }
 }
 
@@ -348,6 +481,7 @@ header nav ul li:nth-child(5) a{
 @media screen and (max-width:768px){
     .form .btn{
         font-size: var(--spanph-font-size);
+        margin-top: 5vw;
     }
 }
 
@@ -358,6 +492,60 @@ header nav ul li:nth-child(5) a{
 }
 
 /* ============================================= */
+
+figcaption .closeimg{
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+}
+
+@media screen and (max-width:768px){
+    figcaption .closeimg{
+        top: 4vw;
+        right: 4vw;
+    }
+}
+
+figcaption .closeimg img{
+    width: 2vw;
+    display: block;
+}
+
+@media screen and (max-width:1024px){
+    figcaption .closeimg img{
+        width: 3vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    figcaption .closeimg img{
+        width: 6vw;
+    }
+}
+
+figcaption .closeimg:hover{
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
+
+.close{
+    position: absolute;
+    display: block;
+}
+
+.close::before{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,.7);
+    content: "";
+    cursor: default;
+}
+
+
+
 
 .contact_agree{
     display: none;
@@ -372,6 +560,7 @@ header nav ul li:nth-child(5) a{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
 .contact_agree figcaption{
@@ -392,29 +581,13 @@ header nav ul li:nth-child(5) a{
     }
 }
 
-.contact_agree figcaption .closeimg{
-    position: absolute;
-    top: 2vw;
-    right: 2vw;
-}
-
-.contact_agree figcaption .closeimg img{
-    width: 2vw;
-    display: block;
-}
-
-@media screen and (max-width:1024px){
-    .contact_agree figcaption .closeimg img{
-        width: 3vw;
+@media screen and (max-width:768px){
+    .contact_agree figcaption{
+        padding: 13vw 4vw;
     }
 }
 
-.contact_agree figcaption .closeimg:hover{
-    rotate: 90deg;
-    transition: 0.5s;
-}
-
-.contact_agree figcaption h3{
+.contact_agree h3{
     color: var(--orange-color);
     font-weight: bold;
     font-size: var(--h3-font-size);
@@ -423,12 +596,13 @@ header nav ul li:nth-child(5) a{
 }
 
 @media screen and (max-width:768px){
-    .contact_agree figcaption h3{
+    .contact_agree h3{
         font-size: var(--h3ph-font-size);
+        padding-bottom: 2.5vw;
     }
 }
 
-.contact_agree figcaption p{
+.contact_agree p{
     color: var(--dkgray-color);
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--span-font-size);
@@ -436,53 +610,49 @@ header nav ul li:nth-child(5) a{
 }
 
 @media screen and (max-width:1024px){
-    .contact_agree figcaption p{
+    .contact_agree p{
         line-height: 22px;
     }
 }
 
 @media screen and (max-width:768px){
-    .contact_agree figcaption p{
+    .contact_agree p{
         font-size: var(--spanph-font-size);
+        line-height: 25px;
     }
 }
 
-.contact_agree figcaption .sticker-1o img{
+.contact_agree .sticker-1o img{
     position: absolute;
-    rotate: 15deg;
+    transform: rotate(15deg);
     right: 2vw; 
     bottom: 13vw;
     width: 7vw;
     vertical-align: bottom;
 }
 
-.contact_agree figcaption .sticker-earth img{
+.contact_agree .sticker-earth img{
     position: absolute;
-    rotate: -17deg;
+    transform: rotate(-17deg);
     right: 6.5vw; 
     bottom: 13.5vw;
     width: 4vw;
     vertical-align: bottom;
 }
 
-.contact_agree .close{
-    position: absolute;
-    display: block;
+@media screen and (max-width:768px){
+    .contact_agree .sticker-1o img{
+        right: 2vw; 
+        bottom: 9vw;
+        width: 14vw;
+    }
+    
+    .contact_agree .sticker-earth img{
+        right: 8.5vw; 
+        bottom: 8.5vw;
+        width: 11vw;
+    }
 }
-
-
-
-.contact_agree .close::before{
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: rgba(0,0,0,.7);
-    content: "";
-    cursor: default;
-}
-
 
 /* ============================================= */
 
@@ -499,6 +669,7 @@ header nav ul li:nth-child(5) a{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
 .contact_tqp figcaption{
@@ -519,48 +690,42 @@ header nav ul li:nth-child(5) a{
     }
 }
 
-.contact_tqp figcaption .closeimg{
-    position: absolute;
-    top: 2vw;
-    right: 2vw;
-}
-
-.contact_tqp figcaption .closeimg img{
-    width: 2vw;
-    display: block;
-}
-
-@media screen and (max-width:1024px){
-    .contact_tqp figcaption .closeimg img{
-        width: 3vw;
+@media screen and (max-width:768px){
+    .contact_tqp figcaption{
+        padding: 20vw 15vw;
     }
 }
 
-.contact_tqp figcaption .closeimg:hover{
-    rotate: 90deg;
-    transition: 0.5s;
-}
-
-.contact_tqp figcaption .logo{
+.contact_tqp .logo{
     padding-bottom: 1vw;
 }
 
-.contact_tqp figcaption .logo img{
+.contact_tqp .logo img{
     display: block;
     width: 16vw;
 }
 
 @media screen and (max-width:1024px){
-    .contact_tqp figcaption .logo{
+    .contact_tqp .logo{
         padding-bottom: 2vw;
     }
 
-    .contact_tqp figcaption .logo img{
+    .contact_tqp .logo img{
         width: 25vw;
     }
 }
 
-.contact_tqp figcaption h2{
+@media screen and (max-width:768px){
+    .contact_tqp .logo{
+        padding-bottom: 3vw;
+    }
+
+    .contact_tqp .logo img{
+        width: 35vw;
+    }
+}
+
+.contact_tqp h2{
     color: var(--orange-color);
     font-size: var(--h2-font-size);
     text-align: center;
@@ -568,12 +733,12 @@ header nav ul li:nth-child(5) a{
 }
 
 @media screen and (max-width:768px){
-    .contact_tqp figcaption h2{
+    .contact_tqp h2{
         font-size: var(--h2ph-font-size);
     }
 }
 
-.contact_tqp figcaption span{
+.contact_tqp span{
     color: var(--dkgray-color);
     font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--p-font-size);
@@ -582,21 +747,22 @@ header nav ul li:nth-child(5) a{
 }
 
 @media screen and (max-width:768px){
-    .contact_tqp figcaption span{
+    .contact_tqp span{
         font-size: var(--pph-font-size);
+        line-height: 6vw;
     }
 }
 
-.contact_tqp figcaption .sticker-snow img{
+.contact_tqp .sticker-snow img{
     position: absolute;
-    rotate: -18deg;
+    transform: rotate(-18deg);
     left: 11.5vw; 
     top: 7vw;
     width: 3vw;
     vertical-align: bottom;
 }
 
-.contact_tqp figcaption .sticker-eye img{
+.contact_tqp .sticker-eye img{
     position: absolute;
     left: 13vw; 
     top: 5vw;
@@ -604,29 +770,31 @@ header nav ul li:nth-child(5) a{
     vertical-align: bottom;
 }
 
-.contact_tqp figcaption .sticker-circlebomb img{
+.contact_tqp .sticker-circlebomb img{
     position: absolute;
-    rotate: 8deg;
+    transform: rotate(8deg);
     right: 9vw; 
     bottom: 5vw;
     width: 7vw;
     vertical-align: bottom;
 }
 
-.contact_tqp .close{
-    position: absolute;
-    display: block;
-}
-
-
-
-.contact_tqp .close::before{
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: rgba(0,0,0,.7);
-    content: "";
-    cursor: default;
+@media screen and (max-width:768px){
+    .contact_tqp .sticker-snow img{
+        left: 9vw; 
+        top: 7vw;
+        width: 6vw;
+    }
+    
+    .contact_tqp .sticker-eye img{
+        left: 13vw; 
+        top: 5vw;
+        width: 9vw;
+    }
+    
+    .contact_tqp .sticker-circlebomb img{
+        right: 9vw; 
+        bottom: 5vw;
+        width: 11vw;
+    }
 }

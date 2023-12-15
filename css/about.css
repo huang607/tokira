@@ -2,6 +2,12 @@ header nav ul li:nth-child(1) a{
     color: var(--orange-color);
 }
 
+@media screen and (max-width:768px){
+    .aboutmain{
+        padding-top: 17vw;
+    }
+}
+
 .banner{
     width: 100%;
     /* height: 25vw; */
@@ -9,13 +15,14 @@ header nav ul li:nth-child(1) a{
     position: relative;
 }
 
+
 .banner h2{
     color: #fff;
     font-size: var(--h2-font-size);
     text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
     
     position: absolute;
-    top: 13.5vw;
+    top: 45%;
     /* bottom: 0; */
     left: 13.2vw;
     animation: bannertitle 1s;
@@ -42,6 +49,14 @@ header nav ul li:nth-child(1) a{
     vertical-align: bottom;
 }
 
+@media screen and (max-width:768px){
+    .banner img{
+        height: 200px;
+        object-fit: cover;
+        object-position: left top;
+    }
+}
+
 
 /* ============================================= */
 
@@ -57,6 +72,12 @@ header nav ul li:nth-child(1) a{
 @media screen and (max-width:1024px){
     .brand{
         padding: 13vw 0 0 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    .brand{
+        padding: 18vw 0 0 0;
     }
 }
 
@@ -78,14 +99,14 @@ header nav ul li:nth-child(1) a{
 .brand .tokira{
     color: var(--green-color);
     font-size: 10vw;
-    align-self: start;
+    align-self: flex-start;
     padding-bottom: 4vw;
 }
 
 .brand .together{
     color: var(--green-color);
     font-size: 10vw;
-    align-self: end;
+    align-self: flex-end;
 }
 
 .brand .sticker-bc img{
@@ -94,7 +115,7 @@ header nav ul li:nth-child(1) a{
     top: 9vw;
     width: 7vw;
     height: 3vw;
-    rotate: -11deg;
+    transform: rotate(-11deg);
     vertical-align: bottom;
 }
 
@@ -104,17 +125,17 @@ header nav ul li:nth-child(1) a{
     left: 6.5vw; 
     top: 14vw;
     width: 7.5vw;
-    rotate: 27deg;
+    transform: rotate(-27deg);
     vertical-align: bottom;
     animation: sticker-circlebomb 12s infinite linear;
 }
 
 @keyframes sticker-circlebomb{
     0%{
-        rotate: 0deg;
+        transform: rotate(0deg);
     }
     100%{
-        rotate: 360deg;
+        transform: rotate(360deg);
     }
 }
 
@@ -123,17 +144,17 @@ header nav ul li:nth-child(1) a{
     right: 4vw; 
     top: 20vw;
     width: 6vw;
-    rotate: -16deg;
+    transform: rotate(-16deg);
     vertical-align: bottom;
     animation: sticker-sun 2s infinite alternate linear;
 }
 
 @keyframes sticker-sun{
     0%{
-        rotate: 10deg;
+        transform: rotate(10deg);
     }
     100%{
-        rotate: -10deg;
+        transform: rotate(-10deg);
     }
 }
 
@@ -142,7 +163,7 @@ header nav ul li:nth-child(1) a{
     right: 6vw; 
     top: 21vw;
     width: 8.5vw;
-    rotate: 19deg;
+    transform: rotate(19deg);
     vertical-align: bottom;
 }
 
@@ -192,6 +213,44 @@ header nav ul li:nth-child(1) a{
     }
 }
 
+@media screen and (max-width:768px){
+    .brand .logo{
+        top: 45%;
+    }
+    
+    .brand .logo img{
+        width: 32vw;
+    } 
+
+    .brand .tokira{
+        padding-bottom: 13vw;
+    }
+
+    .brand .sticker-bc img{
+        left: 35vw; 
+        top: 11vw;
+        width: 14vw;
+        height: 14vw;
+    }
+    
+    .brand .sticker-circlebomb img{
+        left: 6.5vw; 
+        top: 23.5vw;
+        width: 14.5vw;
+    }
+    
+    .brand .sticker-sun img{ 
+        top: 33vw;
+        width: 13vw;
+    }
+    
+    .brand .sticker-earth img{
+        right: 9.5vw; 
+        top: 36vw;
+        width: 15.5vw;
+    }
+}
+
 /* ============================================= */
 
 
@@ -203,6 +262,12 @@ header nav ul li:nth-child(1) a{
 @media screen and (max-width:1024px){
     .concept{
         padding: 13vw 0 ;
+    }
+}
+
+@media screen and (max-width:768px){
+    .concept{
+        padding: 18vw 0 ;
     }
 }
 
@@ -223,6 +288,9 @@ header nav ul li:nth-child(1) a{
 }
 
 
+.concept .p2{
+    display: none;
+}
 
 .concept p{
     color: var(--dkgray-color);
@@ -248,14 +316,25 @@ header nav ul li:nth-child(1) a{
 @media screen and (max-width:768px){
     .concept h2{
         font-size: var(--h2ph-font-size);
+        line-height: 12vw;
     }
 
     .concept h3{
         font-size: var(--h3ph-font-size);
+        line-height: 14vw;
+    }
+
+    .concept .p1{
+        display: none;
+    }
+
+    .concept .p2{
+        display: block;
     }
     
     .concept p{
         font-size: var(--pph-font-size);
+        line-height: 8vw;
     }
 }
 
@@ -264,7 +343,7 @@ header nav ul li:nth-child(1) a{
     right: 17vw; 
     bottom: -2vw;
     width: 8.5vw;
-    rotate: 14deg;
+    transform: rotate(14deg);
     vertical-align: bottom;
 }
 
@@ -273,8 +352,22 @@ header nav ul li:nth-child(1) a{
     right: 22vw; 
     bottom: -4vw;
     width: 6.5vw;
-    rotate: -3deg;
+    transform: rotate(-3deg);
     vertical-align: bottom;
+}
+
+@media screen and (max-width:768px){
+    .concept .sticker-1o img{
+        right: 10vw; 
+        bottom: -8vw;
+        width: 16.5vw;
+    }
+    
+    .concept .sticker-good img{
+        right: 18vw; 
+        bottom: -16vw;
+        width: 14.5vw;
+    }
 }
 
 
@@ -305,11 +398,40 @@ header nav ul li:nth-child(1) a{
     }
 }
 
+@media screen and (max-width:768px){
+    .line{
+        height: 25vw;
+        animation: line2 2s;
+    }
+
+    @keyframes line2{
+        0%{
+            height: 0vw;
+        }
+    
+        100%{
+            height: 25vw;
+        }
+    }
+}
+
 
 /* ============================================= */
 
 .visual{ 
     margin-top: 9.5vw;
+}
+
+@media screen and (max-width:1024px){
+    .visual{ 
+        margin-top: 13vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    .visual{ 
+        margin-top: 18vw;
+    }
 }
 
 .visual .item{
@@ -355,15 +477,22 @@ header nav ul li:nth-child(1) a{
     width: 25%;
     vertical-align: bottom;
     position: absolute;
-    left: 37.5%;
-    top: 25%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 @media screen and (max-width:1024px){
     .visual img{
         width: 40%;
-        left: 30%;
-        top: 35%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .visual img{
+        width: 50%;
     }
 }
 
@@ -389,8 +518,22 @@ header nav ul li:nth-child(1) a{
     left: 2vw; 
     bottom: 4.5vw;
     width: 3.5vw;
-    rotate: 23deg;
+    transform: rotate(23deg);
     vertical-align: bottom;
+}
+
+@media screen and (max-width:768px){
+    .product_type .sticker-hot img{
+        left: 3vw; 
+        bottom: 2vw;
+        width: 15vw;
+    }
+    
+    .product_type .sticker-snow img{
+        left: 0vw; 
+        bottom: -2vw;
+        width: 11.5vw;
+    }
 }
 
 
@@ -413,5 +556,11 @@ header nav ul li:nth-child(1) a{
     
     .map iframe{
         height: 25vh;
+    }
+}
+
+@media screen and (max-width:768px){
+    .map iframe{
+        height: 40vh;
     }
 }

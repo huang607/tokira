@@ -5,7 +5,7 @@ footer{
 
 footer .sticker-bc img{
     position: absolute;
-    rotate: -14.26deg;
+    transform: rotate(-14.26deg);
     right: 24vw;
     top: -0.5vw;
     width: 9.5vw;
@@ -22,24 +22,49 @@ footer .sticker-1 img{
 
 footer .sticker-hagd img{
     position: absolute;
-    rotate: 14.71deg;
+    transform: rotate(-14.71deg);
     right: 8vw;
     top: 1vw;
     width: 12vw;
     vertical-align: bottom;
 }
 
+@media screen and (max-width:768px){
+    footer .sticker-bc img{
+        right: 38vw;
+        top: -0.5vw;
+        width: 17.5vw;
+    }
+    
+    footer .sticker-1 img{
+        right: 4.5vw;
+        top: -7vw;
+        width: 17.5vw;
+    }
+    
+    footer .sticker-hagd img{
+        right: 12vw;
+        top: 2vw;
+        width: 20vw;
+    }
+}
 
 /* ============================================= */
 
 
 footer .front{
-    width: 91%;
+    width: 90%;
     margin: auto;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: space-between;
     padding: 7vw 0 0 0;
+}
+
+@media screen and (max-width:768px){
+    footer .front{
+        padding: 15vw 0 0 0;
+    }
 }
 
 footer .front .logo img{
@@ -47,6 +72,17 @@ footer .front .logo img{
     vertical-align: bottom;
 }
 
+@media screen and (max-width:768px){
+    footer .front .logo img{
+        width: 68%;
+    }
+}
+
+@media screen and (max-width:768px){
+    footer .front .top{
+        display: none;
+    }
+}
 
 footer .front .top img{
     display: block;
@@ -56,15 +92,15 @@ footer .front .top img{
     vertical-align: bottom;
 }
 
-footer .front .top span{
-    color: var(--white-color);
-    font-size: var(--span-font-size);
+@media screen and (max-width:1024px){
+    footer .front .top img{
+        width: 1.8vw;
+    }
 }
 
-@media screen and (max-width:768px){
-    footer .front .top span{
-        font-size: var(--spanph-font-size);
-    }
+footer .front span{
+    color: var(--white-color);
+    font-size: var(--span-font-size);
 }
 
 footer .front .top a{
@@ -93,12 +129,37 @@ footer .front .top a:hover::after{
 /* ============================================= */
 
 footer .info{
-    width: 91%;
+    width: 90%;
     margin: auto;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: space-between;
     padding: 1.5vw 0 0 0 ;
+}
+
+@media screen and (max-width:768px){
+    footer .info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5vw 0 0 0 ;
+    }
+}
+
+footer .info .item{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:768px){
+    footer .info .item{
+        flex-direction: row;
+        padding-bottom: 2vw;
+    }
+}
+
+footer .info a{
+    text-decoration: none;
 }
 
 footer .info span{
@@ -114,32 +175,75 @@ footer .info span{
     }
 }
 
-footer .info span:nth-child(4){
-    font-family: 'Syncopate', sans-serif;
+footer .info a[href^="tel:"]{
+    color: var(--white-color);
+    font-family: 'Noto Sans TC', sans-serif;
     font-size: var(--span-font-size);
-    position: relative;
+    line-height: 20px;
+    text-decoration: none;
 }
 
 @media screen and (max-width:768px){
-    footer .info span:nth-child(4){
-        font-size: var(--spanph-font-size);
-    }
-}
-
-footer .info span:last-child{
-    font-family: 'Syncopate', sans-serif;
-    font-size: var(--span-font-size);
-    position: relative;
-}
-
-@media screen and (max-width:768px){
-    footer .info span:last-child{
+    footer .info a[href^="tel:"]{
         font-size: var(--spanph-font-size);
     }
 }
 
 
-footer .info span:nth-child(4)::after{
+
+@media screen and (max-width:768px){
+    footer .info .item:first-child span:first-child:after{
+        content: "";
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: var(--spanph-font-size);
+        padding: 0 1vw;
+    }
+
+    footer .info .item:nth-child(2) span:first-child:after{
+        content: "|";
+        color: var(--white-color);
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: var(--spanph-font-size);
+        padding: 0 2vw;
+    }
+
+    footer .info .item:nth-child(3) span:first-child:after{
+        content: "|";
+        color: var(--white-color);
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: var(--spanph-font-size);
+        padding: 0 2vw;
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+    footer .info .media{
+        width: 100%;
+        /* padding-top: 3vw;   */
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
+footer .info .media span{
+    font-family: 'Syncopate', sans-serif;
+    font-size: var(--span-font-size);
+    position: relative;
+    padding-left: 3vw;
+}
+
+@media screen and (max-width:768px){
+    footer .info .media span{
+        font-size: var(--spanph-font-size);
+        padding-left: 0;
+    }
+}
+
+
+footer .info .media span::after{
     content: "";
     position: absolute;
     left: 0;
@@ -150,34 +254,71 @@ footer .info span:nth-child(4)::after{
     transition: .5s;
 }
 
-footer .info span:nth-child(4):hover::after{
+footer .info .media span:hover::after{
     width: 100%;
 }
 
-footer .info span:last-child::after{
+
+
+footer .info .media .top{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    footer .info .media .top{
+        display: block;
+    }
+}
+
+footer .info .top img{
+    display: block;
+    margin: auto;
+    width: 3.5vw;
+    padding:  0 0 1vw 0;
+    vertical-align: bottom;
+}
+
+footer .info span{
+    color: var(--white-color);
+    font-size: var(--spanph-font-size);
+}
+
+footer .info .top a{
+    text-decoration: none;
+    position: relative;
+}
+
+
+footer .info .top a::after{
     content: "";
     position: absolute;
     left: 0;
     bottom: -0.3vw;
     width: 0%;
     height: 0.14vw;
-    background-color: var(--white-color)fff;
+    background-color: var(--white-color);
     transition: .5s;
 }
 
-footer .info span:last-child:hover::after{
+footer .info .top a:hover::after{
     width: 100%;
 }
-
 
 /* ============================================= */
 
 footer .bottom{
-    width: 91%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     padding: 2vw 0 4vw 0;
+}
+
+@media screen and (max-width:768px){
+    footer .bottom{
+        flex-direction: column;
+        padding: 5vw 0 6vw 0;
+    }
 }
 
 footer .bottom span{
@@ -189,6 +330,8 @@ footer .bottom span{
 @media screen and (max-width:768px){
     footer .bottom span{
         font-size: var(--spanph-font-size);
+        line-height: 22px;
+        text-align: justify;
     }
 }
 
@@ -200,5 +343,6 @@ footer .bottom span:last-child{
 @media screen and (max-width:768px){
     footer .bottom span:last-child{
         font-size: var(--spanph-font-size);
+        padding-top: 2vw;
     }
 }

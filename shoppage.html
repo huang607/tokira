@@ -7,12 +7,12 @@
     <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon" />
     
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css" >
     <link rel="stylesheet" href="./css/shoppage.css">
-    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/productwrap.css">
 
     <script src="https://kit.fontawesome.com/9c638736ac.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/shoppage.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,159 +21,47 @@
 <body>
     
     <div class="wrap">
-        <header>
-            
-            <nav>
-                <ul>
-                    <li>
-                        <a href="about.html" class="headerbtn">
-                            <div class="headeron">
-                                <div class="headertxt">ABOUT</div>
-                                <div class="headerout">
-                                    <div class="headertxt">ABOUT</div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
+        <div id="header"></div>
 
-                    <li>
-                        <a href="news.html" class="headerbtn">
-                            <div class="headeron">
-                                <div class="headertxt">NEWS</div>
-                                <div class="headerout">
-                                    <div class="headertxt">NEWS</div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="logo">
-                        <a href="index.html"><img src="./image/header_logo.svg" alt="logo"></a>
-                    </li>
-
-                    <li>
-                        <a href="shop.html" class="headerbtn">
-                            <div class="headeron">
-                                <div class="headertxt">SHOP</div>
-                                <div class="headerout">
-                                    <div class="headertxt">SHOP</div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html" class="headerbtn">
-                            <div class="headeron">
-                                <div class="headertxt">CONTACT</div>
-                                <div class="headerout">
-                                    <div class="headertxt">CONTACT</div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="cart">
-                        <a href="cart.html">
-                            <img src="./image/header_cart.svg" alt="cart">
-                            <div class="count">2</div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <input type="checkbox" name="" id="menu-switch">
-        <div class="headerph">
-            
-            <label for="menu-switch" class="hb">
-                <div class="line1"></div>
-                <div class="line2"></div>
-            </label>
-            
-            <a href="index.html" class="logo">
-                <img src="./image/header_logo.svg" alt="logo">
-            </a>
-            
-            <a href="cart.html" class="cart">
-                <img src="./image/header_cart.svg" alt="cart">
-                <div class="count">2</div>
-            </a>
-            
-            <nav>
-                <ul>
-                    <li>
-                        <a href="about.html" class="headerbtn">
-                            ABOUT
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="news.html" class="headerbtn">
-                            NEWS
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="shop.html" class="headerbtn">
-                            SHOP
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html" class="headerbtn">
-                            CONTACT
-                        </a>
-                    </li>
-
-                </ul>
-            </nav>
-            <!-- -------------------------------- -->
-        </div>
-    </div>
-
-
-
-    <div class="wrap">
         <div class="shoppagemain" id="top">
             <div class="banner">
                 
                 <div class="bannerimg">
-                    <div class="imgs1">
-                        <div class="overlay"></div>
-                        <img src="./image/productpage_1.jpg" alt="productpage1">
+                    <div class="imgs">
+                        <!-- <div class="overlay"></div> -->
+                        <img class="small" src="./image/productpage_1.jpg" alt="productpage1">
                     </div>
     
-                    <div class="imgs2">
-                        <div class="overlay"></div>
-                        <img src="./image/productpage_2.jpg" alt="productpage2">
+                    <div class="imgs">
+                        <!-- <div class="overlay"></div> -->
+                        <img class="small" src="./image/productpage_2.jpg" alt="productpage2">
                     </div>
     
-                    <div class="imgs3">
-                        <div class="overlay"></div>
-                        <img src="./image/productpage_3.jpg" alt="productpage3">
+                    <div class="imgs">
+                        <!-- <div class="overlay"></div> -->
+                        <img class="small" src="./image/productpage_3.jpg" alt="productpage3">
                     </div>
     
-                    <div class="imgs4">
-                        <div class="overlay"></div>
-                        <img src="./image/productpage_4.jpg" alt="productpage4">
+                    <div class="imgs">
+                        <!-- <div class="overlay"></div> -->
+                        <img class="small" src="./image/productpage_4.jpg" alt="productpage4">
                     </div>    
-                    
+                </div>    
     
-                    <div class="imgmain">
-                        <div class="imgl">
-                            <img src="./image/productpage_1.jpg" alt="productpage1">
-                        </div>
-                        
-                        <div class="arrow_left">
-                            <a href="#"><img src="./image/product_arrow.svg" alt="arrow"></a>
-                        </div>
-    
-                        <div class="arrow_right">
-                            <a href="#"><img src="./image/product_arrow.svg" alt="arrow"></a>
-                        </div>
+                <div class="imgmain">
+                    <div class="imgl">
+                        <img id="large" src="./image/productpage_1.jpg" alt="productpage1">
                     </div>
+                    
+                    <!-- <div class="arrow_left">
+                        <a href="#"><img src="./image/product_arrow.svg" alt="arrow"></a>
+                    </div>
+
+                    <div class="arrow_right">
+                        <a href="#"><img src="./image/product_arrow.svg" alt="arrow"></a>
+                    </div> -->
                 </div>
+                
 
                 <div class="info">
                     <h3 class="title">掌上電子遊戲機</h3>
@@ -192,9 +80,9 @@
                     
                     <div class="detail">
                         <div class="count">
-                            <button>-</button>
-                            <input type="text" value="1">
-                            <button>+</button>
+                            <input type="button" value="-" class="button btnMinus0">
+                            <input type="text" value="1" id="qty0">
+                            <input type="button" value="+" class="button btnPlus0">
                         </div>
 
                         <span class="price">$ 980</span>
@@ -215,7 +103,7 @@
                     <div class="sticker-bomb2"><img src="./image/sticker_bomb.svg" alt="sticker-bomb"></div>
                 </div>
 
-                <p>
+                <p class="p1">
                     經典的掌上遊戲機為遊戲界奠定了里程碑。
                     <br>
                     輕巧設計，優秀耐用，擁有多樣化的遊戲庫，為玩家帶來無盡樂趣。
@@ -223,6 +111,24 @@
                     這款機器不僅是遊戲娛樂的象徵，更是一段懷舊的回憶，激發了無數玩家的熱情與想像。
                     <br>
                     從超級瑪利歐到口袋妖怪，Game Boy 留下了豐富多彩的遊戲歷史，成為世代經典之一。
+                </p>
+
+                <p class="p2">
+                    經典的掌上遊戲機為遊戲界奠定了里程碑。
+                    <br>
+                    輕巧設計，優秀耐用
+                    <br>
+                    擁有多樣化的遊戲庫，為玩家帶來無盡樂趣
+                    <br>
+                    這款機器不僅是遊戲娛樂的象徵
+                    <br>
+                    更是一段懷舊的回憶，激發了無數玩家的熱情與想像
+                    <br>
+                    從超級瑪利歐到口袋妖怪
+                    <br>
+                    Game Boy 留下了豐富多彩的遊戲歷史
+                    <br>
+                    成為世代經典之一
                 </p>
 
                 <div class="primg">
@@ -356,39 +262,16 @@
                 </div>
             </div>
         </div>
+
+        <div id="footer"></div>
     </div>
 
-    
-
-    <div class="wrap">
-        <footer>
-            <div class="deco">
-                <div class="sticker-bc"><img src="./image/sticker_bc.svg" alt="sticker-bc"></div>
-                <div class="sticker-1"><img src="./image/sticker_1.svg" alt="sticker-bc"></div>
-                <div class="sticker-hagd"><img src="./image/sticker_hagd.svg" alt="sticker-sun"></div>
-            </div>
-            <div class="front">
-                <div class="logo">
-                    <img src="./image/footer_logo.svg" alt="logo">
-                </div>
-                <div class="top">
-                    <a href="#top"><img src="./image/footer_arrow.svg" alt="top">
-                        <span>TOP</span>
-                    </a>
-                </div>
-            </div>
-            <div class="info">
-                <span>320<br>桃園市中壢區復興路46號9樓</span>
-                <span>聯絡電話<br>03-425-1234</span>
-                <span>營業時間<br>平日 14:00-19:30   假日 13:00-19:30</span>
-                <span>INSTAGRAM</span>
-                <span>FACEBOOK</span>
-            </div>
-            <div class="bottom">
-                <span>本網站為緯育TibaMe前端工程師班第88期學員專題作品，本平台僅供學習、展示之用。</span>
-                <span>@2023 TOKIRA</span>
-            </div>
-        </footer>
-    </div>
+    <script type="text/javascript">
+        //在js中引入html
+        $(document).ready(function () {
+            $('#header').load('header.html');
+            $('#footer').load('footer.html');
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Select Option Style</title>
+		<style>
+			form{
+				width: 30em;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+			form>.info{
+				text-align: left;
+				display: none;
+			}
+			form>select[data-chose='zh-tw']~.zh-tw-info{
+				display: block;
+				padding: 1em;
+			}
+			form>select[data-chose='zh-cn']~.zh-cn-info{
+				display: block;
+				padding: 1em;
+			}
+			form>select[data-chose='en']~.en-info{
+				display: block;
+				padding: 1em;
+			}
+			footer{text-align: center;}
+		</style>
+	</head>
+	<body>		
+		<form>
+			Language:
+            
+			<select data-chose="zh-tw" onchange="this.dataset.chose = this.value;">
+				<option selected value="zh-tw">繁體中文</option>
+				<option value="zh-cn">簡体中文</option>
+				<option value="en">English</option>
+			</select>
+
+			<div class="info zh-tw-info">大多數軟件授權聲明是設計用以剝奪您分享與修改軟件的自由。相反地，GNU通用公共授權力圖保證您分享與修改自由軟件的自由–確保軟件對所有的使用者而言都是自由的。通用公共授權適用於大多數自由軟件基金會的軟件，以及任何作者指定使用本授權的其它軟件。（有些自由軟件基金會的軟件，則適用 GNU函式庫通用公共授權規定。）您也可以讓您的軟件適用本授權規定。</div>
+			<div class="info zh-cn-info">大多数软件授权声明是设计用以剥夺您分享与修改软件的自由。相反地​​，GNU通用公共授权力图保证您分享与修改自由软件的自由–确保软件对所有的使用者而言都是自由的。通用公共授权适用于大多数自由软件基金会的软件，以及任何作者指定使用本授权的其它软件。 （有些自由软件基金会的软件，则适用 GNU函式库通用公共授权规定。）您也可以让您的软件适用本授权规定。</div>
+			<div class="info en-info">The licenses for most software are designed to take away your freedom to share and change it. By contrast, the GNU General Public License is intended to guarantee your freedom to share and change free software-- to make sure the software is free for all its users. This General Public License applies to most of the Free Software Foundation's software and to any other program whose authors commit to using it.
+	(Some other Free Software Foundation software is covered by the GNU Library General Public License instead.) You can apply it to your programs, too. </div>
+			<button>Agree</button>&nbsp;<button>Disagree</button>
+			<br />
+			<br />
+			<div>Change select value to set different style.</div>
+			<br />
+		</form>		
+		<footer>By <a href="https://woodloch.blog">https://woodloch.blog</a> &nbsp;</footer>
+	</body>
+</html>

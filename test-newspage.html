@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS - TOKIRA SHOP</title>
+    <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <script src="https://kit.fontawesome.com/9c638736ac.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/newspage.js"></script>
+
+
+
+    <style>
+        /* itemView */
+        .newsimg{
+            position:relative;
+            width: 80%;
+            height:80vh;
+            margin: auto;
+            overflow:hidden;
+            display: flex;
+        }
+
+
+        /* wrap */
+        .newsimg .nitemgroupcenter{
+            position:absolute;
+            width:300%;
+            transition:left 1s;
+            left: 0%;
+            z-index: 1;
+        }
+
+
+        /* item */
+        .newsimg .item{
+            width:33.33%;
+            text-align: center;
+            float:left;
+        }
+
+/* ======================================= */
+        /* itemView */
+        .newsimgleft{
+            position:relative;
+            width: 20%;
+            height:60vh;
+            margin: auto;
+            overflow:hidden;
+            display: flex;
+        }
+
+
+        /* wrap */
+        .newsimgleft .nitemgroupleft{
+            position:absolute;
+            width:300%;
+            transition:left 1s;
+            left: 0%;
+        }
+
+        /* item */
+        .newsimgleft .item{
+            width:33.33%;
+            text-align: center;
+            float:left;
+        }
+
+        /* ======================================= */
+
+        /* itemView */
+        .newsimgright{
+            position:relative;
+            width: 20%;
+            height:60vh;
+            margin: auto;
+            overflow:hidden;
+            display: flex;
+        }
+
+
+        /* wrap */
+        .newsimgright .nitemgroup{
+            position:absolute;
+            width:300%;
+            transition:left 1s;
+            left: 0%;
+        }
+
+
+        /* item */
+        .newsimgright .item{
+            width:33.33%;
+            text-align: center;
+            float:left;
+        }
+
+
+        .newsimg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* width: 74%; */
+            width: 90%;
+            margin: auto;
+            position: relative;
+            outline: 1vw solid var(--lggray-color);
+        }
+
+        .newsimg .center {
+            text-align: center;
+            /* z-index: 1; */
+            position: relative;
+        }
+
+        .newsimg img{
+            width: 60%;
+            /* display: block; */
+            vertical-align: bottom;
+        }
+
+        .newsimg .arrow_left{
+            z-index: 2;
+        }
+
+        .newsimg .arrow_left img{
+            transform: rotate(-90deg);
+            filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
+            position: absolute;
+            left:30%;
+            top: 50%;
+            width: 1.2vw;
+            z-index: 2;
+        }
+
+        .newsimg .arrow_right{
+            z-index: 2;
+        }
+
+        .newsimg .arrow_right img{
+            transform: rotate(90deg);
+            filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
+            position: absolute;
+            right: 30%;
+            top: 50%;
+            width: 1.2vw;
+            z-index: 2;
+        }
+
+
+
+        /* .newsimg .left{
+            position: absolute;
+            left: 0vw;
+        } */
+
+        /* .newsimg .left img{
+            width: 100%;
+            vertical-align: bottom;
+        } */
+
+        /* .newsimg .right{
+            position: absolute;
+            right: 0;
+        } */
+
+        /* .newsimg .right img{
+            width: 100%;
+            vertical-align: bottom;
+        } */
+
+        .nitemgroupleft{
+            position: absolute;
+            left: 0;
+        }
+
+        .nitemgroupright{
+            position: absolute;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+
+
+        <div class="newsimg">
+            <div class="arrow_left" id="btnLeft">
+                <img src="./image/product_arrow.svg" alt="arrow">
+            </div>
+
+            <div class="arrow_right" id="btnRight">
+                <img src="./image/product_arrow.svg" alt="arrow">
+            </div>
+            
+            <div class="nitemgroupcenter">
+                <div class="item left">
+                    <img src="./image/newspage_yuda.jpg" alt="yuda"> 
+                </div>
+
+                <div class="item right">
+                    <img src="./image/newspage_robot.jpg" alt="robot"> 
+                </div>
+
+                <div class="item center">
+                    <img src="./image/newspage_gift.jpg" alt="gift">
+                </div>
+            </div>
+            
+            <div class="newsimgleft">
+                <div class="nitemgroupleft">
+                    <div class="item left">
+                        <img src="./image/newspage_yuda.jpg" alt="yuda"> 
+                    </div>
+        
+                    <div class="item right">
+                        <img src="./image/newspage_robot.jpg" alt="robot"> 
+                    </div>
+        
+                    <div class="item center">
+                        <img src="./image/newspage_gift.jpg" alt="gift">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="newsimgright">
+                <div class="nitemgroupright">
+                    <div class="item left">
+                        <img src="./image/newspage_yuda.jpg" alt="yuda"> 
+                    </div>
+
+                    <div class="item right">
+                        <img src="./image/newspage_robot.jpg" alt="robot"> 
+                    </div>
+
+                    <div class="item center">
+                        <img src="./image/newspage_gift.jpg" alt="gift">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+
+    </script>
+</body>
+</html>

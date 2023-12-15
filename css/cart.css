@@ -2,6 +2,12 @@ header .cart a .count{
     background-color: var(--orange-color);
 }
 
+@media screen and (max-width:768px){
+    .cartmain{
+        padding-top: 17vw;
+    }
+}
+
 .banner{
     padding-top: 10.5vw;
     padding-bottom: 5vw;
@@ -64,7 +70,7 @@ header .cart a .count{
 }
 
 .banner .itemgroup .item{
-    padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+    padding: 1.5vw;
     border-bottom: var(--borderpc-border);
 
     display: flex;
@@ -80,6 +86,12 @@ header .cart a .count{
 @media screen and (max-width:1024px){
     .banner .itemgroup .item{
         border-bottom: var(--borderpad-border);
+    }
+}
+
+@media screen and (max-width:1024px){
+    .banner .itemgroup .item{
+        padding: 5vw 1.5vw;
     }
 }
 
@@ -175,11 +187,19 @@ header .cart a .count{
 
 @media screen and (max-width:1024px){
     .banner .count{
+        padding: 6.5px 22px;
         border: var(--borderpad-border);
     }
 }
 
-.banner .count button{
+@media screen and (max-width:768px){
+    .banner .count{
+        padding: 1px 22px;
+        border: var(--borderpad-border);
+    }
+}
+
+/* .banner .count .button{
     border: none;
     font-family: 'Syncopate', 'Noto Sans TC', sans-serif;
     font-size: var(--span-font-size);
@@ -187,17 +207,17 @@ header .cart a .count{
 }
 
 @media screen and (max-width:768px){
-    .banner .count button{
+    .banner .count .button{
         font-size: var(--spanph-font-size);
     }
-}
+} */
 
 .banner .count input{
     outline: none;
     border: none;
     font-family: 'Syncopate', 'Noto Sans TC', sans-serif;
     font-size: var(--span-font-size);
-    width: 5.5vw;
+    width: 3.5vw;
     /* padding-right: 3.5vw; */
     text-align: center;
     background: none;
@@ -205,12 +225,13 @@ header .cart a .count{
 
 @media screen and (max-width:768px){
     .banner .count input{
-        font-size: var(--spanph-font-size);
+        font-size: var(--pph-font-size);
+        width: 6vw;
     }
 }
 
 
-.banner .count button:hover{
+.banner .count .button:hover{
     color: var(--orange-color);
 }
 
@@ -225,6 +246,12 @@ header .cart a .count{
 .banner .remove img{
     width: 80%;
     vertical-align: bottom;
+}
+
+@media screen and (max-width:768px){
+    .banner .remove img{
+        width: 70%;
+    }
 }
 
 .banner .remove img:last-child{
@@ -263,12 +290,23 @@ header .cart a .count{
     }
 }
 
+@media screen and (max-width:768px){
+    .list{
+        width: 100%;
+        height: 100vw;
+        margin-top: 10vw;
+        background-image: url(../image/cart_listm.svg);
+        padding: 5vw;
+        box-sizing: border-box;
+    }
+}
+
 .list .sticker-snow img{
     position: absolute;
     right: 4vw; 
     top: -3vw;
     width: 4vw;
-    rotate: 13deg;
+    transform: rotate(13deg);
     vertical-align: bottom;
 }
 
@@ -277,8 +315,22 @@ header .cart a .count{
     right: -2vw; 
     top: -2vw;
     width: 8vw;
-    rotate: -17deg;
+    transform: rotate(-17deg);
     vertical-align: bottom;
+}
+
+@media screen and (max-width:768px){
+    .list .sticker-snow img{
+        right: 10vw; 
+        top: -3vw;
+        width: 9vw;
+    }
+    
+    .list .sticker-sun img{
+        right: -2vw; 
+        top: -2vw;
+        width: 16vw;
+    }
 }
 
 .list h3{
@@ -304,6 +356,12 @@ header .cart a .count{
 @media screen and (max-width:1024px){
     .list .detail{
         padding: 4vw 0 0 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    .list .detail{
+        padding: 7vw 0 0 0;
     }
 }
 
@@ -337,6 +395,13 @@ header .cart a .count{
     }
 }
 
+@media screen and (max-width:768px){
+    .list .detailtotal{
+        margin: 7vw auto;
+        padding: 5vw 0;
+    }
+}
+
 .list .detailtotal span{
     color: var(--dkgray-color);
     font-size: var(--p-font-size);
@@ -350,7 +415,7 @@ header .cart a .count{
 
 
 .list .btn{
-    margin-left: 25%;
+    margin: auto;
     color: var(--orange-color);
     font-size: var(--span-font-size);
     text-decoration: none;
@@ -360,12 +425,11 @@ header .cart a .count{
     border-radius: 60vw;
     display: block;
     text-align: center;
-    width: 8vw;
+    width: 50%;
 }
 
 @media screen and (max-width:1024px){
     .list .btn{
-        margin-left: 36%;
         padding: 12.5px 26px;
         border: 1.5px solid var(--orange-color);
         width: 16vw;
@@ -375,6 +439,7 @@ header .cart a .count{
 @media screen and (max-width:768px){
     .list .btn{
         font-size: var(--spanph-font-size);
+        width: 40vw;
     }
 }
 
@@ -391,7 +456,7 @@ header .cart a .count{
     left: 0vw; 
     bottom: 40vw;
     width: 8vw;
-    rotate: -14deg;
+    transform: rotate(-14deg);
     vertical-align: bottom;
 }
 
@@ -401,3 +466,12 @@ header .cart a .count{
         bottom: 50vw;
     }
 }
+
+@media screen and (max-width:768px){
+    .sticker-good img{
+        left: 0vw; 
+        bottom: 140vw;
+        width: 17vw;
+    }
+}
+

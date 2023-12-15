@@ -7,12 +7,11 @@
     <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon" />
     
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css" >
     <link rel="stylesheet" href="./css/shop.css">
-    <!-- <link rel="stylesheet" href="./css/product.css"> -->
 
     <script src="https://kit.fontawesome.com/9c638736ac.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/shop.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,120 +20,8 @@
 <body>
     
     <div class="wrap">
-        <header>
-            
-            <nav>
-                <ul>
-                    <li>
-                        <a href="about.html" class="headerbtn">
-                            <div class="headeron">
-                                <div class="headertxt">ABOUT</div>
-                                <div class="headerout">
-                                    <div class="headertxt">ABOUT</div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
+        <div id="header"></div>
 
-                    <li>
-                        <a href="news.html" class="headerbtn">
-                            <div class="headeron">
-                                <div class="headertxt">NEWS</div>
-                                <div class="headerout">
-                                    <div class="headertxt">NEWS</div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="logo">
-                        <a href="index.html"><img src="./image/header_logo.svg" alt="logo"></a>
-                    </li>
-
-                    <li>
-                        <a href="shop.html" class="headerbtn">
-                            <div class="headeron">
-                                <div class="headertxt">SHOP</div>
-                                <div class="headerout">
-                                    <div class="headertxt">SHOP</div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html" class="headerbtn">
-                            <div class="headeron">
-                                <div class="headertxt">CONTACT</div>
-                                <div class="headerout">
-                                    <div class="headertxt">CONTACT</div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="cart">
-                        <a href="cart.html">
-                            <img src="./image/header_cart.svg" alt="cart">
-                            <div class="count">2</div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <input type="checkbox" name="" id="menu-switch">
-        <div class="headerph">
-            
-            <label for="menu-switch" class="hb">
-                <div class="line1"></div>
-                <div class="line2"></div>
-            </label>
-            
-            <a href="index.html" class="logo">
-                <img src="./image/header_logo.svg" alt="logo">
-            </a>
-            
-            <a href="cart.html" class="cart">
-                <img src="./image/header_cart.svg" alt="cart">
-                <div class="count">2</div>
-            </a>
-            
-            <nav>
-                <ul>
-                    <li>
-                        <a href="about.html" class="headerbtn">
-                            ABOUT
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="news.html" class="headerbtn">
-                            NEWS
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="shop.html" class="headerbtn">
-                            SHOP
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html" class="headerbtn">
-                            CONTACT
-                        </a>
-                    </li>
-
-                </ul>
-            </nav>
-            <!-- -------------------------------- -->
-        </div>
-    </div>
-
-
-
-    <div class="wrap">
         <div class="shopmain" id="top">
             <div class="banner">
                 <h2 class="title">SHOP</h2>
@@ -149,390 +36,673 @@
                 </div>
 
                 <div class="shopcontent">
-                    <ul class="shopmenu">
-                        <li>
-                            <a href="#" class="shoptype">
-                                <span>ALL</span><span>(14)</span>
-                            </a>
-                        </li>
+                    <div class="shopmenu">
+                        <div class="shoptype all-menu" onclick="changeToAll();">
+                            <span style="color: var(--orange-color);">ALL</span><span>(14)</span>
+                        </div>
 
-                        <li>
-                            <a href="#" class="shoptype">
-                                <span>TOYS</span><span>(5)</span>
-                            </a>
-                        </li>
+                        <div class="shoptype toys-menu" onclick="changeToToys();">
+                            <span>TOYS</span><span>(5)</span>
+                        </div>
 
-                        <li>
-                            <a href="#" class="shoptype">
-                                <span>LIVING</span><span>(4)</span>
-                            </a>
-                        </li>
+                        <div class="shoptype living-menu" onclick="changeToLiving();">
+                            <span>LIVING</span><span>(4)</span>
+                        </div>
 
-                        <li>
-                            <a href="#" class="shoptype">
-                                <span>VINTAGE</span><span>(3)</span>
-                            </a>
-                        </li>
+                        <div class="shoptype vintage-menu" onclick="changeToVintage();">
+                            <span>VINTAGE</span><span>(3)</span>
+                        </div>
 
-                        <li>
-                            <a href="#" class="shoptype">
-                                <span>PHOTOS</span><span>(2)</span>
-                            </a>
-                        </li>
-                    </ul>
-
+                        <div class="shoptype photos-menu" onclick="changeToPhotos();">
+                            <span>PHOTOS</span><span>(2)</span>
+                        </div>
+                    </div>
                     
                     <div class="product">
-                        <div class="itemgroup">
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">掌上電子遊戲機</span>
-        
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">80年代經典電子遊戲機，帶您重溫當年的遊戲樂趣與童年回憶。</span>
-                                    </div>
-                                    
-                                    
-        
-                                    <div class="bottom">
-                                        <span class="price">$ 980</span>
-            
-                                        <span class="stamp1">NEW</span>
-                                    </div>
-        
-                                    <div class="overlay"></div>
-                                    
-                                    <div class="primg">
-                                        <img src="./image/product_gameboy.jpg" alt="gameboy">
-                                    </div>
-                                </a>
-                            </div>
-        
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">任天堂磁碟片</span>
-                                        
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">創新的遊戲媒介。成就了遊戲史上的經典，承載了無數令人難忘的冒險與故事。</span>
-                                    </div>
-            
-                                    <div class="bottom">
-                                        <span class="price">$ 780</span>
-            
-                                        <span class="stamp1">NEW</span>
-                                    </div>   
-        
-                                    <div class="overlay"></div>
-                                    
-                                    <div class="primg">
-                                        <img src="./image/product_gamedisk.jpg" alt="gamedisk">
-                                    </div> 
-                                </a>
-                            </div>
-        
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">音樂時光卡式錄音帶</span>
-                                        
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">充滿復古魅力的卡式錄音帶，帶您回到音樂在磁帶上流傳的年代，重溫那些珍貴的音樂時刻。</span>
-                                    </div>
-            
-                                    <div class="bottom">
-                                        <span class="price">$ 360</span>
-                                    </div>   
-        
-                                    <div class="overlay"></div>
-                                    
-                                    <div class="primg">
-                                        <img src="./image/product_audiotape.jpg" alt="audiotape">
-                                    </div>
-                                    
-                                </a>
-                            </div>
-        
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">View-Master 幻燈片機</span>
-                                        
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">即刻探索多樣景觀，沉浸於生動故事。這經典裝置將美景帶入手中，成為您探險的視覺窗。</span>
-                                    </div>
-            
-                                    <div class="bottom">
-                                        <span class="price">$ 600</span>
-                                    </div>   
-                                    
-                                    <div class="overlay"></div>
-        
-                                    <div class="primg">
-                                        <img src="./image/product_viewmaster.jpg" alt="viewmaster">
-                                    </div>
-                                    
-                                </a>
-                            </div>
+                        <div class="itemgroup all-info">
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">掌上電子遊戲機</span>
     
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">太空探險樂高組合</span>
-        
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">精彩的外星人樂高組合，將您帶入外太空探險的刺激世界，充滿樂趣和挑戰。</span>
-                                    </div>
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
                                     
-                                    
+                                    <span class="detail">80年代經典電子遊戲機，帶您重溫當年的遊戲樂趣與童年回憶。</span>
+                                </div>
+                                
+                                <div class="bottom">
+                                    <span class="price">$ 980</span>
         
-                                    <div class="bottom">
-                                        <span class="price">$ 590</span>
-            
-                                        <span class="stamp1">HOT</span>
-                                    </div>
-        
-                                    <div class="overlay"></div>
-                                    
-                                    <div class="primg">
-                                        <img src="./image/product_film.jpg" alt="film">
-                                    </div>
-                                </a>
-                            </div>
-        
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">舊式攝影底片</span>
-                                        
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">復古的底片帶您進入攝影的神秘世界，探索以前的攝影技術和獨特的影像魅力。</span>
-                                    </div>
-            
-                                    <div class="bottom">
-                                        <span class="price">$ 230</span>
-            
-                                        <span class="stamp2">SOLD<br>OUT</span>
-                                    </div>   
-        
-                                    <div class="overlay"></div>
-                                    
-                                    <div class="primg">
-                                        <img src="./image/product_gamedisk.jpg" alt="gamedisk">
-                                    </div> 
-                                </a>
-                            </div>
-        
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">經典角色模型車</span>
-                                        
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">經典角色化身賽車手融合了熱情與速度，為您帶來激動人心的賽車樂趣。收藏或比賽，都能激發無限童心。</span>
-                                    </div>
-            
-                                    <div class="bottom">
-                                        <span class="price">$ 670</span>
-                                    </div>   
-        
-                                    <div class="overlay"></div>
-                                    
-                                    <div class="primg">
-                                        <img src="./image/product_modelcar.jpg" alt="modelcar">
-                                    </div>
-                                    
-                                </a>
-                            </div>
-        
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">電影海報收藏品</span>
-                                        
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">這些復古風格的電影海報彷彿是時光隧道，帶您重溫經典電影的美妙。</span>
-                                    </div>
-            
-                                    <div class="bottom">
-                                        <span class="price">$ 540</span>
-                                    </div>   
-                                    
-                                    <div class="overlay"></div>
-        
-                                    <div class="primg">
-                                        <img src="./image/product_poster.jpg" alt="poster">
-                                    </div>
-                                    
-                                </a>
-                            </div>
+                                    <span class="stamp1">NEW</span>
+                                </div>
     
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">SEGA遊戲卡帶</span>
-        
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">充滿懷舊風情的遊戲傳奇。蘊含了SEGA遊戲史上的經典，帶來無盡的遊戲樂趣與挑戰。經典遊戲，永不褪色。</span>
-                                    </div>
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_gameboy.jpg" alt="gameboy">
+                                </div>
+                            </a>
+
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">任天堂卡帶</span>
                                     
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
                                     
+                                    <span class="detail">創新的遊戲媒介。成就了遊戲史上的經典，承載了無數令人難忘的冒險與故事。</span>
+                                </div>
         
-                                    <div class="bottom">
-                                        <span class="price">$ 540</span>
-                                    </div>
+                                <div class="bottom">
+                                    <span class="price">$ 780</span>
         
-                                    <div class="overlay"></div>
-                                    
-                                    <div class="primg">
-                                        <img src="./image/product_sega.jpg" alt="sega">
-                                    </div>
-                                </a>
-                            </div>
-        
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">奇脆圈玩具TAZO</span>
-                                        
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">獨特設計，藏匿奇幻力量。收集、交換、探索其中的秘密，為你的TAZO收藏品帶來新的奇妙體驗。</span>
-                                    </div>
-            
-                                    <div class="bottom">
-                                        <span class="price">$ 160</span>
-                                    </div>   
-        
-                                    <div class="overlay"></div>
-                                    
-                                    <div class="primg">
-                                        <img src="./image/product_tazo.jpg" alt="tazo">
-                                    </div> 
-                                </a>
-                            </div>
-        
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">雲端飛行船裝飾</span>
-                                        
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">這些精緻裝飾充滿夢幻氛圍，帶您飛向冒險之旅。為生活增添一絲奇幻氛圍與探險精神。</span>
-                                    </div>
-            
-                                    <div class="bottom">
-                                        <span class="price">$ 720</span>
-                                    </div>   
-        
-                                    <div class="overlay"></div>
-                                    
-                                    <div class="primg">
-                                        <img src="./image/product_space.jpg" alt="space">
-                                    </div>
-                                    
-                                </a>
-                            </div>
-        
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">MF DOOM黑膠唱片</span>
-                                        
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">收錄了MF DOOM深邃的音樂世界，展現其獨特風格與才華。品味音樂巨匠的藝術，享受深沉旋律的震撼。</span>
-                                    </div>
-            
-                                    <div class="bottom">
-                                        <span class="price">$ 830</span>
+                                    <span class="stamp1">NEW</span>
+                                </div>   
     
-                                        <span class="stamp2">SOLD<br>OUT</span>
-                                    </div>   
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_gamedisk.jpg" alt="gamedisk">
+                                </div> 
+                            </a>
+
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">音樂時光卡式錄音帶</span>
                                     
-                                    <div class="overlay"></div>
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">充滿復古魅力的卡式錄音帶，帶您回到音樂在磁帶上流傳的年代，重溫那些珍貴的音樂時刻。</span>
+                                </div>
         
-                                    <div class="primg">
-                                        <img src="./image/product_mfdoom.jpg" alt="mfdoom">
-                                    </div>
-                                    
-                                </a>
-                            </div>
+                                <div class="bottom">
+                                    <span class="price">$ 360</span>
+                                </div>   
     
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">空手道小子吊卡</span>
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_audiotape.jpg" alt="audiotape">
+                                </div>
+                                
+                            </a>
         
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">捕捉了空手道小子的英勇形象，展現著其技藝與精神。收藏或懸掛，都能體現熱血少年的勇氣與冒險精神。</span>
-                                    </div>
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">View-Master 幻燈片機</span>
                                     
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
                                     
+                                    <span class="detail">即刻探索多樣景觀，沉浸於生動故事。這經典裝置將美景帶入手中，成為您探險的視覺窗。</span>
+                                </div>
         
-                                    <div class="bottom">
-                                        <span class="price">$ 610</span>
-            
-                                        <span class="stamp">HOT</span>
-                                    </div>
-        
-                                    <div class="overlay"></div>
+                                <div class="bottom">
+                                    <span class="price">$ 600</span>
+                                </div>   
+                                
+                                <div class="overlay"></div>
+    
+                                <div class="primg">
+                                    <img src="./image/product_viewmaster.jpg" alt="viewmaster">
+                                </div>
+                                
+                            </a>
+    
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">太空探險樂高組合</span>
+    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
                                     
-                                    <div class="primg">
-                                        <img src="./image/product_kid.jpg" alt="gameboy">
-                                    </div>
-                                </a>
-                            </div>
+                                    <span class="detail">精彩的外星人樂高組合，將您帶入外太空探險的刺激世界，充滿樂趣和挑戰。</span>
+                                </div>
+                                
+                                
+    
+                                <div class="bottom">
+                                    <span class="price">$ 590</span>
         
-                            <div class="item">
-                                <a href="shoppage.html">
-                                    <div class="top">
-                                        <span class="name">愛因斯坦零錢筒</span>
-                                        
-                                        <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
-                                        <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
-                                        
-                                        <span class="detail">智慧與儲蓄的象徵。不僅能儲蓄，更是一件啓發人心的藝術品，為您的存錢計畫增添趣味。</span>
-                                    </div>
-            
-                                    <div class="bottom">
-                                        <span class="price">$ 540</span>
-                                    </div>   
+                                    <span class="stamp2">SOLD<br>OUT</span>
+                                </div>
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_lego.jpg" alt="lego">
+                                </div>
+                            </a>
         
-                                    <div class="overlay"></div>
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">舊式攝影底片</span>
                                     
-                                    <div class="primg">
-                                        <img src="./image/product_einstein.jpg" alt="einstein">
-                                    </div> 
-                                </a>
-                            </div>
-                            
-                            
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">復古的底片帶您進入攝影的神秘世界，探索以前的攝影技術和獨特的影像魅力。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 230</span>
+        
+                                    <span class="stamp1">HOT</span>
+                                </div>   
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_film.jpg" alt="film">
+                                </div> 
+                            </a>
+        
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">經典角色模型車</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">經典角色化身賽車手融合了熱情與速度，為您帶來激動人心的賽車樂趣。收藏或比賽，都能激發無限童心。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 670</span>
+                                </div>   
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_modelcar.jpg" alt="modelcar">
+                                </div>
+                                
+                            </a>
+        
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">電影海報收藏品</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">這些復古風格的電影海報彷彿是時光隧道，帶您重溫經典電影的美妙。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 540</span>
+                                </div>   
+                                
+                                <div class="overlay"></div>
+    
+                                <div class="primg">
+                                    <img src="./image/product_poster.jpg" alt="poster">
+                                </div>
+                                
+                            </a>
+    
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">SEGA遊戲卡帶</span>
+    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">充滿懷舊風情的遊戲傳奇。蘊含了SEGA遊戲史上的經典，帶來無盡的遊戲樂趣與挑戰。經典遊戲，永不褪色。</span>
+                                </div>
+                                
+                                
+    
+                                <div class="bottom">
+                                    <span class="price">$ 540</span>
+                                </div>
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_sega.jpg" alt="sega">
+                                </div>
+                            </a>
+        
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">奇脆圈玩具TAZO</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">獨特設計，藏匿奇幻力量。收集、交換、探索其中的秘密，為你的TAZO收藏品帶來新的奇妙體驗。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 160</span>
+                                </div>   
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_tazo.jpg" alt="tazo">
+                                </div> 
+                            </a>
+        
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">雲端飛行船裝飾</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">這些精緻裝飾充滿夢幻氛圍，帶您飛向冒險之旅。為生活增添一絲奇幻氛圍與探險精神。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 720</span>
+                                </div>   
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_space.jpg" alt="space">
+                                </div>
+                                
+                            </a>
+        
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">MF DOOM黑膠唱片</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">收錄了MF DOOM深邃的音樂世界，展現其獨特風格與才華。品味音樂巨匠的藝術，享受深沉旋律的震撼。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 830</span>
+
+                                    <span class="stamp2">SOLD<br>OUT</span>
+                                </div>   
+                                
+                                <div class="overlay"></div>
+    
+                                <div class="primg">
+                                    <img src="./image/product_mfdoom.jpg" alt="mfdoom">
+                                </div>
+                                
+                            </a>
+    
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">空手道小子吊卡</span>
+    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">捕捉了空手道小子的英勇形象，展現著其技藝與精神。收藏或懸掛，都能體現熱血少年的勇氣與冒險精神。</span>
+                                </div>
+                                
+                                
+    
+                                <div class="bottom">
+                                    <span class="price">$ 610</span>
+        
+                                    <span class="stamp">HOT</span>
+                                </div>
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_kid.jpg" alt="gameboy">
+                                </div>
+                            </a>
+        
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">愛因斯坦零錢筒</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">智慧與儲蓄的象徵。不僅能儲蓄，更是一件啓發人心的藝術品，為您的存錢計畫增添趣味。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 540</span>
+                                </div>   
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_einstein.jpg" alt="einstein">
+                                </div> 
+                            </a>
+                        </div>
+
+                        <div class="itemgroup toys-info" style="display:none">
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">掌上電子遊戲機</span>
+    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">80年代經典電子遊戲機，帶您重溫當年的遊戲樂趣與童年回憶。</span>
+                                </div>
+                                
+                                <div class="bottom">
+                                    <span class="price">$ 980</span>
+        
+                                    <span class="stamp1">NEW</span>
+                                </div>
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_gameboy.jpg" alt="gameboy">
+                                </div>
+                            </a>
+
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">太空探險樂高組合</span>
+    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">精彩的外星人樂高組合，將您帶入外太空探險的刺激世界，充滿樂趣和挑戰。</span>
+                                </div>
+                                
+                                
+    
+                                <div class="bottom">
+                                    <span class="price">$ 590</span>
+        
+                                    <span class="stamp2">SOLD<br>OUT</span>
+                                </div>
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_lego.jpg" alt="lego">
+                                </div>
+                            </a>
+
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">經典角色模型車</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">經典角色化身賽車手融合了熱情與速度，為您帶來激動人心的賽車樂趣。收藏或比賽，都能激發無限童心。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 670</span>
+                                </div>   
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_modelcar.jpg" alt="modelcar">
+                                </div>
+                                
+                            </a>
+
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">奇脆圈玩具TAZO</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">獨特設計，藏匿奇幻力量。收集、交換、探索其中的秘密，為你的TAZO收藏品帶來新的奇妙體驗。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 160</span>
+                                </div>   
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_tazo.jpg" alt="tazo">
+                                </div> 
+                            </a>
+
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">空手道小子吊卡</span>
+    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">捕捉了空手道小子的英勇形象，展現著其技藝與精神。收藏或懸掛，都能體現熱血少年的勇氣與冒險精神。</span>
+                                </div>
+                                
+                                
+    
+                                <div class="bottom">
+                                    <span class="price">$ 610</span>
+        
+                                    <span class="stamp">HOT</span>
+                                </div>
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_kid.jpg" alt="gameboy">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="itemgroup living-info" style="display:none">
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">電影海報收藏品</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">這些復古風格的電影海報彷彿是時光隧道，帶您重溫經典電影的美妙。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 540</span>
+                                </div>   
+                                
+                                <div class="overlay"></div>
+    
+                                <div class="primg">
+                                    <img src="./image/product_poster.jpg" alt="poster">
+                                </div>
+                                
+                            </a>
+
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">雲端飛行船裝飾</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">這些精緻裝飾充滿夢幻氛圍，帶您飛向冒險之旅。為生活增添一絲奇幻氛圍與探險精神。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 720</span>
+                                </div>   
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_space.jpg" alt="space">
+                                </div>
+                                
+                            </a>
+        
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">MF DOOM黑膠唱片</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">收錄了MF DOOM深邃的音樂世界，展現其獨特風格與才華。品味音樂巨匠的藝術，享受深沉旋律的震撼。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 830</span>
+
+                                    <span class="stamp2">SOLD<br>OUT</span>
+                                </div>   
+                                
+                                <div class="overlay"></div>
+    
+                                <div class="primg">
+                                    <img src="./image/product_mfdoom.jpg" alt="mfdoom">
+                                </div>
+                                
+                            </a>
+
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">愛因斯坦零錢筒</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">智慧與儲蓄的象徵。不僅能儲蓄，更是一件啓發人心的藝術品，為您的存錢計畫增添趣味。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 540</span>
+                                </div>   
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_einstein.jpg" alt="einstein">
+                                </div> 
+                            </a>
+                        </div>
+
+                        <div class="itemgroup vintage-info" style="display:none">
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">任天堂卡帶</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">創新的遊戲媒介。成就了遊戲史上的經典，承載了無數令人難忘的冒險與故事。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 780</span>
+        
+                                    <span class="stamp1">NEW</span>
+                                </div>   
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_gamedisk.jpg" alt="gamedisk">
+                                </div> 
+                            </a>
+
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">音樂時光卡式錄音帶</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">充滿復古魅力的卡式錄音帶，帶您回到音樂在磁帶上流傳的年代，重溫那些珍貴的音樂時刻。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 360</span>
+                                </div>   
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_audiotape.jpg" alt="audiotape">
+                                </div>
+                                
+                            </a>
+
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">SEGA遊戲卡帶</span>
+    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">充滿懷舊風情的遊戲傳奇。蘊含了SEGA遊戲史上的經典，帶來無盡的遊戲樂趣與挑戰。經典遊戲，永不褪色。</span>
+                                </div>
+                                
+                                
+    
+                                <div class="bottom">
+                                    <span class="price">$ 540</span>
+                                </div>
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_sega.jpg" alt="sega">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="itemgroup photos-info" style="display:none">
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">View-Master 幻燈片機</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">即刻探索多樣景觀，沉浸於生動故事。這經典裝置將美景帶入手中，成為您探險的視覺窗。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 600</span>
+                                </div>   
+                                
+                                <div class="overlay"></div>
+    
+                                <div class="primg">
+                                    <img src="./image/product_viewmaster.jpg" alt="viewmaster">
+                                </div>
+                                
+                            </a>
+
+                            <a href="shoppage.html" class="item">
+                                <div class="top">
+                                    <span class="name">舊式攝影底片</span>
+                                    
+                                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                    
+                                    <span class="detail">復古的底片帶您進入攝影的神秘世界，探索以前的攝影技術和獨特的影像魅力。</span>
+                                </div>
+        
+                                <div class="bottom">
+                                    <span class="price">$ 230</span>
+        
+                                    <span class="stamp1">HOT</span>
+                                </div>   
+    
+                                <div class="overlay"></div>
+                                
+                                <div class="primg">
+                                    <img src="./image/product_film.jpg" alt="film">
+                                </div> 
+                            </a>
                         </div>
 
                         <div class="page">
@@ -545,44 +715,357 @@
                             <a href="#">>|</a>
                         </div>
                     </div>
-                </div>
-                    
-                </div>
 
+                    <div class="phoneshop">
+                        <select data-chose="all" onchange="this.dataset.chose = this.value;">
+                            <option selected value="all"><span>ALL</span>&nbsp;<span>(14)</span></option>
+                            <option value="toys"><span>TOYS</span>&nbsp;<span>(5)</span></option>
+                            <option value="living"><span>LIVING</span>&nbsp;<span>(4)</span></option>
+                            <option value="vintage"><span>VINTAGE</span>&nbsp;<span>(3)</span></option>
+                            <option value="photos"><span>PHOTOS</span>&nbsp;<span>(2)</span></option>
+                        </select>
+
+                        <a href="shoppage.html" class="item all-info toys-info">
+                            <div class="top">
+                                <span class="name">掌上電子遊戲機</span>
+
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">80年代經典電子遊戲機，帶您重溫當年的遊戲樂趣與童年回憶。</span>
+                            </div>
+                            
+                            <div class="bottom">
+                                <span class="price">$ 980</span>
+    
+                                <span class="stamp1">NEW</span>
+                            </div>
+
+                            <div class="overlay"></div>
+                            
+                            <div class="primg">
+                                <img src="./image/product_gameboy.jpg" alt="gameboy">
+                            </div>
+                        </a>
+    
+                        <a href="shoppage.html" class="item all-info vintage-info">
+                            <div class="top">
+                                <span class="name">任天堂卡帶</span>
+                                
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">創新的遊戲媒介。成就了遊戲史上的經典，承載了無數令人難忘的冒險與故事。</span>
+                            </div>
+    
+                            <div class="bottom">
+                                <span class="price">$ 780</span>
+    
+                                <span class="stamp1">NEW</span>
+                            </div>   
+
+                            <div class="overlay"></div>
+                            
+                            <div class="primg">
+                                <img src="./image/product_gamedisk.jpg" alt="gamedisk">
+                            </div> 
+                        </a>
+
+                        <a href="shoppage.html" class="item all-info vintage-info">
+                            <div class="top">
+                                <span class="name">音樂時光卡式錄音帶</span>
+                                
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">充滿復古魅力的卡式錄音帶，帶您回到音樂在磁帶上流傳的年代，重溫那些珍貴的音樂時刻。</span>
+                            </div>
+    
+                            <div class="bottom">
+                                <span class="price">$ 360</span>
+                            </div>   
+
+                            <div class="overlay"></div>
+                            
+                            <div class="primg">
+                                <img src="./image/product_audiotape.jpg" alt="audiotape">
+                            </div>
+                            
+                        </a>
+    
+                        <a href="shoppage.html" class="item all-info photos-info">
+                            <div class="top">
+                                <span class="name">View-Master 幻燈片機</span>
+                                
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">即刻探索多樣景觀，沉浸於生動故事。這經典裝置將美景帶入手中，成為您探險的視覺窗。</span>
+                            </div>
+    
+                            <div class="bottom">
+                                <span class="price">$ 600</span>
+                            </div>   
+                            
+                            <div class="overlay"></div>
+
+                            <div class="primg">
+                                <img src="./image/product_viewmaster.jpg" alt="viewmaster">
+                            </div>
+                            
+                        </a>
+
+                        <a href="shoppage.html" class="item all-info toys-info">
+                            <div class="top">
+                                <span class="name">太空探險樂高組合</span>
+
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">精彩的外星人樂高組合，將您帶入外太空探險的刺激世界，充滿樂趣和挑戰。</span>
+                            </div>
+                            
+                            
+
+                            <div class="bottom">
+                                <span class="price">$ 590</span>
+    
+                                <span class="stamp2">SOLD<br>OUT</span>
+                            </div>
+
+                            <div class="overlay"></div>
+                            
+                            <div class="primg">
+                                <img src="./image/product_lego.jpg" alt="lego">
+                            </div>
+                        </a>
+    
+                        <a href="shoppage.html" class="item all-info photos-info">
+                            <div class="top">
+                                <span class="name">舊式攝影底片</span>
+                                
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">復古的底片帶您進入攝影的神秘世界，探索以前的攝影技術和獨特的影像魅力。</span>
+                            </div>
+    
+                            <div class="bottom">
+                                <span class="price">$ 230</span>
+    
+                                <span class="stamp1">HOT</span>
+                            </div>   
+
+                            <div class="overlay"></div>
+                            
+                            <div class="primg">
+                                <img src="./image/product_film.jpg" alt="film">
+                            </div> 
+                        </a>
+    
+                        <a href="shoppage.html" class="item all-info toys-info">
+                            <div class="top">
+                                <span class="name">經典角色模型車</span>
+                                
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">經典角色化身賽車手融合了熱情與速度，為您帶來激動人心的賽車樂趣。收藏或比賽，都能激發無限童心。</span>
+                            </div>
+    
+                            <div class="bottom">
+                                <span class="price">$ 670</span>
+                            </div>   
+
+                            <div class="overlay"></div>
+                            
+                            <div class="primg">
+                                <img src="./image/product_modelcar.jpg" alt="modelcar">
+                            </div>
+                            
+                        </a>
+    
+                        <a href="shoppage.html" class="item all-info living-info">
+                            <div class="top">
+                                <span class="name">電影海報收藏品</span>
+                                
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">這些復古風格的電影海報彷彿是時光隧道，帶您重溫經典電影的美妙。</span>
+                            </div>
+    
+                            <div class="bottom">
+                                <span class="price">$ 540</span>
+                            </div>   
+                            
+                            <div class="overlay"></div>
+
+                            <div class="primg">
+                                <img src="./image/product_poster.jpg" alt="poster">
+                            </div>
+                            
+                        </a>
+
+                        <a href="shoppage.html" class="item all-info vintage-info">
+                            <div class="top">
+                                <span class="name">SEGA遊戲卡帶</span>
+
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">充滿懷舊風情的遊戲傳奇。蘊含了SEGA遊戲史上的經典，帶來無盡的遊戲樂趣與挑戰。經典遊戲，永不褪色。</span>
+                            </div>
+                            
+                            
+
+                            <div class="bottom">
+                                <span class="price">$ 540</span>
+                            </div>
+
+                            <div class="overlay"></div>
+                            
+                            <div class="primg">
+                                <img src="./image/product_sega.jpg" alt="sega">
+                            </div>
+                        </a>
+    
+                        <a href="shoppage.html" class="item all-info toys-info">
+                            <div class="top">
+                                <span class="name">奇脆圈玩具TAZO</span>
+                                
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">獨特設計，藏匿奇幻力量。收集、交換、探索其中的秘密，為你的TAZO收藏品帶來新的奇妙體驗。</span>
+                            </div>
+    
+                            <div class="bottom">
+                                <span class="price">$ 160</span>
+                            </div>   
+
+                            <div class="overlay"></div>
+                            
+                            <div class="primg">
+                                <img src="./image/product_tazo.jpg" alt="tazo">
+                            </div> 
+                        </a>
+    
+                        <a href="shoppage.html" class="item all-info living-info">
+                            <div class="top">
+                                <span class="name">雲端飛行船裝飾</span>
+                                
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">這些精緻裝飾充滿夢幻氛圍，帶您飛向冒險之旅。為生活增添一絲奇幻氛圍與探險精神。</span>
+                            </div>
+    
+                            <div class="bottom">
+                                <span class="price">$ 720</span>
+                            </div>   
+
+                            <div class="overlay"></div>
+                            
+                            <div class="primg">
+                                <img src="./image/product_space.jpg" alt="space">
+                            </div>
+                            
+                        </a>
+    
+                        <a href="shoppage.html" class="item all-info living-info">
+                            <div class="top">
+                                <span class="name">MF DOOM黑膠唱片</span>
+                                
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">收錄了MF DOOM深邃的音樂世界，展現其獨特風格與才華。品味音樂巨匠的藝術，享受深沉旋律的震撼。</span>
+                            </div>
+    
+                            <div class="bottom">
+                                <span class="price">$ 830</span>
+
+                                <span class="stamp2">SOLD<br>OUT</span>
+                            </div>   
+                            
+                            <div class="overlay"></div>
+
+                            <div class="primg">
+                                <img src="./image/product_mfdoom.jpg" alt="mfdoom">
+                            </div>
+                            
+                        </a>
+
+                        <a href="shoppage.html" class="item all-info toys-info">
+                            <div class="top">
+                                <span class="name">空手道小子吊卡</span>
+
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">捕捉了空手道小子的英勇形象，展現著其技藝與精神。收藏或懸掛，都能體現熱血少年的勇氣與冒險精神。</span>
+                            </div>
+                            
+                            
+
+                            <div class="bottom">
+                                <span class="price">$ 610</span>
+    
+                                <span class="stamp">HOT</span>
+                            </div>
+
+                            <div class="overlay"></div>
+                            
+                            <div class="primg">
+                                <img src="./image/product_kid.jpg" alt="gameboy">
+                            </div>
+                        </a>
+    
+                        <a href="shoppage.html" class="item all-info living-info">
+                            <div class="top">
+                                <span class="name">愛因斯坦零錢筒</span>
+                                
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                                <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+                                
+                                <span class="detail">智慧與儲蓄的象徵。不僅能儲蓄，更是一件啓發人心的藝術品，為您的存錢計畫增添趣味。</span>
+                            </div>
+    
+                            <div class="bottom">
+                                <span class="price">$ 540</span>
+                            </div>   
+
+                            <div class="overlay"></div>
+                            
+                            <div class="primg">
+                                <img src="./image/product_einstein.jpg" alt="einstein">
+                            </div> 
+                        </a>
+
+                        <div class="page">
+                            <a href="#">|<</a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">>|</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div id="footer"></div>
     </div>
 
-    
-
-    <div class="wrap">
-        <footer>
-            <div class="deco">
-                <div class="sticker-bc"><img src="./image/sticker_bc.svg" alt="sticker-bc"></div>
-                <div class="sticker-1"><img src="./image/sticker_1.svg" alt="sticker-bc"></div>
-                <div class="sticker-hagd"><img src="./image/sticker_hagd.svg" alt="sticker-sun"></div>
-            </div>
-            <div class="front">
-                <div class="logo">
-                    <img src="./image/footer_logo.svg" alt="logo">
-                </div>
-                <div class="top">
-                    <a href="#top"><img src="./image/footer_arrow.svg" alt="top">
-                        <span>TOP</span></a>
-                </div>
-            </div>
-            <div class="info">
-                <span>320<br>桃園市中壢區復興路46號9樓</span>
-                <span>聯絡電話<br>03-425-1234</span>
-                <span>營業時間<br>平日 14:00-19:30   假日 13:00-19:30</span>
-                <span>INSTAGRAM</span>
-                <span>FACEBOOK</span>
-            </div>
-            <div class="bottom">
-                <span>本網站為緯育TibaMe前端工程師班第88期學員專題作品，本平台僅供學習、展示之用。</span>
-                <span>@2023 TOKIRA</span>
-            </div>
-        </footer>
-    </div>
+    <script type="text/javascript">
+        //在js中引入html
+        $(document).ready(function () {
+            $('#header').load('header.html');
+            $('#footer').load('footer.html');
+        });
+    </script>
 </body>
 </html>

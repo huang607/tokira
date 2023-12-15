@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/index.js"></script>
+    <style>
+        /* itemView */
+        .product_new{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            background-color: var(--lggray-color);
+            /* overflow:hidden; */
+        }
+
+        /* wrap */
+        .product_new .itemgroup{
+            /* position:absolute;
+            margin-left:5px;
+            top:5px;
+            left:5px; */
+            width:2500px;
+            transition:left 1s;
+        }
+
+        /* item */
+        .product_new .item{
+            width:33.33%;
+            text-align: center;
+            float:left;
+        }
+
+        .product_new .gamedisk{
+            height: 100vh;
+            background-size: cover;
+            background-image: url(../image/productnew_gamedisk.jpg) ;
+            background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+        } 
+
+        .product_new .gameboy{
+            height: 100vh;
+            background-size: cover;
+            background-image: url(../image/productnew_gameboy.jpg) ;
+            background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+        } 
+
+        .product_new .film{
+            height: 100vh;
+            background-size: cover;
+            background-image: url(../image/productnew_film.jpg) ;
+            background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+        } 
+
+        .product_new .arrow_left img{
+            transform: rotate(-90deg);
+            filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
+            position: absolute;
+            left: 5vw;
+            top: 50%;
+            width: 1.2vw;
+            z-index: 1;
+        }
+
+        .product_new .arrow_right img{
+            transform: rotate(90deg);
+            filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
+            position: absolute;
+            right: 5vw;
+            top: 50%;
+            width: 1.2vw;
+            z-index: 1;
+        }
+
+        @media screen and (max-width:1024px){
+            .product_new .arrow_left img{
+                width: 1.8vw;
+            }
+            
+            .product_new .arrow_right img{
+                width: 1.8vw;
+            }
+        }
+
+        @media screen and (max-width:768px){
+            .product_new .arrow_left img{
+                width: 4.5vw;
+            }
+            
+            .product_new .arrow_right img{
+                width: 4.5vw;
+            }
+        }
+
+        .product_new:hover .arrow_left img{
+            animation: arrowleft .5s;
+        }
+
+        .product_new:hover .arrow_right img{
+            animation: arrowright .5s;
+        }
+
+        @keyframes arrowleft{
+            0%{
+                left: 6vw;
+            }
+            100%{
+                left: 5vw;
+            }
+        }
+
+        @keyframes arrowright{
+            0%{
+                right: 6vw;
+            }
+            100%{
+                right: 5vw;
+            }
+        }
+
+        .product_new .sticker-flower img{
+            position: absolute;
+            left: 24vw; 
+            top: -5vw;
+            width: 11vw;
+            vertical-align: bottom;
+        }
+
+        .product_new .sticker-bomb1 img{
+            position: absolute;
+            right: 2vw; 
+            bottom: 3.5vw;
+            width: 8vw;
+            vertical-align: bottom;
+        }
+
+        @media screen and (max-width:768px){
+            .product_new .sticker-flower img{
+                left: 8vw; 
+                top: -10vw;
+                width: 19vw;
+            }
+            
+            .product_new .sticker-bomb1 img{
+                right: 2vw; 
+                bottom: 3.5vw;
+                width: 16vw;
+            }
+        }
+
+        .product_new h2{
+            color: var(--white-color);
+            font-size: var(--h2-font-size);
+            text-align: center;
+            text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+            position: absolute;
+            top: 6vw;
+            left: 0;
+            right: 0;
+        }
+
+        @media screen and (max-width:1024px){
+            .product_new h2{
+                top: 13vw;
+            }
+        }
+
+        @media screen and (max-width:768px){
+            .product_new h2{
+                top: 20vw;
+                font-size: var(--h2ph-font-size);
+            }
+        }
+
+        .product_new .bottom{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            bottom: 6vw;
+            left: 0;
+            right: 0;
+        }
+
+        @media screen and (max-width:1024px){
+            .product_new .bottom{
+                bottom: 13vw;
+            }
+        }
+
+        @media screen and (max-width:768px){
+            .product_new .bottom{
+                bottom: 20vw;
+            }
+        }
+
+        .product_new h3{
+            color: var(--white-color);
+            font-size: var(--h3-font-size);
+            text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+            margin-bottom: 1.7vw;
+        }
+
+        @media screen and (max-width:768px){
+            .product_new h3{
+                font-size: var(--h3ph-font-size);
+                margin-bottom: 4vw;
+            }
+        }
+
+        .product_new span{
+            color: var(--white-color);
+            font-weight: bold;
+            font-size: var(--h3-font-size);
+            letter-spacing: 0.08vw;
+            text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+        }
+
+        @media screen and (max-width:768px){
+            .product_new span{
+                font-size: var(--h3ph-font-size);
+            }
+        }
+
+
+        .product_new .btn{
+            color: var(--dkgray-color);
+            font-size: var(--span-font-size);
+            text-decoration: none;
+            box-shadow: 0 0 1vw rgba(0, 0, 0, 0.4);
+            padding: 0.7vw 1.8vw;
+            background-color: #ececec;
+            border: var(--borderpc-border);
+            border-radius: 60vw;
+            display: block;
+        }
+
+        @media screen and (max-width:1024px){
+            .product_new .btn{
+                padding: 12.5px 26px;
+                border: var(--borderpad-border);
+            }
+        }
+
+        @media screen and (max-width:768px){
+            .product_new .btn{
+                font-size: var(--spanph-font-size);
+            }
+        }
+
+        .product_new .btn:hover{
+            color: var(--orange-color);
+            border-color: var(--orange-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="product_new">
+        <div class="deco">
+            <div class="sticker-flower
+            "><img src="./image/sticker_flower.svg" alt="sticker-flower"></div>
+            <div class="sticker-bomb1"><img src="./image/sticker_bomb.svg" alt="sticker-bomb"></div>
+            <!-- <div class="sticker-bomb2"><img src="./image/sticker_bomb.svg" alt="sticker-bomb"></div> -->
+        </div>
+
+        <input type="button" id="btnLeft" value="<<" disabled style="font-weight:bold;font-size:20px">
+
+        <input type="button" id="btnRight" value=">>" style="font-weight:bold;font-size:20px">
+
+        <!-- <div class="arrow_left" id="btnLeft">
+            <img src="./image/product_arrow.svg" alt="arrow">
+        </div>
+
+        <div class="arrow_right" id="btnRight">
+            <img src="./image/product_arrow.svg" alt="arrow">
+        </div> -->
+
+        <div class="itemgroup">
+            <div class="item gamedisk">
+                <h2>\ NEW ARRIVAL /</h2>
+
+                <div class="bottom">
+                    <h3>Nitendo<span>任天堂卡帶</span></h3>
+                    <h3>$ 780</h3>
+                    <a href="shoppage.html" class="btn">SHOP NOW</a>
+                </div>
+            </div>
+
+            <div class="item gameboy">
+                <h2>\ NEW ARRIVAL /</h2>
+
+                <div class="bottom">
+                    <h3>Nitendo<span>掌上電子遊戲機</span></h3>
+                    <h3>$ 980</h3>
+                    <a href="shoppage.html" class="btn">SHOP NOW</a>
+                </div>
+            </div>
+
+            <div class="item film">
+                <h2>\ HOT SALE /</h2>
+
+                <div class="bottom">
+                    <h3>Nitendo<span>舊式攝影底片</span></h3>
+                    <h3>$ 230</h3>
+                    <a href="shoppage.html" class="btn">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

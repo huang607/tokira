@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-selectpc copy</title>
+    <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/news.css">
+
+    <script src="https://kit.fontawesome.com/9c638736ac.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700;900&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="header"></div>
+
+        <div class="newsmain" id="top">
+            <div class="banner">
+                <h2>NEWS</h2>
+                <img src="./image/banner_news.jpg" alt="banner"> 
+            </div>
+
+            <div class="info">
+                <div class="deco">
+                    <div class="sticker-sun"><img src="./image/sticker_sun.svg" alt="sticker-sun"></div>
+                    <div class="sticker-hot"><img src="./image/sticker_hot.svg" alt="sticker-hot"></div>
+                    <div class="sticker-good"><img src="./image/sticker_good.svg" alt="sticker-good"></div>
+                </div>
+
+                <div class="newscontent">
+                    <div class="newsmenu">
+                        <div class="newstype" onclick="changeToAll();">
+                            <span>ALL</span><span>(6)</span>
+                        </div>
+                    
+                        <div class="newstype" onclick="changeToProduct();">
+                            <span>PRODUCT</span><span>(2)</span>
+                        </div>
+                    
+                        <div class="newstype" onclick="changeToActivity();">
+                            <span>ACTIVITY</span><span>(2)</span>
+                        </div>
+                    
+                        <div class="newstype" onclick="changeToStore();">
+                            <span>STORE</span><span>(2)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="itemgroup all-info">
+                        <a href="newspage.html" class="item">
+
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.11.02</span>
+                                    <span class="type">PRODUCT</span>
+                                </div>
+
+                                <span class="title">聖誕限定禮品包：預售開啓!</span>
+
+                                <p class="detail">
+                                    聖誕即將到來，我們推出了限量的聖誕禮品包預售，內含多款驚喜禮物，送給自己或摯愛吧！
+                                </p>
+                            </div>
+
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_christmas_m.jpg" alt="christmas"></div>
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                            </div>
+                            
+                        </a>
+                        
+                        <a href="newspage.html" class="item">
+                            
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.10.23</span>
+                                    <span class="type">ACTIVITY</span>
+                                </div>
+
+                                <span class="title">獨家活動：舊時光電影之夜</span>
+
+                                <p class="detail">
+                                    10/27晚，將在店內舉辦「舊時光電影之夜」，播放經典玩具相關電影，歡迎一同感受懷舊氛圍。
+                                </p>
+                            </div>
+                            
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_movie_m.jpg" alt="movie"></div>
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                            </div>
+                        </a>
+
+                        <a href="newspage.html" class="item">
+                            
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.09.18</span>
+                                    <span class="type">ACTIVITY</span>
+                                </div>
+
+                                <span class="title">玩具交換日，共同分享收藏之樂！</span>
+
+                                <p class="detail">
+                                    我們即將舉辦玩具交換日，讓玩具愛好者們共同分享心頭好。準備好你的交換清單吧！
+                                </p>
+                            </div>
+                            
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_toy_m.jpg" alt="toy"></div>
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                            </div>
+                        </a>
+
+                        <a href="newspage.html" class="item">
+
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.09.10</span>
+                                    <span class="type">STORE</span>
+                                </div>
+
+                                <span class="title">回憶盎然的遊戲機進駐！</span>
+
+                                <p class="detail">
+                                    恢復兒時的遊戲樂趣！我們現在擁有大量的經典遊戲機，讓你重溫童年的快樂時光。
+                                </p>
+                            </div>
+                            
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_game_m.jpg" alt="game"></div>
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                            </div>
+                        </a>
+
+                        <a href="newspage.html" class="item">
+                            
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.08.17</span>
+                                    <span class="type">STORE</span>
+                                </div>
+
+                                <span class="title">全新店鋪隆重開幕！</span>
+
+                                <p class="detail">
+                                    我們的全新店鋪即將於08/26正式開幕！期待您蒞臨，一同探索懷舊的玩具世界。
+                                </p>
+                            </div>
+                            
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_open_m.jpg" alt="open"></div>
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                            </div>
+                        </a>
+
+                        <a href="newspage.html" class="item">
+                            
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.08.03</span>
+                                    <span class="type">PRODUCT</span>
+                                </div>
+
+                                <span class="title">懷舊公仔回歸：經典角色再現</span>
+
+                                <p class="detail">
+                                    如同穿越時光隧道，讓您與最愛的角色再次相遇。即刻購買，感受懷舊的美好。
+                                </p>
+                            </div>
+                            
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_mario_m.jpg" alt="mario"></div>
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="itemgroup product-info"  style="display: none;">
+                        <a href="newspage.html" class="item">
+
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.11.02</span>
+                                    <span class="type">PRODUCT</span>
+                                </div>
+
+                                <span class="title">聖誕限定禮品包：預售開啓!</span>
+
+                                <p class="detail">
+                                    聖誕即將到來，我們推出了限量的聖誕禮品包預售，內含多款驚喜禮物，送給自己或摯愛吧！
+                                </p>
+                            </div>
+
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_christmas_m.jpg" alt="christmas"></div>
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                            </div>
+                            
+                        </a>
+
+                        <a href="newspage.html" class="item">
+                            
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.08.03</span>
+                                    <span class="type">PRODUCT</span>
+                                </div>
+
+                                <span class="title">懷舊公仔回歸：經典角色再現</span>
+
+                                <p class="detail">
+                                    如同穿越時光隧道，讓您與最愛的角色再次相遇。即刻購買，感受懷舊的美好。
+                                </p>
+                            </div>
+                            
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_mario_m.jpg" alt="mario"></div>
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="itemgroup activity-info"  style="display: none;">
+                        <a href="newspage.html" class="item">
+                            
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.10.23</span>
+                                    <span class="type">ACTIVITY</span>
+                                </div>
+
+                                <span class="title">獨家活動：舊時光電影之夜</span>
+
+                                <p class="detail">
+                                    10/27晚，將在店內舉辦「舊時光電影之夜」，播放經典玩具相關電影，歡迎一同感受懷舊氛圍。
+                                </p>
+                            </div>
+                            
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_movie_m.jpg" alt="movie"></div>
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                            </div>
+                        </a>
+                        
+                        <a href="newspage.html" class="item">
+                        
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.09.18</span>
+                                    <span class="type">ACTIVITY</span>
+                                </div>
+
+                                <span class="title">玩具交換日，共同分享收藏之樂！</span>
+
+                                <p class="detail">
+                                    我們即將舉辦玩具交換日，讓玩具愛好者們共同分享心頭好。準備好你的交換清單吧！
+                                </p>
+                            </div>
+                            
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_toy_m.jpg" alt="toy"></div>
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="itemgroup store-info"  style="display: none;">
+                        <a href="newspage.html" class="item">
+
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.09.10</span>
+                                    <span class="type">STORE</span>
+                                </div>
+
+                                <span class="title">回憶盎然的遊戲機進駐！</span>
+
+                                <p class="detail">
+                                    恢復兒時的遊戲樂趣！我們現在擁有大量的經典遊戲機，讓你重溫童年的快樂時光。
+                                </p>
+                            </div>
+                            
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_game_m.jpg" alt="game"></div>
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                            </div>
+                        </a>
+
+                        <a href="newspage.html" class="item">
+                            
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.08.17</span>
+                                    <span class="type">STORE</span>
+                                </div>
+
+                                <span class="title">全新店鋪隆重開幕！</span>
+
+                                <p class="detail">
+                                    我們的全新店鋪即將於08/26正式開幕！期待您蒞臨，一同探索懷舊的玩具世界。
+                                </p>
+                            </div>
+                            
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_open_m.jpg" alt="open"></div>
+                                <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="page">
+                        <a href="#">|<</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">>|</a>
+                    </div>
+
+                    <div class="phonenews">
+                        <select data-chose="all" onchange="this.dataset.chose = this.value;">
+                            <option selected value="all"><span>ALL</span>&nbsp;<span>(6)</span></option>
+                            <option value="product"><span>PRODUCT</span>&nbsp;<span>(2)</span></option>
+                            <option value="activity"><span>ACTIVITY</span>&nbsp;<span>(2)</span></option>
+                            <option value="store"><span>STORE</span>&nbsp;<span>(2)</span></option>
+                        </select>
+
+                        <a href="newspage.html" class="item all-info product-info">
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_christmas_l.jpg" alt="christmas"></div>
+                            </div>
+
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.11.02</span>
+                                    <span class="type">PRODUCT</span>
+                                </div>
+
+                                <span class="title">聖誕限定禮品包：預售開啓!</span>
+
+                                <p class="detail">
+                                    聖誕即將到來，我們推出了限量的聖誕禮品包預售，內含多款驚喜禮物，送給自己或摯愛吧！
+                                </p>
+                            </div>
+                        </a>
+                        
+                        <a href="newspage.html" class="item all-info activity-info">
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_movie_l.jpg" alt="movie"></div>
+                            </div>
+
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.10.23</span>
+                                    <span class="type">ACTIVITY</span>
+                                </div>
+
+                                <span class="title">獨家活動：舊時光電影之夜</span>
+
+                                <p class="detail">
+                                    10/27晚，將在店內舉辦「舊時光電影之夜」，播放經典玩具相關電影，歡迎一同感受懷舊氛圍。
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="newspage.html" class="item all-info activity-info">
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_toy_l.jpg" alt="toy"></div>
+                            </div>
+
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.09.18</span>
+                                    <span class="type">ACTIVITY</span>
+                                </div>
+
+                                <span class="title">玩具交換日，共同分享收藏之樂！</span>
+
+                                <p class="detail">
+                                    我們即將舉辦玩具交換日，讓玩具愛好者們共同分享心頭好。準備好你的交換清單吧！
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="newspage.html" class="item all-info store-info">
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_game_l.jpg" alt="game"></div>
+                            </div>
+
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.09.10</span>
+                                    <span class="type">STORE</span>
+                                </div>
+
+                                <span class="title">回憶盎然的遊戲機進駐！</span>
+
+                                <p class="detail">
+                                    恢復兒時的遊戲樂趣！我們現在擁有大量的經典遊戲機，讓你重溫童年的快樂時光。
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="newspage.html" class="item all-info store-info">
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_open_l.jpg" alt="open"></div>
+                            </div>
+
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.08.17</span>
+                                    <span class="type">STORE</span>
+                                </div>
+
+                                <span class="title">全新店鋪隆重開幕！</span>
+
+                                <p class="detail">
+                                    我們的全新店鋪即將於08/26正式開幕！期待您蒞臨，一同探索懷舊的玩具世界。
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="newspage.html" class="item all-info product-info">
+                            <div class="primg">
+                                <div class="newsimg"><img src="./image/news_mario_l.jpg" alt="mario"></div>
+                            </div>
+
+                            <div class="text">
+                                <div class="datetype">
+                                    <span class="date">2023.08.03</span>
+                                    <span class="type">PRODUCT</span>
+                                </div>
+
+                                <span class="title">懷舊公仔回歸：經典角色再現</span>
+
+                                <p class="detail">
+                                    如同穿越時光隧道，讓您與最愛的角色再次相遇。即刻購買，感受懷舊的美好。
+                                </p>
+                            </div>
+                        </a>
+
+                        <div class="page">
+                            <a href="#">|<</a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">>|</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer"></div>
+    </div>
+
+    <script type="text/javascript">
+        //在js中引入html
+        $(document).ready(function () {
+            $('.header').load('header.html');
+            $('.footer').load('footer.html');
+        });
+    </script>
+
+<script>
+    function changeToAll(){
+        //先取得要操作的標籤
+        let allDiv=document.querySelector(".all-info");
+        let productDiv=document.querySelector(".product-info");
+        let activityDiv=document.querySelector(".activity-info");
+        let storeDiv=document.querySelector(".store-info");
+
+        //在對標籤做操作
+        allDiv.style.display="block";
+        productDiv.style.display="none";
+        activityDiv.style.display="none";
+        storeDiv.style.display="none";
+    }
+
+    function changeToProduct(){
+        //先取得要操作的標籤
+        let allDiv=document.querySelector(".all-info");
+        let productDiv=document.querySelector(".product-info");
+        let activityDiv=document.querySelector(".activity-info");
+        let storeDiv=document.querySelector(".store-info");
+
+        //在對標籤做操作
+        allDiv.style.display="none";
+        productDiv.style.display="block";
+        activityDiv.style.display="none";
+        storeDiv.style.display="none";
+    }
+
+    function changeToActivity(){
+        //先取得要操作的標籤
+        let allDiv=document.querySelector(".all-info");
+        let productDiv=document.querySelector(".product-info");
+        let activityDiv=document.querySelector(".activity-info");
+        let storeDiv=document.querySelector(".store-info");
+
+        //在對標籤做操作
+        allDiv.style.display="none";
+        productDiv.style.display="none";
+        activityDiv.style.display="block";
+        storeDiv.style.display="none";
+    }
+
+    function changeToStore(){
+        //先取得要操作的標籤
+        let allDiv=document.querySelector(".all-info");
+        let productDiv=document.querySelector(".product-info");
+        let activityDiv=document.querySelector(".activity-info");
+        let storeDiv=document.querySelector(".store-info");
+
+        //在對標籤做操作
+        allDiv.style.display="none";
+        productDiv.style.display="none";
+        activityDiv.style.display="none";
+        storeDiv.style.display="block";
+    }
+</script>
+</body>
+</html>

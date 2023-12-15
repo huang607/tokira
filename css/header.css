@@ -17,8 +17,8 @@
 
 
     /* ph ====================== */
-    /* 33px */
-    --h2ph-font-size:clamp(1.3rem, 2.3vw, 2.1rem); 
+    /* 36px */
+    --h2ph-font-size:clamp(1.5rem, 2.5vw, 2.3rem); 
 
     /* 24px */
     --h3ph-font-size:clamp(1.2rem, 1.6vw, 1.5rem);
@@ -253,6 +253,9 @@ header .cart img{
 
 
 
+.phoneheader{
+    display: none;
+}
 
 .headerph{
     background-color: var(--white-color);
@@ -337,18 +340,18 @@ header .cart img{
     display: none;
 }
 
-#menu-switch:checked ~ .headerph nav {
+#menu-switch:checked ~ .phoneheader .headerph nav {
     display: block;
     
 }
 
-#menu-switch:checked ~ .headerph .hb .line1{
-    rotate: 30deg;
+#menu-switch:checked ~ .phoneheader .headerph .hb .line1{
+    transform: rotate(30deg);
     margin: 1px auto;
 }
 
-#menu-switch:checked ~ .headerph .hb .line2{
-    rotate: -30deg;
+#menu-switch:checked ~ .phoneheader .headerph .hb .line2{
+    transform: rotate(-30deg);
     margin: -2px auto;
 }
 
@@ -381,7 +384,7 @@ header .cart img{
         display: none;
     }
 
-    /* .headerph{
+    .phoneheader{
         display: block;
-    } */
+    }
 }
