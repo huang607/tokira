@@ -7,13 +7,17 @@ function $id(id){  //$id("btnLeft")
 
 window.addEventListener("load", function(){
 
-    let wrap = document.querySelector(".nitemgroupcenter");
+    let centerwrap = document.querySelector(".nitemgroupcenter");
+    let leftwrap = document.querySelector(".nitemgroupleft");
+    let rightwrap = document.querySelector(".nitemgroupright");
     let curIndex = 0;
     //-----------------------------------------btnLeft.onclick
     $id("btnLeft").onclick = function(){
         $id("btnLeft").style.display="block";
         curIndex--;
-        wrap.style.left = - curIndex * 100 + "%";
+        centerwrap.style.left = - curIndex * 100 + "%";
+        leftwrap.style.left = - curIndex * 100 + "%";
+        rightwrap.style.left = - curIndex * 100 + "%";
         if(curIndex === 0){
             $id("btnLeft").style.display="none";
         }
@@ -29,7 +33,9 @@ window.addEventListener("load", function(){
         } else {
             $id("btnLeft").style.display="block";
         }
-        wrap.style.left = - curIndex * 100 + "%";
+        centerwrap.style.left = - curIndex * 100 + "%";
+        leftwrap.style.left = - curIndex * 100 + "%";
+        rightwrap.style.left = - curIndex * 100 + "%";
         
         
     }

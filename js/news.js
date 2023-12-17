@@ -97,3 +97,4 @@ function changeToStore(){
     activityMenu.style.color="#3A3A3A";
     storeMenu.style.color="#FE793E";
 }
+

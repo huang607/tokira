@@ -100,14 +100,10 @@ header nav ul li:nth-child(2) a{
 
 
 /* ============================================= */
+
+
 .text{
-    /* display: flex; */
-    
-    /* justify-content: space-between;
-    align-content: center;
-    justify-items: end;justify-items: center; */
     padding-bottom:  4vw;
-    /* text-align: end; */
     margin: auto;
     position: relative;
     width: 74%;
@@ -194,13 +190,163 @@ p{
     }
 }
 
+/* ============================================= */
+/* itemView */
+.newsimgcenter{
+    position:relative;
+    width: 37vw;
+    height: 37vw;
+    margin: auto;
+    overflow: hidden;
+    /* display: flex; */
+    outline: 1vw solid var(--lggray-color);
+    z-index: 1;
+}
+
+@media screen and (max-width:1024px){
+    .newsimgcenter{
+        width: 57vw;
+        height: 57vw;
+        outline: 2vw solid var(--lggray-color);
+    }
+}
+
+@media screen and (max-width:768px){
+    .newsimgcenter{
+        width: 67vw;
+        height: 67vw;
+    }
+}
+
+/* wrap */
+.newsimgcenter .nitemgroupcenter{
+    position:absolute;
+    width:300%;
+    transition:left 1s;
+    left: 0%;
+}
+
+
+/* item */
+.newsimgcenter .item{
+    width:33.33%;
+    text-align: center;
+    float:left;
+}
+
+.newsimgcenter .item img{
+    width: 100%;
+    /* display: block; */
+    vertical-align: bottom;
+}
+
+/* ======================================= */
+
+/* itemView */
+.newsimgleft{
+    /* position:relative; */
+    width: 30vw;
+    height: 30vw;
+    margin: auto;
+    overflow:hidden;
+    position: absolute;
+    left: -5vw;
+}
+
+@media screen and (max-width:1024px){
+    .newsimgleft{
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    .newsimgleft{
+        width: 50vw;
+        height: 50vw;
+    }
+}
+
+/* wrap */
+.newsimgleft .nitemgroupleft{
+    position:absolute;
+    width:300%;
+    transition:left 1s;
+    left: 0%;
+}
+
+/* item */
+.newsimgleft .item{
+    width:33%;
+    text-align: center;
+    float:left;
+}
+
+.newsimgleft .item img{
+    width: 100%;
+    /* display: block; */
+    vertical-align: bottom;
+}
+
+/* ======================================= */
+
+/* itemView */
+.newsimgright{
+    /* position:relative; */
+    width: 30vw;
+    height: 30vw;
+    margin: auto;
+    overflow:hidden;
+    /* display: flex; */
+    position: absolute;
+    right: -5vw; 
+}
+
+@media screen and (max-width:1024px){
+    .newsimgright{
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    .newsimgright{
+        width: 50vw;
+        height: 50vw;
+    }
+}
+
+
+/* wrap */
+.newsimgright .nitemgroupright{
+    position:absolute;
+    width:300%;
+    transition:left 1s;
+    left: 0%;
+}
+
+/* item */
+.newsimgright .item{
+    width: 33%;
+    text-align: center;
+    float:left;
+}
+
+.newsimgright .item img{
+    width: 100%;
+    /* display: block; */
+    vertical-align: bottom;
+}
+
 .newsimg{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 74%;
+    /* width: 100%; */
     margin: auto;
     position: relative;
+    overflow: hidden;
 }
 
 @media screen and (max-width:1024px){
@@ -215,83 +361,79 @@ p{
     }
 }
 
-.newsimg .center{
-    z-index: 1;
-    position: relative;
+
+
+.newsimg .arrow_left{
+    position: absolute;
+    left:28%;
+    z-index: 2;
 }
 
-.newsimg .center .imgc {
-    text-align: center;
-    outline: 1vw solid var(--lggray-color);
-}
-
-@media screen and (max-width:1024px){
-    .newsimg .center .imgc {
-        outline: 2vw solid var(--lggray-color);
-    }
-}
-
-.newsimg .center .imgc img{
-    width: 35vw;
-    /* display: block; */
-    vertical-align: bottom;
-}
-
-@media screen and (max-width:1024px){
-    .newsimg .center .imgc img{
-        width: 55vw;
-    }
-}
-
-@media screen and (max-width:768px){
-    .newsimg .center .imgc img{
-        width: 65vw;
-    }
-}
-
-.newsimg .center .arrow_left img{
+.newsimg .arrow_left img{
     transform: rotate(-90deg);
     filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
-    position: absolute;
+    /* position: absolute;
     left: 1.7vw;
-    top: 50%;
+    top: 50%; */
     width: 1.2vw;
 }
 
-.newsimg .center .arrow_right img{
+.newsimg .arrow_right{
+    position: absolute;
+    right:28%;
+    z-index: 2;
+}
+
+.newsimg .arrow_right img{
     transform: rotate(90deg);
     filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
-    position: absolute;
+    /* position: absolute;
     right: 1.7vw;
-    top: 50%;
+    top: 50%; */
     width: 1.2vw;
 }
 
 @media screen and (max-width:1024px){
-    .newsimg .center .arrow_left img{
+    .newsimg .arrow_left{
+        left:22%;
+    }
+
+    .newsimg .arrow_left img{
         width: 1.8vw;
     }
     
-    .newsimg .center .arrow_right img{
+    .newsimg .arrow_right{
+        right:22%;
+    }
+
+    .newsimg .arrow_right img{
         width: 1.8vw;
     }
 }
 
 @media screen and (max-width:768px){
-    .newsimg .center .arrow_left img{
+    .newsimg .arrow_left{
+        left:20%;
+    }
+
+    .newsimg .arrow_left img{
         width: 4.5vw;
     }
     
-    .newsimg .center .arrow_right img{
+    .newsimg .arrow_right{
+        right:20%;
+    }
+
+    .newsimg .arrow_right img{
         width: 4.5vw;
     }
 }
 
-.newsimg .center:hover .arrow_left img{
+.newsimg:hover .arrow_left img{
     animation: arrowleft .5s;
 }
 
-.newsimg .center:hover .arrow_right img{
+.newsimg:hover .arrow_right img{
     animation: arrowright .5s;
 }
 
@@ -310,46 +452,5 @@ p{
     }
     100%{
         right: 1.7vw;
-    }
-}
-
-
-.newsimg .left{
-    position: absolute;
-    left: 0vw;
-}
-
-.newsimg .left img{
-    width: 22vw;
-    vertical-align: bottom;
-}
-
-.newsimg .right{
-    position: absolute;
-    right: 0;
-}
-
-.newsimg .right img{
-    width: 22vw;
-    vertical-align: bottom;
-}
-
-@media screen and (max-width:1024px){
-    .newsimg .left img{
-        width: 32vw;
-    }
-
-    .newsimg .right img{
-        width: 32vw;
-    }
-}
-
-@media screen and (max-width:768px){
-    .newsimg .left img{
-        width: 42vw;
-    }
-
-    .newsimg .right img{
-        width: 42vw;
     }
 }

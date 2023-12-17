@@ -1,4 +1,6 @@
 
+
+//電腦版篩選器
 function changeToAll(){
     //先取得要操作的標籤
     let allDiv=document.querySelector(".all-info");

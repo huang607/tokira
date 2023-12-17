@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <style>
+        /* 先定义一种样式 */
+
+        .img-list ul li{
+            width: 200px;
+            height: 200px;
+            background: #ff0;
+            display: block;
+            float: left;
+            margin: 10px;
+        }
+
+
+        /* 定义另一种样式 */
+
+        .list ul li{
+            width: 400px;
+            height: 100px;
+            background: #f00;
+            display: block;
+            float: left;
+            margin: 10px;
+        }
+
+
+        .check-1,.check-2{
+            width:25px;
+            height:25px;
+            background:url(./image/product_display1-1.svg) center center no-repeat ;
+        }
+
+        .check-2{
+            background:url(./image/product_display2-1.svg) center center no-repeat ;
+        }
+    </style>
+</head>
+<body>
+    <a id="check" href="###" class="check-1">切换布局</a>
+
+    <!-- 注意这里定义了一个带图标的样式：check-1 ，我们还要在样式表里写它的样式 -->
+
+    <div id="clickChange" class="img-list">  <!-- 注意这里要先定义一个class -->
+        <ul>
+            <li><a href="#">我是一个小朋友</a></li>
+            <li><a href="#">我是一个小朋友</a></li>
+            <li><a href="#">我是一个小朋友</a></li>
+            <li><a href="#">我是一个小朋友</a></li>
+            <li><a href="#">我是一个小朋友</a></li>
+        </ul>
+    </div>
+
+    <script>
+
+        $("#check").click(function(){
+        // 定义 id为 check 的a标签的click事件，鼠标点击这个a标签执行这段程序。
+        
+        $("#clickChange").toggleClass("list");
+        // 查找 id为 clickChange的容器，给它增加一个新的class：list。我们原来在页面结构代码里写的  class="img-list"，会变成： class="img-list list"，这时，我们就完成了对页面布局样式的覆盖。
+        
+        $(".check-1").toggleClass("check-2");
+        // 查找到类名为 check-1的容器，这里是将鼠标点击的a标签class在 “check-1”和“check-2”之间切换。
+        
+        });
+        
+    </script>
+</body>
+</html>

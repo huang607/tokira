@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>序號</td>
+                <td>名稱</td>
+                <td>數量</td>
+                <td>單價</td>
+                <td>小計</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>肉串</td>
+                <td>
+                    <input type="button" value="-" class="minus">
+                    <input type="text" value="1" id="qty0">
+                    <input type="button" value="+" class="add">	
+                </td>
+                <td>5</td>
+                <td class="total">5</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>草莓</td>
+                <td>
+                    <input type="button" value="-" class="minus">
+                    <input type="text" value="1" id="qty0">
+                    <input type="button" value="+" class="add">	
+                </td>
+                <td>9</td>
+                <td class="total">9</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>餅乾</td>
+                <td>
+                    <input type="button" value="-" class="minus">
+                    <input type="text" value="1" id="qty0">
+                    <input type="button" value="+" class="add">	
+                </td>
+                <td>20</td>
+                <td class="total">20</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>葡萄</td>
+                <td>
+                    <input type="button" value="-" class="minus">
+                    <input type="text" value="1" id="qty0">
+                    <input type="button" value="+" class="add">	
+                </td>
+                <td>8</td>
+                <td class="total">8</td>
+            </tr>
+
+            <tr>
+                <td colspan="5">
+                    共計消費：＄<span id="sum2">42</span>元
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        //add
+        var adds = document.getElementsByClassName("add");
+        //循環
+        for (var i = 0; i<adds.length; i++){
+            //單擊事件
+            adds[i].onclick = function(){
+                //1.獲取輸入框對象
+                var inputEle = this.previousElementSibling;
+                //2.獲取原來的值
+                var inputValue = inputEle.value;
+                //3.重新複製
+                inputEle.value = parseInt(inputValue) + 1;
+
+                //計算金額
+                //1.數量
+                var number=parseInt(inputEle.value);
+                //2.單價
+                var price=parseFloat(this.parentNode.nextElementSibling.innerHTML);
+                //3.金額
+                var sum = number*price;
+
+                //4.賦值 保留2位小數點->toFixed(2)
+                this.parentNode.nextElementSibling.nextElementSibling.innerHTML=sum.toFixed(2);
+
+                //調用方法
+                getAmount();
+            }
+        }
+
+        //minus
+        var minus = document.getElementsByClassName("minus");
+        //循環
+        for (var i = 0; i<minus.length; i++){
+            //單擊事件
+            minus[i].onclick = function(){
+                //1.獲取輸入框對象
+                var inputEle = this.nextElementSibling;
+                //2.獲取原來的值
+                var inputValue = inputEle.value;
+                //判斷
+                if(parseInt(inputValue)>1){
+                    //3.重新複製
+                    inputEle.value = parseInt(inputValue) - 1;
+
+                    //計算金額
+                    //1.數量
+                    var number=parseInt(inputEle.value);
+                    //2.單價
+                    var price=parseFloat(this.parentNode.nextElementSibling.innerHTML);
+                    //3.金額
+                    var sum = number*price;
+
+                    //4.賦值 保留2位小數點->toFixed(2)
+                    this.parentNode.nextElementSibling.nextElementSibling.innerHTML=sum.toFixed(2);
+
+                    //調用方法
+                    getAmount();
+                }
+                
+            }
+        }
+
+        //計算金額
+        function getAmount(){
+            //0.累計和
+            var sum=0;
+            //1.total
+            var totals = document.getElementsByClassName("total");
+            //2.循環
+            for(var i=0;i<totals.length;i++){
+                sum+=parseFloat(totals[i].innerHTML);
+            }
+
+            //3.賦值
+            document.getElementById("sum2").innerHTML=sum.toFixed(2);
+        }
+    </script>
+</body>
+</html>

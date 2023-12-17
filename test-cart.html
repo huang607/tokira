@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+        單價<input type="text" id="price" name="price"><br>
+        數量<input type="number" min="0" max="27" id="num"><br>
+        <button onclick="cal()">計算</button><br>
+            
+        總價<input type="text" id="total">
+    
+    <script>
+    function cal() {
+        pirce = document.getElementById("price").value;
+        num = document.getElementById("num").value;
+        totals=pirce*num;
+        document.getElementById("total").value = totals;
+    }
+    </script>
+</body>
+</html>

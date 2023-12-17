@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP - TOKIRA SHOP</title>
+    <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <script src="https://kit.fontawesome.com/9c638736ac.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700;900&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+
+
+        /* ============================================= */
+
+        .shopcontent{
+            margin: 5.7vw auto 0 auto;
+            display: flex;
+            justify-content: space-between;
+            border-top: var(--borderpc-border);
+            width: 74%;
+        }
+
+        @media screen and (max-width:1024px){
+            .shopcontent{
+                border-top: var(--borderpad-border);
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width:768px){
+            .shopcontent{
+                border-top: none;
+                flex-wrap: wrap;
+                /* flex-direction: column; */
+                padding: 9vw 0 18vw 0;
+            }
+        }
+
+
+        /* ============================================= */
+        .phoneshop{
+            display: none;
+            background-color: rgba(236, 236, 236, 0);
+        }
+
+        @media screen and (max-width:768px){
+            .phoneshop{
+                display: block flex;
+                flex-wrap: wrap;
+                padding: 9vw 0 18vw 0;
+            }
+        }
+
+        /* ============================================= */
+
+        /* .displaybutton{
+            display: flex;
+            margin: auto;
+            justify-content: flex-end;
+            right: 0;
+        } */
+        
+        .check-1,.check-2{
+            width:25px;
+            height:25px;
+            background:url(./image/product_display1-1.svg) center center no-repeat ;
+        }
+
+        .check-2{
+            background:url(./image/product_display2-1.svg) center center no-repeat ;
+        }
+        
+
+        .product{
+            padding-top: 3.4vw;
+            padding-bottom: 9.5vw;
+            padding-left: 3.4vw;
+            border-left: var(--borderpc-border);
+        }
+
+        @media screen and (max-width:1024px){
+            .product{
+                padding-left: 2vw;
+                border-left: var(--borderpad-border);
+            }
+        }
+
+        @media screen and (max-width:768px){
+            .product{
+                display: none;
+            }
+        }
+
+    
+        .shopcontent .itemgroup{
+            /* display: flex;
+            flex-wrap: wrap;
+            justify-content: start; */
+            width: 100%;
+            display: grid;
+            gap: 1vw;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media screen and (max-width:1024px){
+            .shopcontent .itemgroup{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .shopcontent .item{
+            /* margin: 0 0.5vw 0.5vw 0.5vw; */
+            position: relative;
+        }
+
+        @media screen and (max-width:768px){
+            .shopcontent .item itema{
+                width: 100%;
+                margin: 4vw 0;
+                position: relative;
+                /* display: none; */
+            }
+
+            .shopcontent .itemb{
+                width: 48%;
+                margin: 2vw 0;
+                position: relative;
+                /* display: none; */
+            }
+        }
+
+
+
+
+
+        .shopcontent .top{
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+            align-items: center;
+            left: 0;
+            right: 0;
+            top: 0;
+            padding: 1vw 1vw 0 1vw;
+        }
+
+        @media screen and (max-width:768px){
+            .shopcontent .item itema .top{
+                padding: 5vw 5vw 0 5vw;
+            }
+
+            .shopcontent .itemb .top{
+                padding: 2vw 2vw 0 2vw;
+            }
+        }
+
+        .shopcontent .name{
+            color: #fff;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: var(--p-font-size);
+            letter-spacing: 0.08vw;
+            text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+        }
+
+        @media screen and (max-width:768px){
+            .shopcontent .item itema .name{
+                line-height: 18px;
+                font-size: var(--h3-font-size);
+            }
+
+            .shopcontent .itemb .name{
+                width: 140px;
+                line-height: 22px;
+                font-size: var(--pph-font-size);
+            }
+        }
+
+        .shopcontent .arrow{
+            position: absolute;
+            /* display: none; */
+            top: 1vw;
+            right: 1vw;
+        }
+
+        .shopcontent .arrow img{
+            transform: rotate(45deg);
+            filter:drop-shadow(0px 0px 0.6vw rgba(0,0,0,60));
+            width: 1.2vw;
+            vertical-align: bottom;
+        }
+
+        .shopcontent .arrow2{
+            position: absolute;
+            top: 1vw;
+            right: 1vw;
+        }
+
+        .shopcontent .arrow2 img{
+            transform: rotate(45deg);
+            width: 1.2vw;
+            vertical-align: bottom;
+        }
+
+        @media screen and (max-width:1024px){
+            .shopcontent .arrow img{
+                width: 1.8vw;
+            }
+
+            .shopcontent .arrow2 img{
+                width: 1.8vw;
+            }
+        }
+
+        @media screen and (max-width:768px){
+            .shopcontent .item itema .arrow{
+                top: 5vw;
+                right: 5vw;
+            }
+            
+            .shopcontent .item itema .arrow2{
+                top: 5vw;
+                right: 5vw;
+            }
+
+            .shopcontent .item itema .arrow img{
+                width: 5vw;
+            }
+            
+            .shopcontent .item itema .arrow2 img{
+                width: 5vw;
+            }
+
+            .shopcontent .itemb .arrow{
+                top: 2.5vw;
+                right: 2vw;
+            }
+            
+            .shopcontent .itemb .arrow2{
+                top: 2.5vw;
+                right: 2vw; 
+            }
+
+            .shopcontent .itemb .arrow img{
+                width: 4vw;
+            }
+            
+            .shopcontent .itemb .arrow2 img{
+                width: 4vw;
+            }
+        }
+
+        .shopcontent .detail{
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            top: 2vw;
+            padding: 1.5vw 1vw 0 0;
+            color: var(--dkgray-color);
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: var(--span-font-size);
+            line-height: 22px;
+            display: none;
+            text-align: justify;
+        }
+
+        @media screen and (max-width:1024px){
+            .shopcontent .detail{
+                padding: 2.5vw 1vw 0 0;
+                line-height: 20px;
+            }
+        }
+
+        @media screen and (max-width:768px){
+            .shopcontent .item itema .detail{
+                font-size: var(--pph-font-size);
+                top: 10vw;
+                padding: 5vw 5vw 0 0;
+                line-height: 28px;
+            }
+
+            .shopcontent .itemb .detail{
+                font-size: var(--pph-font-size);
+                top: 8vw;
+                padding: 5vw 2vw 0 0;
+                line-height: 22px;
+            }
+        }
+
+        .shopcontent .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: none;
+        }
+
+
+        .shopcontent .item a:hover .overlay{
+            display: block;
+        }
+
+        .shopcontent .item a:hover .name{
+            color: var(--dkgray-color);
+            text-shadow: none;
+            z-index: 2;
+        }
+
+        .shopcontent .item a:hover .arrow img{
+            display: none;
+        }
+
+        .shopcontent .item a:hover .arrow2 img{
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: rotate(180deg);
+            transition: 0.5s;
+            z-index: 88;
+            
+        }
+
+
+        .shopcontent .item a:hover .top .detail{
+            display: block;
+            transition: 1s;
+            z-index: 2;
+        }
+
+
+
+
+
+
+
+        .shopcontent .bottom{
+            display: flex;
+            position: absolute;
+            vertical-align: bottom;
+            align-items: flex-end;
+            justify-content: space-between;
+            left: 0;
+            right: 0;
+            padding: 0 1vw 1vw 1vw;
+            bottom: 0;
+        }
+
+        @media screen and (max-width:768px){
+            .shopcontent .item itema .bottom{
+                padding: 0 5vw 5vw 5vw;
+            }
+
+            .shopcontent .itemb .bottom{
+                padding: 0 2vw 2vw 2vw;
+            }
+        }
+
+        .shopcontent .price{
+            color: #fff;
+            font-size: var(--p-font-size);
+            letter-spacing: 0.08vw;
+            text-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+        }
+
+        @media screen and (max-width:768px){
+            .shopcontent .item itema .price{
+                font-size: var(--h3-font-size);
+            }
+
+            .shopcontent .itemb .price{
+                font-size: var(--pph-font-size);
+            }
+        }
+
+        .shopcontent .stamp1{
+            color: #fff;
+            font-size: var(--stamp-font-size);
+            letter-spacing: 0.08vw;
+            width: 4vw;
+            height: 4vw;
+            background-color: var(--orange-color);
+            border-radius: 30vw;
+            box-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .shopcontent .stamp2{
+            color: #fff;
+            font-size: var(--stamp-font-size);
+            letter-spacing: 0.08vw;
+            width: 4vw;
+            height: 4vw;
+            background-color: #909090;
+            border-radius: 30vw;
+            box-shadow: 0 0 1vw rgba(0, 0, 0, 80);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        @media screen and (max-width:1024px){
+            .shopcontent .stamp1{
+                width: 6vw;
+                height: 6vw;
+            }
+            
+            .shopcontent .stamp2{
+                width: 6vw;
+                height: 6vw;
+            }
+        }
+
+        @media screen and (max-width:768px){
+            .shopcontent .item itema .stamp1{
+                width: 19vw;
+                height: 19vw;
+                font-size: var(--spanph-font-size);
+            }
+            
+            .shopcontent .item itema .stamp2{
+                width: 19vw;
+                height: 19vw;
+                font-size: var(--spanph-font-size);
+            }
+
+            .shopcontent .itemb .stamp1{
+                width: 13vw;
+                height: 13vw;
+                font-size: var(--stampph-font-size);
+            }
+            
+            .shopcontent .itemb .stamp2{
+                width: 13vw;
+                height: 13vw;
+                font-size: var(--stampph-font-size);
+            }
+        }
+
+        .shopcontent .primg img{
+            /* width: 17.3vw;
+            height: 17.3vw; */
+            width: 100%;
+            vertical-align: bottom;
+        }
+
+
+        /* ============================================= */
+
+
+        .shopcontent .page{
+            text-align: center;
+            margin-top: 3.4vw;
+        }
+
+        @media screen and (max-width:768px){
+            .shopcontent .page{
+                margin-top: 10vw;
+            }
+        }
+
+        .shopcontent .page a{
+            color: var(--dkgray-color);
+            font-size: var(--p-font-size);
+            text-decoration: none;
+            margin: 1vw;
+        }
+
+        @media screen and (max-width:768px){
+            .shopcontent .page a{
+                font-size: var(--pph-font-size);
+                margin: 3vw;
+            }
+        }
+
+        .shopcontent .page a:hover{
+            color: var(--orange-color);
+            border-color: var(--orange-color);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="shopcontent">
+
+        <div class="phoneshop">
+            <a id="check" href="###" class="check-1">切换布局</a>
+
+            <a href="shoppage.html" class="item itema all-info toys-info">
+                <div class="top">
+                    <span class="name">掌上電子遊戲機</span>
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">80年代經典電子遊戲機，帶您重溫當年的遊戲樂趣與童年回憶。</span>
+                </div>
+        
+                <div class="bottom">
+                    <span class="price">$ 980</span>
+                    <span class="stamp1">NEW</span>
+                </div>
+                <div class="overlay"></div>
+        
+                <div class="primg">
+                    <img src="./image/product_gameboy.jpg" alt="gameboy">
+                </div>
+            </a>
+            <a href="shoppage.html" class="item itema all-info vintage-info">
+                <div class="top">
+                    <span class="name">任天堂卡帶</span>
+        
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">創新的遊戲媒介。成就了遊戲史上的經典，承載了無數令人難忘的冒險與故事。</span>
+                </div>
+                <div class="bottom">
+                    <span class="price">$ 780</span>
+                    <span class="stamp1">NEW</span>
+                </div>
+                <div class="overlay"></div>
+        
+                <div class="primg">
+                    <img src="./image/product_gamedisk.jpg" alt="gamedisk">
+                </div>
+            </a>
+            <a href="shoppage.html" class="item itema all-info vintage-info">
+                <div class="top">
+                    <span class="name">音樂時光卡式錄音帶</span>
+        
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">充滿復古魅力的卡式錄音帶，帶您回到音樂在磁帶上流傳的年代，重溫那些珍貴的音樂時刻。</span>
+                </div>
+                <div class="bottom">
+                    <span class="price">$ 360</span>
+                </div>
+                <div class="overlay"></div>
+        
+                <div class="primg">
+                    <img src="./image/product_audiotape.jpg" alt="audiotape">
+                </div>
+        
+            </a>
+            <a href="shoppage.html" class="item itema all-info photos-info">
+                <div class="top">
+                    <span class="name">View-Master 幻燈片機</span>
+        
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">即刻探索多樣景觀，沉浸於生動故事。這經典裝置將美景帶入手中，成為您探險的視覺窗。</span>
+                </div>
+                <div class="bottom">
+                    <span class="price">$ 600</span>
+                </div>
+        
+                <div class="overlay"></div>
+                <div class="primg">
+                    <img src="./image/product_viewmaster.jpg" alt="viewmaster">
+                </div>
+        
+            </a>
+            <a href="shoppage.html" class="item itema all-info toys-info">
+                <div class="top">
+                    <span class="name">太空探險樂高組合</span>
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">精彩的外星人樂高組合，將您帶入外太空探險的刺激世界，充滿樂趣和挑戰。</span>
+                </div>
+        
+        
+                <div class="bottom">
+                    <span class="price">$ 590</span>
+                    <span class="stamp2">SOLD<br>OUT</span>
+                </div>
+                <div class="overlay"></div>
+        
+                <div class="primg">
+                    <img src="./image/product_lego.jpg" alt="lego">
+                </div>
+            </a>
+            <a href="shoppage.html" class="item itema all-info photos-info">
+                <div class="top">
+                    <span class="name">舊式攝影底片</span>
+        
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">復古的底片帶您進入攝影的神秘世界，探索以前的攝影技術和獨特的影像魅力。</span>
+                </div>
+                <div class="bottom">
+                    <span class="price">$ 230</span>
+                    <span class="stamp1">HOT</span>
+                </div>
+                <div class="overlay"></div>
+        
+                <div class="primg">
+                    <img src="./image/product_film.jpg" alt="film">
+                </div>
+            </a>
+            <a href="shoppage.html" class="item itema all-info toys-info">
+                <div class="top">
+                    <span class="name">經典角色模型車</span>
+        
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">經典角色化身賽車手融合了熱情與速度，為您帶來激動人心的賽車樂趣。收藏或比賽，都能激發無限童心。</span>
+                </div>
+                <div class="bottom">
+                    <span class="price">$ 670</span>
+                </div>
+                <div class="overlay"></div>
+        
+                <div class="primg">
+                    <img src="./image/product_modelcar.jpg" alt="modelcar">
+                </div>
+        
+            </a>
+            <a href="shoppage.html" class="item itema all-info living-info">
+                <div class="top">
+                    <span class="name">電影海報收藏品</span>
+        
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">這些復古風格的電影海報彷彿是時光隧道，帶您重溫經典電影的美妙。</span>
+                </div>
+                <div class="bottom">
+                    <span class="price">$ 540</span>
+                </div>
+        
+                <div class="overlay"></div>
+                <div class="primg">
+                    <img src="./image/product_poster.jpg" alt="poster">
+                </div>
+        
+            </a>
+            <a href="shoppage.html" class="item itema all-info vintage-info">
+                <div class="top">
+                    <span class="name">SEGA遊戲卡帶</span>
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">充滿懷舊風情的遊戲傳奇。蘊含了SEGA遊戲史上的經典，帶來無盡的遊戲樂趣與挑戰。經典遊戲，永不褪色。</span>
+                </div>
+        
+        
+                <div class="bottom">
+                    <span class="price">$ 540</span>
+                </div>
+                <div class="overlay"></div>
+        
+                <div class="primg">
+                    <img src="./image/product_sega.jpg" alt="sega">
+                </div>
+            </a>
+            <a href="shoppage.html" class="item itema all-info toys-info">
+                <div class="top">
+                    <span class="name">奇脆圈玩具TAZO</span>
+        
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">獨特設計，藏匿奇幻力量。收集、交換、探索其中的秘密，為你的TAZO收藏品帶來新的奇妙體驗。</span>
+                </div>
+                <div class="bottom">
+                    <span class="price">$ 160</span>
+                </div>
+                <div class="overlay"></div>
+        
+                <div class="primg">
+                    <img src="./image/product_tazo.jpg" alt="tazo">
+                </div>
+            </a>
+            <a href="shoppage.html" class="item itema all-info living-info">
+                <div class="top">
+                    <span class="name">雲端飛行船裝飾</span>
+        
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">這些精緻裝飾充滿夢幻氛圍，帶您飛向冒險之旅。為生活增添一絲奇幻氛圍與探險精神。</span>
+                </div>
+                <div class="bottom">
+                    <span class="price">$ 720</span>
+                </div>
+                <div class="overlay"></div>
+        
+                <div class="primg">
+                    <img src="./image/product_space.jpg" alt="space">
+                </div>
+        
+            </a>
+            <a href="shoppage.html" class="item itema all-info living-info">
+                <div class="top">
+                    <span class="name">MF DOOM黑膠唱片</span>
+        
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">收錄了MF DOOM深邃的音樂世界，展現其獨特風格與才華。品味音樂巨匠的藝術，享受深沉旋律的震撼。</span>
+                </div>
+                <div class="bottom">
+                    <span class="price">$ 830</span>
+                    <span class="stamp2">SOLD<br>OUT</span>
+                </div>
+        
+                <div class="overlay"></div>
+                <div class="primg">
+                    <img src="./image/product_mfdoom.jpg" alt="mfdoom">
+                </div>
+        
+            </a>
+            <a href="shoppage.html" class="item itema all-info toys-info">
+                <div class="top">
+                    <span class="name">空手道小子吊卡</span>
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">捕捉了空手道小子的英勇形象，展現著其技藝與精神。收藏或懸掛，都能體現熱血少年的勇氣與冒險精神。</span>
+                </div>
+        
+        
+                <div class="bottom">
+                    <span class="price">$ 610</span>
+                    <span class="stamp">HOT</span>
+                </div>
+                <div class="overlay"></div>
+        
+                <div class="primg">
+                    <img src="./image/product_kid.jpg" alt="gameboy">
+                </div>
+            </a>
+            <a href="shoppage.html" class="item itema all-info living-info">
+                <div class="top">
+                    <span class="name">愛因斯坦零錢筒</span>
+        
+                    <div class="arrow2"><img src="./image/product_arrow2.svg" alt="arrow"></div>
+                    <div class="arrow"><img src="./image/product_arrow.svg" alt="arrow"></div>
+        
+                    <span class="detail">智慧與儲蓄的象徵。不僅能儲蓄，更是一件啓發人心的藝術品，為您的存錢計畫增添趣味。</span>
+                </div>
+                <div class="bottom">
+                    <span class="price">$ 540</span>
+                </div>
+                <div class="overlay"></div>
+        
+                <div class="primg">
+                    <img src="./image/product_einstein.jpg" alt="einstein">
+                </div>
+            </a>
+        </div>
+    </div>
+    <script>
+
+        $("#check").click(function(){
+        // 定义 id为 check 的a标签的click事件，鼠标点击这个a标签执行这段程序。
+        
+        $(".itema").toggleClass("itemb");
+        // 查找 id为 clickChange的容器，给它增加一个新的class：list。我们原来在页面结构代码里写的  class="img-list"，会变成： class="img-list list"，这时，我们就完成了对页面布局样式的覆盖。
+        
+        $(".check-1").toggleClass("check-2");
+        // 查找到类名为 check-1的容器，这里是将鼠标点击的a标签class在 “check-1”和“check-2”之间切换。
+        
+        });
+        
+    </script>
+    
+    <!-- <script>
+        $(function() {
+            $('.displaybutton').click(function(){
+                $('.full').style.display="block";
+                $('.grid').style.display="none";
+                $('.item').toggleClass("itemb");
+                // $('.displaybutton').attr('src',$('.displaybutton').attr('src') == './image/product_display1-1.svg' ? './image/product_display2-1.svg' : './image/product_display1-1.svg' )  
+            });
+        });
+    </script> -->
+</body>
+</html>
