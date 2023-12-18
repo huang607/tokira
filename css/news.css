@@ -169,6 +169,7 @@ header nav ul li:nth-child(2) a{
     color: var(--dkgray-color);
     font-size: var(--span-font-size);
     margin-bottom: 3vw;
+    cursor: pointer;
 }
 
 @media screen and (max-width:1024px){

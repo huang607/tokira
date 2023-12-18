@@ -27,7 +27,7 @@ function changeToAll(){
     toysMenu.style.color="#3A3A3A";
     livingMenu.style.color="#3A3A3A";
     vintageMenu.style.color="#3A3A3A";
-    photoMenu.style.color="#3A3A3A";
+    photosMenu.style.color="#3A3A3A";
 }
 
 function changeToToys(){
@@ -57,7 +57,7 @@ function changeToToys(){
     toysMenu.style.color="#FE793E";
     livingMenu.style.color="#3A3A3A";
     vintageMenu.style.color="#3A3A3A";
-    photoMenu.style.color="#3A3A3A";
+    photosMenu.style.color="#3A3A3A";
 }
 
 function changeToLiving(){
@@ -86,7 +86,7 @@ function changeToLiving(){
     toysMenu.style.color="#3A3A3A";
     livingMenu.style.color="#FE793E";
     vintageMenu.style.color="#3A3A3A";
-    photoMenu.style.color="#3A3A3A";
+    photosMenu.style.color="#3A3A3A";
 }
 
 function changeToVintage(){
@@ -116,7 +116,7 @@ function changeToVintage(){
     toysMenu.style.color="#3A3A3A";
     livingMenu.style.color="#3A3A3A";
     vintageMenu.style.color="#FE793E";
-    photoMenu.style.color="#3A3A3A";
+    photosMenu.style.color="#3A3A3A";
 }
 
 function changeToPhotos(){
@@ -146,5 +146,5 @@ function changeToPhotos(){
     toysMenu.style.color="#3A3A3A";
     livingMenu.style.color="#3A3A3A";
     vintageMenu.style.color="#3A3A3A";
-    photoMenu.style.color="#FE793E";
+    photosMenu.style.color="#FE793E";
 }
