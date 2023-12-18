@@ -506,7 +506,7 @@
     font-size: var(--span-font-size);
     text-decoration: none;
     box-shadow: 0 0 1vw rgba(0, 0, 0, 0.4);
-    padding: 0.7vw 1.8vw;
+    padding: 1vw 2.5vw;
     background-color: #ececec;
     border: var(--borderpc-border);
     border-radius: 60vw;
